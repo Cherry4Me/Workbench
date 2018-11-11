@@ -1,0 +1,110 @@
+<html>
+<head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.highlight {
+  background-color: #ccc !important;
+}
+
+</style>
+
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div 
+ style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false;" 
+ onmousedown="return false;">
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+</div>
+
+
+
+<script>
+
+$(document).ready(function () {
+  var isMouseDown = false;
+  var lastTr = -1;
+  
+  $('body').mousedown(function() {
+    isMouseDown = true;
+    $('td').removeClass('highlight');
+  })
+  .mouseup(function() {
+    isMouseDown = false;
+  });
+
+  $("table td").hover(function(){
+    var ctr = $(this).closest('tr').index();
+    lastTr = lastTr === -1 ? ctr : lastTr;
+    
+    if (isMouseDown)
+      if (lastTr !== ctr)
+        $('td').removeClass('highlight');
+      else
+        $(this).addClass("highlight");
+    
+    lastTr = $(this).closest('tr').index();
+  });
+
+  $("table td").click(function(){
+    $(this).toggleClass('highlight');
+  });
+});
+
+</script>
+</body>
+</html>
