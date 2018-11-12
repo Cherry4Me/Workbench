@@ -16,6 +16,7 @@ public class InterpreterTest {
     List<Executable> callabals = interpreter.callabals(math);
 
     Object[] ints = {2, 23};
+    Class[] classes = {Integer.class, Integer.class};
 
     TypeSaveObject call = interpreter.call(callabals.get(16), math, ints);
 

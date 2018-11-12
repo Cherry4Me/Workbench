@@ -22,7 +22,7 @@ public class Interpreter {
       return ClassExplorer.allNonStaticMethods(clazz);
   }
 
-  public static TypeSaveObject call(Executable executable, TypeSaveObject object, Object... args) throws Exception {
+  public static TypeSaveObject call(Executable executable, TypeSaveObject object, Object[] args) throws Exception {
     Object out;
     Class type = null;
     executable.setAccessible(true);
@@ -49,7 +49,19 @@ public class Interpreter {
   }
 
 
-  public static TypeSaveObject call(String executable, TypeSaveObject typeSaveObject, ArrayList<Object> parsedParams) throws Exception {
+  public static TypeSaveObject call(String executable
+      , TypeSaveObject typeSaveObject
+      , ArrayList<Object> parsedParams
+      , Class<?>[] paramClasses) throws Exception {
+    Executable executable1 = typeSaveObject.getType().getMethod(executable, paramClasses);
+    if (executable1 == null) {
+      executable1 = typeSaveObject.getType().getConstructor(paramClasses);
+    }
+    return call(executable1, typeSaveObject, parsedParams.toArray());
+  }
+
+
+  /*public static TypeSaveObject call(String executable, TypeSaveObject typeSaveObject, ArrayList<Object> parsedParams) throws Exception {
     List<Executable> executables;
     if (typeSaveObject.isNull()) {
       executables = ClassExplorer.allStaticMethods(typeSaveObject.getType());
@@ -63,5 +75,5 @@ public class Interpreter {
       }
     }
     throw new RuntimeException("NO Methode");
-  }
+  }*/
 }

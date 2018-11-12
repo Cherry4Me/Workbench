@@ -2,6 +2,7 @@ package de.cherry.workbench.interpreter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.cherry.workbench.explorer.TypeSaveObject;
+import org.apache.commons.lang3.ClassUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -26,14 +27,16 @@ public class InterpreterRest {
       @RequestBody CallDTO call) throws Exception {
     TypeSaveObject typeSaveObject = TypeSaveObject.form(call.getClazz(), call.getObject());
     ArrayList<Object> parsedParams = new ArrayList<>();
+    Class[] parsedParamClasses = new Class[call.getParams().length];
     ObjectMapper objectMapper = new ObjectMapper();
     String[] paramsClasses = call.getParamsClasses();
     String[] params = call.getParams();
     for (int i = 0; i < paramsClasses.length; i++) {
-      parsedParams.add(objectMapper.readValue(params[i], Class.forName(paramsClasses[i])));
+      Class<?> valueType = ClassUtils.getClass(paramsClasses[i]);
+      parsedParamClasses[i] = valueType;
+      parsedParams.add(objectMapper.readValue(params[i], valueType));
     }
-
-    return Interpreter.call(call.getExecutable(), typeSaveObject, parsedParams);
+    return Interpreter.call(call.getExecutable(), typeSaveObject, parsedParams, parsedParamClasses);
   }
 
 

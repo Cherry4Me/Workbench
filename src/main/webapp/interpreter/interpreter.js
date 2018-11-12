@@ -3,7 +3,7 @@ let data = {
     executable: "min",
     clazz: "java.lang.Math",
     object: "null",
-    paramsClasses:["java.lang.Integer", "java.lang.Integer"],
+    paramsClasses:["int", "int"],
     params: ["12", "24"]
 
 
