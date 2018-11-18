@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dogsbody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Fileable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/TxtFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ServerDogsbody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/general/DirTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/InterpreterRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/InterpreterRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workbench.iml" beforeDir="false" afterPath="$PROJECT_DIR$/workbench.iml" afterDir="false" />
     </list>
     <list id="ed7fffbb-cbc6-4597-9cfa-e62df035442a" name="ignore" comment="">
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/workbench.kotlin_module" beforeDir="false" />
@@ -212,33 +216,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="java" value="6" />
+          <entry key="html" value="2" />
+          <entry key="java" value="38" />
           <entry key="js" value="1" />
+          <entry key="txt" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="6" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="38" />
           <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="385" />
-          <entry key="js" value="6" />
-          <entry key="txt" value="19" />
+          <entry key="dummy" value="7" />
+          <entry key="html" value="15" />
+          <entry key="java" value="2420" />
+          <entry key="js" value="68" />
+          <entry key="txt" value="39" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="385" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="HTML" value="15" />
+          <entry key="JAVA" value="2420" />
+          <entry key="JavaScript" value="68" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -247,28 +256,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="780">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/general/DirTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/WorkbenchApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ServerDogsbody.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="135">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -277,51 +293,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="55" column="90" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="1780" column="18" selection-start-line="1780" selection-start-column="18" selection-end-line="1780" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="71">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -339,11 +340,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/WorkbenchApplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/interpreter.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ServerDogsbody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Fileable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/TxtFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/general/DirTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java" />
       </list>
     </option>
   </component>
@@ -351,7 +361,9 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -367,6 +379,17 @@
             <path>
               <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,15 +403,54 @@
               <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,7 +461,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.cherry.workbench.general" />
+      <recent name="de.cherry.workbench.server" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="de.cherry.workbench.server" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -413,7 +489,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ServerDogsbodyTest.create">
     <configuration name="WorkbenchApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.WorkbenchApplication" />
       <module name="workbench" />
@@ -421,8 +497,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DirTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workbench" />
+      <option name="PACKAGE_NAME" value="de.cherry.workbench.general" />
+      <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.general.DirTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DirTest.start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workbench" />
+      <option name="PACKAGE_NAME" value="de.cherry.workbench.general" />
+      <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.general.DirTest" />
+      <option name="METHOD_NAME" value="start" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerDogsbodyTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workbench" />
+      <option name="PACKAGE_NAME" value="de.cherry.workbench.server" />
+      <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.server.ServerDogsbodyTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.WorkbenchApplication" />
+      <item itemvalue="JUnit.ServerDogsbodyTest.create" />
+      <item itemvalue="JUnit.DirTest.start" />
+      <item itemvalue="JUnit.DirTest.delete" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServerDogsbodyTest.create" />
+        <item itemvalue="JUnit.DirTest.start" />
+        <item itemvalue="JUnit.DirTest.delete" />
         <item itemvalue="Application.WorkbenchApplication" />
       </list>
     </recent_temporary>
@@ -446,12 +561,57 @@
       <option name="project" value="LOCAL" />
       <updated>1542042519316</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Interpreter works">
+      <created>1542045110104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542045110104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Interpreter UI">
+      <created>1542045881876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542045881876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DirTest_start - 2018.11.16 at 18h 10m 28s.xml">
+      <configuration name="DirTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DirTest_start - 2018.11.16 at 18h 13m 20s.xml">
+      <configuration name="DirTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DirTest_start - 2018.11.16 at 23h 23m 12s.xml">
+      <configuration name="DirTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DirTest_start - 2018.11.16 at 23h 31m 01s.xml">
+      <configuration name="DirTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DirTest_start - 2018.11.16 at 23h 55m 16s.xml">
+      <configuration name="DirTest.start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerDogsbodyTest_create - 2018.11.18 at 17h 07m 45s.xml">
+      <configuration name="ServerDogsbodyTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerDogsbodyTest_create - 2018.11.18 at 17h 08m 21s.xml">
+      <configuration name="ServerDogsbodyTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerDogsbodyTest_create - 2018.11.18 at 17h 08m 41s.xml">
+      <configuration name="ServerDogsbodyTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerDogsbodyTest_create - 2018.11.18 at 17h 24m 02s.xml">
+      <configuration name="ServerDogsbodyTest.create" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServerDogsbodyTest_create - 2018.11.18 at 17h 29m 06s.xml">
+      <configuration name="ServerDogsbodyTest.create" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -461,7 +621,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -485,34 +645,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="make runnable" />
-    <option name="LAST_COMMIT_MESSAGE" value="make runnable" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Interpreter works" />
+    <MESSAGE value="Interpreter UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interpreter UI" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>inner[0].apply(this)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>inner[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>ClassUtils</expression-string>
         <language-id>JAVA</language-id>
@@ -548,21 +697,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>typeSaveObject.getType().getMethod(executable, paramClasses)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>typeSaveObject.getType().getMethod(executable, (Class[]) paramClasses.toArray())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>typeSaveObject.getType().getMethod(executable, (Class&lt;?&gt;[]) paramClasses.toArray())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -573,34 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/WorkbenchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="1780" column="18" selection-start-line="1780" selection-start-column="18" selection-end-line="1780" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="55" column="90" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -611,24 +721,232 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js">
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="165">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="260">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/interpreter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dogsbody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/WorkbenchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="335">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/out/src/main/java/de/test/out/OutApplication.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="357" column="11" selection-start-line="357" selection-start-column="11" selection-end-line="357" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/FileCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/DoubleFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Fileable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/TxtFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5-sources.jar!/org/apache/commons/io/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="2015" column="23" selection-start-line="2015" selection-start-column="23" selection-end-line="2015" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/charset/spi/CharsetProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="527" column="24" lean-forward="true" selection-start-line="527" selection-start-column="24" selection-end-line="527" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/UnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/function/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/general/DirTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ServerDogsbody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
