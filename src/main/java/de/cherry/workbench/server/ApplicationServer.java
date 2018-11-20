@@ -33,7 +33,7 @@ public class ApplicationServer {
   }
 
   public void build() throws Exception {
-    TxtFile pom = new TxtFile();
+    Pom pom = new Pom();
 
 
     Dir dir = Dir.start(location.toPath());
