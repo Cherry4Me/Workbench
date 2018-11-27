@@ -20,6 +20,10 @@ public class Dir {
   private List<Dir> innerDirs = new ArrayList<>();
   private List<Fileable> innerEntitys = new ArrayList<>();
 
+  public File getFile() {
+    return start.toFile();
+  }
+
   private Dir(Path start) {
     this.start = start;
   }
@@ -46,6 +50,19 @@ public class Dir {
     }
     innerDirs.add(child);
     return this;
+  }
+
+  public Dir addPackage(String name, Function<Dir, Dir>... inner) {
+    String[] packages = name.split("\\.");
+    Dir child = this;
+
+    for (String aPackage : packages) {
+      //todo
+      Dir temp = new Dir(Paths.get(start.toString() + File.separator + aPackage));
+      innerDirs.add(temp);
+      child = temp;
+    }
+    return child;
   }
 
 

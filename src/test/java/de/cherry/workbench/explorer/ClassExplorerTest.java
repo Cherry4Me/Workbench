@@ -24,7 +24,7 @@ public class ClassExplorerTest {
     Reflections reflections = new Reflections(new ConfigurationBuilder()
         .setScanners(new SubTypesScanner(false /* don't exclude Object.class */), new ResourcesScanner())
         .setUrls(ClasspathHelper.forClassLoader(classLoadersList.toArray(new ClassLoader[0])))
-        .filterInputsBy(new FilterBuilder().include(FilterBuilder.prefix("java.lang"))));
+        .filterInputsBy(new FilterBuilder().include(FilterBuilder.prefix("javaDir.lang"))));
 
     Set<Class<?>> classes = reflections.getSubTypesOf(Object.class);
     System.out.println("test");

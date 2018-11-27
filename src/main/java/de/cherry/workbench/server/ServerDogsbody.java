@@ -14,10 +14,9 @@ public class ServerDogsbody implements Dogsbody {
     ApplicationServer server = new ApplicationServer();
 
 
-    server.setProject(project);
-    server.setLocation(dir);
-    server.build();
-
+    server.project = project;
+    server.location = dir;
+    server.init();
 
     return server;
   }
