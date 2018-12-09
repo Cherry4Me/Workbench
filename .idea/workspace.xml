@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/desinger/grapesjs-navbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="" />
     <list id="ed7fffbb-cbc6-4597-9cfa-e62df035442a" name="ignore" comment="" />
     <list id="f1eb5701-2920-4ea8-8171-6a8717a04537" name="wayne" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,7 +55,7 @@
           <entry key="html" value="220" />
           <entry key="java" value="6207" />
           <entry key="js" value="68" />
-          <entry key="txt" value="376" />
+          <entry key="txt" value="401" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
@@ -68,7 +64,7 @@
           <entry key="HTML" value="220" />
           <entry key="JAVA" value="6207" />
           <entry key="JavaScript" value="68" />
-          <entry key="PLAIN_TEXT" value="399" />
+          <entry key="PLAIN_TEXT" value="424" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -145,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
@@ -490,7 +486,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544027310102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Start with ui builder">
+      <created>1544381180584</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544381180584</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Start with ui builder2">
+      <created>1544381209374</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544381209374</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -599,7 +609,9 @@
     <MESSAGE value="from Entity to full funktional rest by code" />
     <MESSAGE value="Builder frontend" />
     <MESSAGE value="Create Classes out of the ERM from the Frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Classes out of the ERM from the Frontend" />
+    <MESSAGE value="Start with ui builder" />
+    <MESSAGE value="Start with ui builder2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start with ui builder2" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="debuggerHistoryManager">
