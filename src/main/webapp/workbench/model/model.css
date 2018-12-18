@@ -1,0 +1,35 @@
+body {
+    margin: 0 !important;
+}
+
+#mynetwork {
+    width: auto;
+    height: 100vh;
+    border: 1px solid lightgray;
+}
+
+#operation {
+    font-size: 28px;
+}
+
+#node-popUp {
+    display: none;
+    z-index: 299;
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    width: 250px;
+    height: 120px;
+    background-color: #d6d9d8;
+}
+
+#edge-popUp {
+    display: none;
+    z-index: 299;
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    width: 250px;
+    height: 90px;
+    background-color: #d6d9d8;
+}
