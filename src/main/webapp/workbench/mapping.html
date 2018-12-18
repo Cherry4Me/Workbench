@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Entity Builder</title>
+  <title>Mapping</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
@@ -14,9 +14,6 @@
 </head>
 
 <body onload="init()">
-
-<!-- <body onload="document.getElementById('nodeEdit').style.display='block'"> -->
-
 
 <div id="nodeEdit" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
@@ -61,18 +58,21 @@
   </div>
 </div>
 
-<div class="w3-sidebar w3-bar-block" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item">
-    <button id="saveButton" class="w3-green w3-button">save</button>
+
+<div class="w3-sidebar w3-bar-block" style="width:20%">
+  <a href="./workbench.html" class="w3-bar-item w3-button">Start</a>
+  <a href="./model.html" class="w3-bar-item w3-button">Model</a>
+  <a href="./routing.html" class="w3-bar-item w3-button ">Routing</a>
+  <a href="#" class="w3-bar-item w3-button w3-green">DataMapping</a>
+  <a href="./pages.html" class="w3-bar-item w3-button ">Pages</a>
+  <a href="#" class="w3-bar-item ">
+    <button id="saveButton" class="w3-green w3-button ">save</button>
   </a>
 
 </div>
 
 
-<div id="mynetwork" style="margin-left:25%"></div>
+<div id="mynetwork" style="margin-left:20%"></div>
 
 
 </body>

@@ -14,7 +14,6 @@ public class Project {
   }
 
   public Project(String group, String artifact) {
-
     this.group = group;
     this.artifact = artifact;
   }
