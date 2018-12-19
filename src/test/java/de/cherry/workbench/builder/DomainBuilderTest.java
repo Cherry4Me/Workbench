@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
+import de.cherry.workbench.start.TempProject;
 import org.junit.Test;
 
 import javax.lang.model.element.Modifier;
@@ -13,8 +14,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.junit.Assert.*;
-
 public class DomainBuilderTest {
 
   @Test
@@ -23,64 +22,15 @@ public class DomainBuilderTest {
     ObjectMapper objectMapper = new ObjectMapper();
     DataNet dataNet = objectMapper.readValue(domainNet, DataNet.class);
 
-
-    Map<String, Node> nodeMap = dataNet.nodes.stream().collect(Collectors.toMap(Node::getId, Node::getThat));
-    for (Node node : dataNet.nodes) {
-      if ("Entity".equals(node.type)) {
-        TypeSpec.Builder domainClass = TypeSpec.classBuilder(node.label);
-        List<Edge> allEdgesToThatNode = getAllEdgesToThatNode(dataNet, node).collect(Collectors.toList());
-        for (Edge edge : allEdgesToThatNode) {
-          Node toAdd;
-          boolean thisNodeHasTheOther;
-          if (edge.to.equals(node.id)) {
-            toAdd = nodeMap.get(edge.from);
-            if ("1-n".equals(edge.label)) {
-              thisNodeHasTheOther = false;
-            } else {
-              thisNodeHasTheOther = true;
-            }
-          } else {
-            toAdd = nodeMap.get(edge.to);
-            if ("n-1".equals(edge.label)) {
-              thisNodeHasTheOther = false;
-            } else {
-              thisNodeHasTheOther = true;
-            }
-          }
-
-
-          if ("Entity".equals(toAdd.type)) {
-            //add Dependency
-            if (!thisNodeHasTheOther) {
-              ClassName className = ClassName.get("com.example.out", toAdd.label);
-              domainClass.addField(className, lowerFirstLetter(toAdd.label), Modifier.PRIVATE);
-            }
-          } else {
-            //addField
-            ClassName className = ClassName.get("java.lang", toAdd.type);
-            domainClass.addField(className, lowerFirstLetter(toAdd.label), Modifier.PRIVATE);
-          }
-        }
-
-        JavaFile domainClassFile = JavaFile
-            .builder("com.example.out", domainClass.build())
-            .build();
-        System.out.println(domainClassFile.toString());
-        System.out.println("-------------------------------------------------------------");
-
-      }
-    }
     System.out.println("ende");
-
-
   }
 
-  private String lowerFirstLetter(String simpleName) {
-    return simpleName.substring(0, 1).toLowerCase() + simpleName.substring(1);
+
+  @Test
+  public void domainToNet() {
+
+    System.out.println("test");
   }
 
-  private Stream<Edge> getAllEdgesToThatNode(DataNet dataNet, Node node) {
-    return dataNet.edges.stream().filter(o -> o.from.equals(node.id) || o.to.equals(node.id));
-  }
 
 }

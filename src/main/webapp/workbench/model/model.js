@@ -13,6 +13,20 @@ function destroy() {
 }
 
 $(document).ready(function() {
+      
+    $.ajax({
+        
+        "url": "http://localhost:9090/model",
+        "method": "GET",
+        
+    }).done(function (response) {
+        console.log(response);
+        data = response;
+        draw();
+
+    });
+    
+
     $("#saveButton").on("click", function() {
         save();
     })
@@ -39,7 +53,18 @@ function save() {
         edges: edges,
         nodes: nodes
     }
-    console.log(saveData);
+    //console.log(saveData);
+      
+    $.ajax({
+        "url": "http://localhost:9090/model",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "data": JSON.stringify(saveData)
+      }).done(function (response) {
+        console.log(response);
+    });
 }
 
 function draw() {
@@ -167,8 +192,4 @@ function saveEdgeData(data, callback) {
     data.label = document.getElementById('elabel').value;
     clearEdgePopUp();
     callback(data);
-}
-
-function init() {
-    draw();
 }

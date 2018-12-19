@@ -15,7 +15,7 @@ public class Node {
 
   public String color;
 
-  public Node getThat() {
+  public Node giveMeThat() {
     return this;
   }
 
