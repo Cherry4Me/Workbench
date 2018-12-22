@@ -19,13 +19,22 @@
   <a href="./routing.html" class="w3-bar-item w3-button ">Routing</a>
   <a href="./mapping.html" class="w3-bar-item w3-button ">DataMapping</a>
   <a href="#" class="w3-bar-item w3-button w3-green">Pages</a>
-
+  <a href="#" class="w3-bar-item ">
+    <button id="createButton" class="w3-green w3-button ">New Page</button>
+  </a>
 </div>
 
 
 <div id="content " style="margin-left:20% ">
-  pages
+  <input returnType="text" id="myInput" class="w3-input w3-border" placeholder="Search for names.." title="Type in a name">
+
+    <table id="myTable" class="w3-table-all w3-hoverable">
+        <tr>
+          <td>Keine Seite gefunden</td>
+        </tr>
+    </table>
 </div>
+<script src="./pages/pages.js"></script>
 </body>
 
 </html>

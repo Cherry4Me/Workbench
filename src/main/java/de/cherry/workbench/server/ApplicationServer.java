@@ -32,6 +32,7 @@ public class ApplicationServer {
   public CtModel model;
 
   public AtomicReference<Dir> javaDir = new AtomicReference<>();
+  public AtomicReference<Dir> webDir = new AtomicReference<>();
   public Pom pom = null;
 
   public Project project;
@@ -54,7 +55,12 @@ public class ApplicationServer {
                   return java;
                 })
             ,
-            x1 -> x1.add("resources")
+            main -> main.add("resources"),
+            main -> main.add("webapp",
+                webapp -> {
+                  webDir.set(webapp);
+                  return webapp;
+                })
         ),
         src -> src.add("test",
             test -> test.add("java")

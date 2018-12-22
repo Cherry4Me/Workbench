@@ -6,12 +6,18 @@ import com.squareup.javapoet.TypeSpec;
 import de.cherry.workbench.builder.DataNet;
 import de.cherry.workbench.builder.Edge;
 import de.cherry.workbench.builder.Node;
+import de.cherry.workbench.general.Dir;
 import de.cherry.workbench.general.Project;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.bind.annotation.*;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
 import javax.lang.model.element.Modifier;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,11 +35,20 @@ public class MainRest {
     return project.as.project;
   }
 
+  @GetMapping("pages")
+  public List<String> getPages() throws IOException {
+    Dir web = project.as.webDir.get();
+    List<String> pathList = Files.walk(Paths.get(web.getFile().getAbsolutePath()))
+        .filter(Files::isRegularFile)
+        .filter((path -> "html".equals(FilenameUtils.getExtension(path.toString()))))
+        .map(path -> path.toString().split("webapp")[1])
+        .collect(Collectors.toList());
+    return pathList;
+  }
+
 
   @PostMapping("model")
   public void setModel(@RequestBody DataNet dataNet) {
-
-
     Map<String, Node> nodeMap = dataNet.nodes.stream().collect(Collectors.toMap(Node::getId, Node::giveMeThat));
     for (Node node : dataNet.nodes) {
       if ("Entity".equals(node.type)) {
@@ -57,8 +72,6 @@ public class MainRest {
               thisNodeHasTheOther = true;
             }
           }
-
-
           if ("Entity".equals(toAdd.type)) {
             //add Dependency
             if (!thisNodeHasTheOther) {
@@ -71,12 +84,10 @@ public class MainRest {
             domainClass.addField(className, lowerFirstLetter(toAdd.label), Modifier.PRIVATE);
           }
         }
-
         JavaFile domainClassFile = JavaFile
             .builder("com.example.out.domain", domainClass.build())
             .build();
         project.as.addClass(domainClassFile);
-
       }
     }
   }
