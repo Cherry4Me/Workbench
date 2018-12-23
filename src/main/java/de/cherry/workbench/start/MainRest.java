@@ -6,9 +6,12 @@ import com.squareup.javapoet.TypeSpec;
 import de.cherry.workbench.builder.DataNet;
 import de.cherry.workbench.builder.Edge;
 import de.cherry.workbench.builder.Node;
+import de.cherry.workbench.desinger.Page;
 import de.cherry.workbench.general.Dir;
 import de.cherry.workbench.general.Project;
 import org.apache.commons.io.FilenameUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.springframework.web.bind.annotation.*;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
@@ -21,7 +24,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -44,6 +46,28 @@ public class MainRest {
         .map(path -> path.toString().split("webapp")[1])
         .collect(Collectors.toList());
     return pathList;
+  }
+
+  @GetMapping("page")
+  public String getPage(@RequestParam("page") String page) throws IOException {
+    Dir web = project.as.webDir.get();
+    String pageFile = web.getFile().toString() + page;
+    String html = new String(Files.readAllBytes(Paths.get(pageFile)));
+    Document document = Jsoup.parse(html);
+    document.title();
+    return document.body().html();
+  }
+
+  @PostMapping("page")
+  public void savePage(@RequestParam("page") String pageUrl
+      , @RequestBody Page page) throws IOException {
+    Dir web = project.as.webDir.get();
+    String pageFile = web.getFile().toString() + pageUrl;
+    Path path = Paths.get(pageFile);
+    String html = new String(Files.readAllBytes(path));
+    Document document = Jsoup.parse(html);
+    document.body().html(page.getBody());
+    Files.write(path, document.html().getBytes());
   }
 
 

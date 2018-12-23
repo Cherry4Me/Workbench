@@ -1,11 +1,53 @@
-$(document).ready(function() {
-    const site = window.location.hash.substring(1);
+var site;
+$(document).ready(function () {
+    site = window.location.hash.substring(1);
     console.log("edit" + site)
+
+
+    $.ajax({
+        "async": true,
+        "url": "http://localhost:9090/page?page=" + site,
+        "method": "GET",
+        "headers": {
+            "content-type": "application/json",
+            "cache-control": "no-cache",
+        }
+    }).done(function (response) {
+        console.log(response);
+        $("#gjs").html(response);
+        init();
+    });
+
+});
+
+function save() {
+    var data = {
+        name: "name",
+        body: editor.getHtml()
+    }
+
+
+    $.ajax({
+        "async": true,
+        "url": "http://localhost:9090/page?page=" + site,
+        "method": "POST",
+        "headers": {
+            "content-type": "application/json",
+        },
+        "data": JSON.stringify(data)
+    }).done(function (response) {
+        console.log(response);
+    });
+}
+
+function init() {
 
     editor = grapesjs.init({
         height: '100%',
         noticeOnUnload: 0,
-        storageManager: { autoload: 0 },
+        storageManager: {
+            autoload: 0
+        },
         container: '#gjs',
         fromElement: true,
 
@@ -18,6 +60,29 @@ $(document).ready(function() {
         // },
     });
 
+    editor.Panels.addPanel({
+        id: 'basic-actions',
+        el: '.panel__basic-actions',
+        buttons: [{
+            id: 'alert-button',
+            className: 'btn-alert-button',
+            label: 'Click my butt(on)',
+            command(editor) {
+                alert('Hello World');
+            }
+        }]
+    });
+
+    editor.Panels.addButton('options', [{
+        id: 'save',
+        className: 'fa fa-floppy-o icon-blank',
+        command: function (editor1, sender) {
+            save();
+        },
+        attributes: {
+            title: 'Save Template'
+        }
+    }]);
 
     var domComps = editor.DomComponents;
     var dType = domComps.getType('default');
@@ -35,11 +100,22 @@ $(document).ready(function() {
                         type: 'select',
                         label: 'Type',
                         name: 'type',
-                        options: [
-                            { value: 'text', name: 'Text' },
-                            { value: 'email', name: 'Email' },
-                            { value: 'password', name: 'Password' },
-                            { value: 'number', name: 'Number' },
+                        options: [{
+                                value: 'text',
+                                name: 'Text'
+                            },
+                            {
+                                value: 'email',
+                                name: 'Email'
+                            },
+                            {
+                                value: 'password',
+                                name: 'Password'
+                            },
+                            {
+                                value: 'number',
+                                name: 'Number'
+                            },
                         ]
                     }, {
                         type: 'checkbox',
@@ -49,9 +125,11 @@ $(document).ready(function() {
                 ],
             }),
         }, {
-            isComponent: function(el) {
+            isComponent: function (el) {
                 if (el.tagName == 'INPUT') {
-                    return { type: 'input' };
+                    return {
+                        type: 'input'
+                    };
                 }
             },
         }),
@@ -95,5 +173,4 @@ $(document).ready(function() {
             }
         },
     });
-
-})
+}
