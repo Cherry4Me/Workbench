@@ -1,23 +1,26 @@
-(function(old) {
-    $.fn.attr = function() {
-      if(arguments.length === 0) {
-        if(this.length === 0) {
-          return null;
-        }
-  
-        var obj = {};
-        $.each(this[0].attributes, function() {
-          if(this.specified) {
-            obj[this.name] = this.value;
-          }
-        });
-        return obj;
-      }
-  
-      return old.apply(this, arguments);
-    };
-  })($.fn.attr);
+(function (old) {
+    $.fn.attr = function () {
+        if (arguments.length === 0) {
+            if (this.length === 0) {
+                return null;
+            }
 
+            var obj = {};
+            $.each(this[0].attributes, function () {
+                if (this.specified) {
+                    obj[this.name] = this.value;
+                }
+            });
+            return obj;
+        }
+
+        return old.apply(this, arguments);
+    };
+})($.fn.attr);
+
+jQuery.fn.outerHTML = function () {
+    return jQuery('<div />').append(this.eq(0).clone()).html();
+};
 
 var site;
 $(document).ready(function () {
@@ -188,9 +191,15 @@ function init() {
                 this.listenTo(this, 'change:header-type', this.updElem);
             },
             updElem: function () {
-                // $('<' + this.changed['header-type'] + ' />') todo update
-                // this.view.model.set('content', newElem.html());
-                // this.view.el.outerHTML = newElem.html();
+                //todo remove or do it right (make the Text Tags cangeable)
+                // var newElem = $('<' + this.changed['header-type'] + '>');
+                // const attrs = $(this.view.el.outerHTML).attr();
+                // for (var attr in attrs) {
+                //     newElem.attr(attr, attrs[attr]);
+                // }
+                // newElem.html(this.view.el.innerHTML);
+                // this.view.model.set('content', newElem.outerHTML());
+                // this.view.el.outerHTML = newElem.outerHTML();
                 // this.attributes.tagName = this.changed['header-type'];
                 // editor.store();
             }
@@ -200,7 +209,9 @@ function init() {
                 for (let i = 0; i < headTypes.length; i++) {
                     const hType = headTypes[i];
                     if (hType.value == tagName)
-                        return {type: 'head'};
+                        return {
+                            type: 'head'
+                        };
                 }
             },
         }),
