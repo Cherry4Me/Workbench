@@ -1,10 +1,9 @@
 package de.cherry.workbench.start;
 
+import de.cherry.workbench.mapping.JsMapping;
 import org.junit.Test;
 
 import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 public class MainRestTest {
 
@@ -14,4 +13,16 @@ public class MainRestTest {
     MainRest mainRest = new MainRest();
     mainRest.getPages();
   }
+
+  @Test
+  public void getMapping() throws IOException {
+    MainRest mainRest = new MainRest();
+    JsMapping jsMapping = mainRest.getMapping("/test.html");
+
+    System.out.println(jsMapping);
+
+
+  }
+
+
 }

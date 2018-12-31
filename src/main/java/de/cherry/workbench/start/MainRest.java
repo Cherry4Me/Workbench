@@ -9,6 +9,7 @@ import de.cherry.workbench.builder.Node;
 import de.cherry.workbench.desinger.Page;
 import de.cherry.workbench.general.Dir;
 import de.cherry.workbench.general.Project;
+import de.cherry.workbench.mapping.JsMapping;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -47,6 +48,19 @@ public class MainRest {
         .collect(Collectors.toList());
     return pathList;
   }
+
+  @GetMapping("mapping")
+  public JsMapping getMapping(@RequestParam("page") String page) throws IOException {
+    Dir web = project.as.webDir.get();
+    String pageFile = web.getFile().toString() + page;
+    String html = new String(Files.readAllBytes(Paths.get(pageFile)));
+    Document document = Jsoup.parse(html);
+    JsMapping jsMapping = new JsMapping();
+    JsMapping.getMapping(document.childNodes(), jsMapping);
+    JsMapping.syncFile(jsMapping);
+    return jsMapping;
+  }
+
 
   @GetMapping("page")
   public String getPage(@RequestParam("page") String page) throws IOException {

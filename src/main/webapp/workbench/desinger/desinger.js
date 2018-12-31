@@ -1,3 +1,5 @@
+
+
 (function (old) {
     $.fn.attr = function () {
         if (arguments.length === 0) {
@@ -105,6 +107,7 @@ function init() {
                 traits: [
                     // strings are automatically converted to text types
                     'name',
+                    'rv-value',
                     'placeholder',
                     {
                         type: 'select',
@@ -132,7 +135,8 @@ function init() {
             }),
         }, {
             isComponent: function (el) {
-                if (el.tagName == 'INPUT') {
+                var tagName = new String(el.tagName).toLowerCase();
+                if (tagName == 'input') {
                     return {
                         type: 'input'
                     };
@@ -173,11 +177,12 @@ function init() {
     var txtModel = txtType.model;
     var txtView = txtType.view;
     domComps.addType('head', {
-
         model: txtModel.extend({
             defaults: Object.assign({}, txtModel.prototype.defaults, {
                 tagName: 'h1',
-                traits: [{
+                traits: [
+                    'rv-text'
+                    ,{
                         type: 'select',
                         label: 'Type',
                         name: 'header-type',
@@ -205,13 +210,61 @@ function init() {
             }
         }, {
             isComponent: function (el) {
-                tagName = new String(el.tagName).toLowerCase();
+                var tagName = new String(el.tagName).toLowerCase();
                 for (let i = 0; i < headTypes.length; i++) {
                     const hType = headTypes[i];
                     if (hType.value == tagName)
                         return {
                             type: 'head'
                         };
+                }
+            },
+        }),
+
+        view: txtView,
+    });
+
+    domComps.addType('container', {
+        model: dModel.extend({
+            defaults: Object.assign({}, dModel.prototype.defaults, {
+                traits: [
+                    // strings are automatically converted to text types
+                    'rv-each-item',
+                    'rv-show',
+                ],
+            }),
+        }, {
+            isComponent: function (el) {
+                var tagName = new String(el.tagName).toLowerCase();
+                if (tagName == 'div') {
+                    return {
+                        type: 'container'
+                    };
+                }
+            },
+        }),
+
+        view: dView,
+    });
+
+
+    domComps.addType('button', {
+        model: txtModel.extend({
+            defaults: Object.assign({}, txtModel.prototype.defaults, {
+                traits: [
+                    // strings are automatically converted to text types
+                    'rv-enabled',
+                    'rv-disabled',
+                    'rv-on-click'
+                ],
+            }),
+        }, {
+            isComponent: function (el) {
+                var tagName = new String(el.tagName).toLowerCase();
+                if (tagName == 'button') {
+                    return {
+                        type: 'button'
+                    };
                 }
             },
         }),

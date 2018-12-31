@@ -1,10 +1,10 @@
 const table = $("#myTable tbody");
 const search = $("#myInput");
 
-search.on("keyup", function() {
+search.on("keyup", function () {
     let input = $(this);
     let filter = input.val().toUpperCase();
-    table.find("tr").each(function(i, element) {
+    table.find("tr").each(function (i, element) {
         let tr = $(element);
         if (tr.text().toUpperCase().indexOf(filter) > -1) {
             tr.show();
@@ -18,7 +18,7 @@ $.ajax({
     "async": true,
     "url": "http://localhost:9090/pages",
     "method": "GET",
-}).done(function(response) {
+}).done(function (response) {
     // console.log(response);
     table.html("");
     search.val("");
@@ -28,8 +28,11 @@ $.ajax({
         newRow
             .append(
                 $("<td>")
-                    .append(
-                        $("<a>").attr("href", "./desinger.html#" + package).text(package)));
+                .append(
+                    $("<a>").attr("href", "./desinger.html#" + package).text(package))
+                .append(
+                    $('<a>').addClass("w3-button w3-margin-left w3-green").attr("href", "./mapping.html#" + package).text("mapping")
+                ));
         table.append(newRow);
     }
 

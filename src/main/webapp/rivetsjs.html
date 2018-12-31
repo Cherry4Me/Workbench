@@ -13,7 +13,8 @@
   <h3>Products</h3>
   <ul>
     <li rv-each-product="data.products">
-      <h3 rv-text="product.title"></h3>
+      <!-- <h3 rv-text="product.title"></h3> -->
+      <input rv-value="product.title"/>
       <var rv-html="product.price | price"></var>
       <button type="button" rv-on-click="controller.onAtbClick">Add to bag</button>
   </ul>
