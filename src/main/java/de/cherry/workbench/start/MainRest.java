@@ -18,6 +18,8 @@ import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
 import javax.lang.model.element.Modifier;
+import javax.script.ScriptException;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -50,14 +52,14 @@ public class MainRest {
   }
 
   @GetMapping("mapping")
-  public JsMapping getMapping(@RequestParam("page") String page) throws IOException {
-    Dir web = project.as.webDir.get();
-    String pageFile = web.getFile().toString() + page;
+  public JsMapping getMapping(@RequestParam("page") String page) throws IOException, ScriptException {
+    File web = project.as.webDir.get().getFile();
+    String pageFile = web.toString() + page;
     String html = new String(Files.readAllBytes(Paths.get(pageFile)));
     Document document = Jsoup.parse(html);
     JsMapping jsMapping = new JsMapping();
     JsMapping.getMapping(document.childNodes(), jsMapping);
-    JsMapping.syncFile(jsMapping);
+    JsMapping.syncFile(jsMapping, web);
     return jsMapping;
   }
 

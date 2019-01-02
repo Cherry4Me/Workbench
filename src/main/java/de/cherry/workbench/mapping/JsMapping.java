@@ -4,6 +4,15 @@ import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Node;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import javax.script.ScriptContext;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+import java.io.File;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +42,21 @@ public class JsMapping {
     }
   }
 
-  public static void syncFile(JsMapping mapping) {
+  public static void syncFile(JsMapping mapping, File web) throws ScriptException, IOException {
+    File jsController = new File(web.toString() + "/" + mapping.src);
+    String jsScript = new String(Files.readAllBytes(Paths.get(jsController.toString())));
+
+
+    ScriptEngine engine = new ScriptEngineManager().getEngineByName("javascript");
+    ScriptContext context = engine.getContext();
+    StringWriter writer = new StringWriter();
+    context.setWriter(writer);
+
+    engine.eval("print('Welocme to java worldddd')");
+
+    String output = writer.toString();
+
+    System.out.println("Script output: " + output);
     throw new NotImplementedException();
   }
 

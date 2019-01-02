@@ -3,6 +3,7 @@ package de.cherry.workbench.start;
 import de.cherry.workbench.mapping.JsMapping;
 import org.junit.Test;
 
+import javax.script.ScriptException;
 import java.io.IOException;
 
 public class MainRestTest {
@@ -15,7 +16,7 @@ public class MainRestTest {
   }
 
   @Test
-  public void getMapping() throws IOException {
+  public void getMapping() throws IOException, ScriptException {
     MainRest mainRest = new MainRest();
     JsMapping jsMapping = mainRest.getMapping("/test.html");
 

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/src/main/webapp/wb-todo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/main/webapp/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/workbench.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/workbench.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" afterDir="false" />
     </list>
@@ -44,13 +49,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="17" />
+          <entry key="CLASS" value="18" />
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="15" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
           <entry key="JAVA" value="169" />
-          <entry key="JavaScript" value="6" />
+          <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="13" />
         </counts>
@@ -67,10 +72,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="250" />
-          <entry key="JAVA" value="8613" />
-          <entry key="JavaScript" value="68" />
-          <entry key="PLAIN_TEXT" value="605" />
+          <entry key="HTML" value="261" />
+          <entry key="JAVA" value="8702" />
+          <entry key="JavaScript" value="83" />
+          <entry key="PLAIN_TEXT" value="607" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -78,24 +83,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+            <state relative-caret-position="65">
+              <caret line="57" column="69" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="113">
+              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
                 <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#250#251#0" expanded="true" />
                 <element signature="e#299#300#0" expanded="true" />
@@ -110,28 +113,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/src/main/webapp/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/src/main/webapp/wb-todo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/org/jsoup/nodes/Attribute.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -154,6 +157,7 @@
       <find>;&quot;</find>
       <find>private</find>
       <find>privateƒ</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -205,15 +209,16 @@
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/Node.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java" />
-        <option value="$PROJECT_DIR$/out/src/main/webapp/test.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/desinger/page.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/desinger/Page.java" />
         <option value="$PROJECT_DIR$/out/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/Mapping.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" />
+        <option value="$PROJECT_DIR$/out/src/main/webapp/test.html" />
+        <option value="$PROJECT_DIR$/out/src/main/webapp/wb-todo.js" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" />
       </list>
     </option>
   </component>
@@ -542,25 +547,17 @@
       <option name="project" value="LOCAL" />
       <updated>1546267586435</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="start with mapping 2">
+      <created>1546267595764</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1546267595764</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainRestTest_getPages - 2018.12.20 at 17h 55m 07s.xml">
-      <configuration name="MainRestTest.getPages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getPages - 2018.12.20 at 17h 56m 41s.xml">
-      <configuration name="MainRestTest.getPages" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getMapping - 2018.12.31 at 14h 21m 06s.xml">
-      <configuration name="MainRestTest.getMapping" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getMapping - 2018.12.31 at 14h 29m 07s.xml">
-      <configuration name="MainRestTest.getMapping" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getMapping_(1) - 2018.12.31 at 15h 14m 40s.xml">
-      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainRestTest_getMapping_(1) - 2018.12.31 at 15h 18m 57s.xml">
       <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
     </history-entry>
@@ -576,6 +573,21 @@
     <history-entry file="MainRestTest_getMapping_(1) - 2018.12.31 at 15h 23m 28s.xml">
       <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.02 at 19h 38m 01s.xml">
+      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.02 at 19h 41m 58s.xml">
+      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.02 at 20h 07m 04s.xml">
+      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.02 at 23h 52m 48s.xml">
+      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.02 at 23h 58m 54s.xml">
+      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,6 +600,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" sideWeight="0.5022831" side_tool="true" weight="0.25767368" />
@@ -597,14 +610,15 @@
       <window_info id="DB Browser" order="5" show_stripe_button="false" weight="0.32956383" />
       <window_info id="Project Explorer" order="6" show_stripe_button="false" weight="0.32956383" />
       <window_info id="Job Explorer" order="7" show_stripe_button="false" weight="0.32956383" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4150685" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4150685" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329653" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.39178082" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.39178082" />
       <window_info anchor="bottom" id="Tool Output" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -669,7 +683,8 @@
     <MESSAGE value="model editor kind of ready ;)2" />
     <MESSAGE value="the designer result looks better" />
     <MESSAGE value="start with mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="start with mapping" />
+    <MESSAGE value="start with mapping 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="start with mapping 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -689,11 +704,52 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>.exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString()+ &quot;/&quot;+ mapping.src).exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString()+ &quot;/&quot;+ mapping.src).getAbsolutePath()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString()+ System.lineSeparator() + mapping.src).getAbsolutePath()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString()+ System.lineSeparator() + mapping.src).exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString()+ System.lineSeparator() + mapping.src)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(web.toString() + mapping.src)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>&quot;rv&quot;.startsWith(attribute.getKey())</expression-string>
         <language-id>JAVA</language-id>
@@ -710,50 +766,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>document.childNodes</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>page</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>page.getBody()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.body().html(page.getBody())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>FilenameUtils.getExtension(path.toString())</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.apache.commons.io.FilenameUtils</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>path.toFile()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/de/cherry/workbench/general/Dir.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/javapoet/1.11.1/javapoet-1.11.1.jar!/com/squareup/javapoet/JavaFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/javapoet/1.11.1/javapoet-1.11.1.jar!/com/squareup/javapoet/MethodSpec.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -945,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/src/main/webapp/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1008,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1036,14 +1037,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#7718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/src/main/webapp/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/src/main/webapp/wb-todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="57" column="69" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="113">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
             <element signature="e#226#227#0" expanded="true" />
             <element signature="e#250#251#0" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
@@ -1053,13 +1089,6 @@
             <element signature="e#491#492#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
         </state>
       </provider>
     </entry>
