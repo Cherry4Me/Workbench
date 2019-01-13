@@ -9,6 +9,7 @@ import de.cherry.workbench.builder.Node;
 import de.cherry.workbench.desinger.Page;
 import de.cherry.workbench.general.Dir;
 import de.cherry.workbench.general.Project;
+import de.cherry.workbench.mapping.JsBinding;
 import de.cherry.workbench.mapping.JsMapping;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
@@ -18,7 +19,6 @@ import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
 import javax.lang.model.element.Modifier;
-import javax.script.ScriptException;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -52,15 +52,14 @@ public class MainRest {
   }
 
   @GetMapping("mapping")
-  public JsMapping getMapping(@RequestParam("page") String page) throws IOException, ScriptException {
+  public JsBinding getMapping(@RequestParam("page") String page) throws Exception {
     File web = project.as.webDir.get().getFile();
     String pageFile = web.toString() + page;
     String html = new String(Files.readAllBytes(Paths.get(pageFile)));
     Document document = Jsoup.parse(html);
     JsMapping jsMapping = new JsMapping();
     JsMapping.getMapping(document.childNodes(), jsMapping);
-    JsMapping.syncFile(jsMapping, web);
-    return jsMapping;
+    return JsBinding.create(jsMapping, web);
   }
 
 

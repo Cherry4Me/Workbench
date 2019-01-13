@@ -1,9 +1,8 @@
 package de.cherry.workbench.start;
 
-import de.cherry.workbench.mapping.JsMapping;
+import de.cherry.workbench.mapping.JsBinding;
 import org.junit.Test;
 
-import javax.script.ScriptException;
 import java.io.IOException;
 
 public class MainRestTest {
@@ -16,11 +15,11 @@ public class MainRestTest {
   }
 
   @Test
-  public void getMapping() throws IOException, ScriptException {
+  public void getMapping() throws Exception {
     MainRest mainRest = new MainRest();
-    JsMapping jsMapping = mainRest.getMapping("/test.html");
+    JsBinding binding = mainRest.getMapping("/test.html");
 
-    System.out.println(jsMapping);
+    System.out.println(binding);
 
 
   }

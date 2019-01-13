@@ -1,4 +1,4 @@
-var controller = {
+var binding = {
     data: {
         title: 'Welcome to the Candy Shop',
         products: [{

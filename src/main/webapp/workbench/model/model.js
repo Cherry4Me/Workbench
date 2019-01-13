@@ -114,6 +114,9 @@ function draw() {
         }
     };
     network = new vis.Network(container, data, options);
+    network.on("click", function (params) {
+        console.log(params);
+    });
 }
 
 function editNode(data, cancelAction, callback) {
