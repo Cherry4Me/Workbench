@@ -29,7 +29,11 @@ $(document).ready(function() {
 
     $("#saveButton").on("click", function() {
         save();
-    })
+    });
+
+    $("#editModel").on("click", function(e){
+        window.location.href = "./meta.html#" + $("#modelToEdit").text();
+    });
 })
 
 function save() {
@@ -115,7 +119,11 @@ function draw() {
     };
     network = new vis.Network(container, data, options);
     network.on("click", function (params) {
-        console.log(params);
+        var node = data.nodes.find(a => a.id == params.nodes[0]);
+        if (node.type == "Entity"){
+            $("#modelToEdit").text(node.label);
+            console.log(node);
+        }
     });
 }
 
