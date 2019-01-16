@@ -2,17 +2,25 @@ package de.cherry.workbench.interpreter;
 
 import de.cherry.workbench.explorer.ClassExplorer;
 import de.cherry.workbench.explorer.TypeSaveObject;
-import sun.tools.java.ClassType;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Executable;
-import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Interpreter {
+
+  public static HashMap<String, String> getStruckture(Class clazz) {
+    HashMap<String, String> struckture = new HashMap<>();
+    Field[] fields = clazz.getDeclaredFields();
+    for (Field field : fields) {
+      struckture.put(field.getName(), field.getType().getName());
+    }
+    return struckture;
+  }
 
   public static List<Executable> callabals(TypeSaveObject object) {
     Class clazz = object.getType();

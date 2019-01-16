@@ -5,14 +5,20 @@ import de.cherry.workbench.explorer.TypeSaveObject;
 import org.apache.commons.lang3.ClassUtils;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.lang.reflect.Executable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
 public class InterpreterRest {
 
+
+  @PostMapping("/getClass")
+  public HashMap<String, String> getStruckture(@RequestBody String className) throws ClassNotFoundException {
+    Class<?> aClass = Class.forName(className);
+    return Interpreter.getStruckture(aClass);
+  }
 
   @GetMapping("/findCallabalsForClass")
   public List<ExecutableWO> getCallabas(@RequestParam("className") String className) throws ClassNotFoundException {
