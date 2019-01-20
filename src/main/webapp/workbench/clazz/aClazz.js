@@ -1,28 +1,3 @@
-//
-// let data = {
-//     executable: "min",
-//     clazz: "java.lang.Math",
-//     object: "null",
-//     paramsClasses: ["int", "int"],
-//     params: ["12", "24"]
-// };
-//
-// $("#in").text(JSON.stringify(data));
-//
-//
-// //let data =  "hallo"
-// $.ajax({
-//     type: 'POST',
-//     url: "/call",
-//     data: JSON.stringify(data),
-//     success: function (data) {
-//         $("#out").text(JSON.stringify(data));
-//         console.log(data);
-//     },
-//     contentType: "application/json",
-//     dataType: 'json'
-// });
-
 let oVal = jQuery.fn.val;
 jQuery.fn.val = function (a) {
     let value = oVal.apply(this, arguments);
@@ -163,7 +138,7 @@ function buildUi($toInsert, className, data) {
             addFields(card, className, structure, data);
             $toInsert.append(card);
             $.ajax({
-                "url": "./methode?class=" + className,
+                "url": "/methode?class=" + className,
                 "method": "GET",
             }).done(function (data) {
                 console.log(data);
@@ -176,6 +151,17 @@ function buildUi($toInsert, className, data) {
 
 }
 
-let className = "de.cherry.workbench.interpreter.Dog4Interpreter";
-// let className = "java.lang.String";
-buildUi($("#interpreter"), className, undefined);
+let classAndClazz = JSON.parse(decodeURI(window.location.hash.substring(1)));
+console.log(classAndClazz);
+
+
+$.ajax({
+    type: 'POST',
+    url: "/getState",
+    data: JSON.stringify( classAndClazz),
+    success: function (response) {
+        buildUi($("#content"), response.className, response.state);
+    },
+    contentType: "application/json",
+    dataType: 'json'
+});

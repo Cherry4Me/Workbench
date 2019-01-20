@@ -31,7 +31,10 @@ $.ajax({
                 .append(
                     $("<a>").attr("href", "./desinger.html#" + package).text(package))
                 .append(
-                    $('<a>').addClass("w3-button w3-margin-left w3-green").attr("href", "./mapping.html#" + package).text("mapping")
+                    $('<a>')
+                    .addClass("w3-button w3-margin-left w3-round-xxlarge w3-small")
+                    .attr("href", "./mapping.html#" + package).text("mapping")
+                    .hashColored()
                 ));
         table.append(newRow);
     }

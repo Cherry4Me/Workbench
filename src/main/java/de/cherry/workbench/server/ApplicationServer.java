@@ -143,6 +143,15 @@ public class ApplicationServer {
     return null;
   }
 
+  public CtClass findClass(String find) {
+    for (CtClass ctClass : allSpoonClasses.getClasses()) {
+      if (find.equals(ctClass.getQualifiedName())) {
+        return ctClass;
+      }
+    }
+    return null;
+  }
+
   protected ApplicationServer() {
 
   }

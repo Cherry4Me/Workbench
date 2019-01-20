@@ -9,59 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./builder/builder.css">
-  <script type="text/javascript" src="./builder/builder.js"></script>
 </head>
 
-<body onload="init()">
-
-<div id="nodeEdit" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-    <div class="w3-center"><br>
-      <h2 id="node-operation">Node</h2>
-      <span class="ncancel w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
-    </div>
-    <div class="w3-section w3-container">
-      <label><b>type</b></label>
-      <select id="ntype" class=" w3-border w3-input">
-        <option value="" disabled selected>Enter Type</option>
-        <option value="Entity">Entity</option>
-        <option value="String">String</option>
-        <option value="Boolean">Boolean</option>
-        <option value="Integer">Integer</option>
-        <option value="Float">Float</option>
-      </select>
-      <label><b>name</b></label>
-      <input class="w3-input w3-border" type="text" placeholder="Enter label" id="nlabel">
-      <button id="nsave" class="w3-button w3-green w3-section" type="button">Save</button>
-      <button type="button" class="ncancel w3-button w3-red">Cancel</button>
-    </div>
-  </div>
-</div>
-
-<div id="edgeEdit" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
-    <div class="w3-center"><br>
-      <h2 id="edge-operation">Edge</h2>
-      <span class="ecancel w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
-    </div>
-    <div class="w3-section w3-container">
-      <label><b>relation</b></label>
-      <select id="elabel" class=" w3-border w3-input">
-        <option value="" disabled selected>Enter Relation</option>
-        <option value="1-n">1 - n</option>
-        <option value="n-1">n - 1</option>
-      </select>
-      <button id="esave" class="w3-button w3-green w3-section" type="button">Save</button>
-      <button type="button" class="ecancel w3-button w3-red">Cancel</button>
-    </div>
-  </div>
-</div>
-
+<body>
 
 <div class="w3-sidebar w3-bar-block" style="width:20%">
   <a href="./workbench.html" class="w3-bar-item w3-button">Start</a>
   <a href="./model.html" class="w3-bar-item w3-button">Model</a>
+  <a href="./clazz.html" class="w3-bar-item w3-button ">Clazz´s</a>
   <a href="#" class="w3-bar-item w3-button w3-green ">Routing</a>
   <a href="./pages.html" class="w3-bar-item w3-button ">Pages</a>
   <a href="#" class="w3-bar-item ">
@@ -71,8 +26,7 @@
 </div>
 
 
-<div id="mynetwork" style="margin-left:20%"></div>
-
+<div style="margin-left:20%"></div>
 
 </body>
 
