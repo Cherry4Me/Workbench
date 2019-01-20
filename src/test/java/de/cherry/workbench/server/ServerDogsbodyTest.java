@@ -47,7 +47,7 @@ public class ServerDogsbodyTest {
         .addSuperinterface(jpaRepoRef)
         .build();
     JavaFile javaFile = JavaFile
-        .builder(as.project.getGroup(), repository)
+        .builder(as.project.group, repository)
         .build();
     as.addClass(javaFile);
 
@@ -173,7 +173,7 @@ public class ServerDogsbodyTest {
         .build();
 
     JavaFile restFile = JavaFile
-        .builder(as.project.getGroup(), rest)
+        .builder(as.project.group, rest)
         .build();
     as.addClass(restFile);
 

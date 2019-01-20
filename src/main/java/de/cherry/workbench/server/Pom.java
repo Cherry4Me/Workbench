@@ -23,12 +23,12 @@ public class Pom implements Fileable {
         "         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n" +
         "  <modelVersion>4.0.0</modelVersion>\n" +
         "\n" +
-        "  <groupId>" + project.getGroup() + "</groupId>\n" +
-        "  <artifactId>" + project.getArtifact() + "</artifactId>\n" +
+        "  <groupId>" + project.group + "</groupId>\n" +
+        "  <artifactId>" + project.artifact + "</artifactId>\n" +
         "  <version>0.0.1-SNAPSHOT</version>\n" +
         "  <packaging>jar</packaging>\n" +
         "\n" +
-        "  <name>" + project.getArtifact() + "</name>\n" +
+        "  <name>" + project.artifact + "</name>\n" +
         "  <description>Demo project for Spring Boot</description>\n" +
         "\n" +
         "  <parent>\n" +

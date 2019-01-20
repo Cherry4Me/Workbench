@@ -9,6 +9,7 @@ import de.cherry.workbench.builder.Node;
 import de.cherry.workbench.desinger.Page;
 import de.cherry.workbench.general.Dir;
 import de.cherry.workbench.general.Project;
+import de.cherry.workbench.interpreter.Uiable;
 import de.cherry.workbench.mapping.JsBinding;
 import de.cherry.workbench.mapping.JsMapping;
 import org.apache.commons.io.FilenameUtils;
@@ -36,8 +37,8 @@ public class MainRest {
   TempProject project = TempProject.getInstance();
 
   @GetMapping("project")
-  public Project getProject() {
-    return project.as.project;
+  public Uiable<Project> getProject() {
+    return new Uiable(project.as.project);
   }
 
   @GetMapping("pages")

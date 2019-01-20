@@ -1,6 +1,6 @@
 package de.cherry.workbench.clazz;
 
-import de.cherry.workbench.builder.DataNet;
+import de.cherry.workbench.interpreter.Uiable;
 import de.cherry.workbench.start.TempProject;
 import org.jetbrains.annotations.Nullable;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,11 +24,11 @@ public class ClazzRest {
   );
 
   @PostMapping("/getState")
-  public ClazzAndState getState(@RequestBody ClassAndClazz classAndClazz) {
+  public Uiable getState(@RequestBody ClassAndClazz classAndClazz) {
     ClazzFinder finder = getClazzFinder(classAndClazz);
     CtClass aClass = project.as.findClass(classAndClazz.aClass);
     MasterClazz clazz = finder.createClazz(aClass);
-    return new ClazzAndState(clazz);
+    return new Uiable(clazz);
   }
 
   @Nullable

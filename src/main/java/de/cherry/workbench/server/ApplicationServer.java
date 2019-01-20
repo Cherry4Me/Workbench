@@ -49,7 +49,7 @@ public class ApplicationServer {
             main -> main.add("java",
                 java -> {
                   javaDir.set(java);
-                  String packageName = project.getGroup();
+                  String packageName = project.group;
                   new File(java.getFile().getAbsolutePath() + File.separator
                       + packageName.replace(".", File.separator)).mkdir();
                   return java;
@@ -112,7 +112,7 @@ public class ApplicationServer {
         .addMethod(main)
         .build();
 
-    JavaFile javaFile = JavaFile.builder(this.project.getGroup(), helloWorld)
+    JavaFile javaFile = JavaFile.builder(this.project.group, helloWorld)
         .build();
 
     this.addClass(javaFile);
