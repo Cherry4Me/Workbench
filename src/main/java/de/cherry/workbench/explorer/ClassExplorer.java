@@ -1,7 +1,6 @@
 package de.cherry.workbench.explorer;
 
 import org.reflections.Reflections;
-import org.reflections.ReflectionsException;
 import org.reflections.scanners.ResourcesScanner;
 import org.reflections.scanners.SubTypesScanner;
 import org.reflections.util.ClasspathHelper;

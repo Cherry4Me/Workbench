@@ -2,7 +2,6 @@ package de.cherry.workbench.clazz.model;
 
 import de.cherry.workbench.clazz.ClazzFinder;
 import de.cherry.workbench.clazz.MasterClazz;
-import org.springframework.web.bind.annotation.RestController;
 import spoon.reflect.declaration.CtClass;
 
 public class ModelFinder implements ClazzFinder {

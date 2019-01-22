@@ -1,6 +1,5 @@
 package de.cherry.workbench.explorer;
 
-import de.cherry.workbench.interpreter.ExecutableWO;
 import de.cherry.workbench.interpreter.ParameterWO;
 import javafx.util.Pair;
 
@@ -8,7 +7,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class MethodeWO {
 
