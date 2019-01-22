@@ -23,13 +23,10 @@ $.ajax({
     "url": "http://localhost:9090/clazz",
     "method": "GET",
 }).done(function (response) {
-    // console.log(response);
     table.html("");
     search.val("");
-    console.log(response);
     for (var aClass in response) {
         let clazzs = response[aClass];
-
         let clazzes = $("<td>");
         for (let i in clazzs ){
             let clazz = clazzs[i];

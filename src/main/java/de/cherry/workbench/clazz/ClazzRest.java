@@ -1,8 +1,11 @@
 package de.cherry.workbench.clazz;
 
+import de.cherry.workbench.clazz.model.ModelFinder;
+import de.cherry.workbench.clazz.rest.RestFinder;
+import de.cherry.workbench.clazz.wo.WoFinder;
 import de.cherry.workbench.interpreter.Uiable;
 import de.cherry.workbench.start.TempProject;
-import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +23,9 @@ public class ClazzRest {
   TempProject project = TempProject.getInstance();
 
   List<ClazzFinder> theFinders = Arrays.asList(
-      new RestFinder()
+      new RestFinder(),
+      new ModelFinder(),
+      new WoFinder()
   );
 
   @PostMapping("/getState")
@@ -31,7 +36,7 @@ public class ClazzRest {
     return new Uiable(clazz);
   }
 
-  @Nullable
+  @NotNull
   private ClazzFinder getClazzFinder(@RequestBody ClassAndClazz classAndClazz) {
     for (ClazzFinder finder : theFinders) {
       if (finder.getClazzName().equals(classAndClazz.aClazz)) {
@@ -57,5 +62,4 @@ public class ClazzRest {
     }
     return clazz4class;
   }
-
 }
