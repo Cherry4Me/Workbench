@@ -1,6 +1,7 @@
 package de.cherry.workbench.start;
 
-import de.cherry.workbench.mapping.JsBinding;
+import de.cherry.workbench.general.start.MainRest;
+import de.cherry.workbench.js.mapping.JsBinding;
 import org.junit.Test;
 
 import java.io.IOException;

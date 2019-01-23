@@ -1,8 +1,9 @@
 package de.cherry.workbench.server;
 
-import com.google.common.collect.Lists;
 import com.squareup.javapoet.*;
 import de.cherry.workbench.general.Project;
+import de.cherry.workbench.general.server.ApplicationServer;
+import de.cherry.workbench.general.server.ServerDogsbody;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -10,17 +11,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtInterface;
-import spoon.reflect.reference.CtTypeReference;
 
 import javax.lang.model.element.Modifier;
-import javax.lang.model.type.TypeMirror;
 import java.io.File;
-import java.lang.reflect.Type;
 import java.net.URI;
 import java.util.*;
-
-import static org.junit.Assert.*;
 
 public class ServerDogsbodyTest {
 

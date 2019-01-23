@@ -1,18 +1,10 @@
 package de.cherry.workbench.builder;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.squareup.javapoet.ClassName;
-import com.squareup.javapoet.JavaFile;
-import com.squareup.javapoet.TypeSpec;
-import de.cherry.workbench.start.TempProject;
+import de.cherry.workbench.pattern.erm.DataNet;
 import org.junit.Test;
 
-import javax.lang.model.element.Modifier;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class DomainBuilderTest {
 

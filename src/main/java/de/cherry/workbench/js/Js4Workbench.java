@@ -8,7 +8,7 @@ import com.shapesecurity.shift.ast.*;
 import com.shapesecurity.shift.codegen.CodeGen;
 import com.shapesecurity.shift.parser.JsError;
 import com.shapesecurity.shift.parser.Parser;
-import de.cherry.workbench.mapping.JsBinding;
+import de.cherry.workbench.js.mapping.JsBinding;
 
 import java.io.IOException;
 import java.lang.Class;
