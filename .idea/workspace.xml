@@ -2,90 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/StudentRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/StudentResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/domain/Note.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/target/classes/com/example/out/domain/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/MasterPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/Visualization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/pattern/VisualizationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/main/java/com/example/out/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/main/java/com/example/out/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/main/java/com/example/out/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/src/main/java/com/example/out/StudentResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/target/classes/de/test/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/DataNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/DataNet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/DomainBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/ClassExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/ClassWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassWO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/ExplorerRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/MethodeWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/MethodeWO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/TypeSaveObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/TypeSaveObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/CallDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/CallDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Dog4Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Dog4Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ExecutableWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ExecutableWO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/InterpreterRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ParameterWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ParameterWO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Uiable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Uiable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ValueContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ValueContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/Js4Workbench.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/Js4Workbench.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/Attribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsBinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsMapping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/ApplicationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/Pom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/Pom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ServerDogsbody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/ServerDogsbody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/AllClassProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/AllClassProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/NotNullCheckAdderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/NotNullCheckAdderProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/NotNullProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/NotNullProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/TemplateRemoverProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/TemplateRemoverProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/getter/Getter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/getter/Getter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/getter/GetterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/getter/GetterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/restify/RestContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/restify/RestContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/restify/Restify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/restify/Restify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/restify/RestifyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/restify/RestifyProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/setter/Setter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/setter/Setter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/spoon/setter/SetterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/setter/SetterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/start/MainRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/TempProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/start/TempProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Duck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Flow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/ClassExplorerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/ClassExplorerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/cherry/workbench/stream/FlowTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/DataNet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/DomainBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/Node.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/ClazzRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/ClazzRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/model/ModelFinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/model/ModelFinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassExplorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassExplorer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/MethodeWO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/MethodeWO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/general/Dir.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/general/Dir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/js/Js4Workbench.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/js/Js4Workbench.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/mapping/Attribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/mapping/JsBinding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/mapping/JsMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ApplicationServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ApplicationServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/TempProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/TempProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/stream/Duck$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/stream/Duck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/stream/Flow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassExplorer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassWO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ExplorerRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/MethodeWO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/TypeSaveObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/CallDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Dog4Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ExecutableWO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/InterpreterRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ParameterWO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Uiable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ValueContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/pattern/PatternRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/pattern/PatternRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ApplicationServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/Pom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ServerDogsbody.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/AllClassProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/NotNullCheckAdderProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/NotNullProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/TemplateRemoverProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/getter/Getter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/getter/GetterProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/restify/Restify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/setter/Setter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/setter/SetterProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/TempProject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/stream/FlowTest.class" beforeDir="false" />
     </list>
     <list id="ed7fffbb-cbc6-4597-9cfa-e62df035442a" name="ignore" comment="" />
     <list id="f1eb5701-2920-4ea8-8171-6a8717a04537" name="wayne" comment="" />
@@ -130,7 +87,7 @@
           <entry key="HTML" value="16" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="314" />
+          <entry key="JAVA" value="315" />
           <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="14" />
@@ -149,9 +106,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="261" />
-          <entry key="JAVA" value="11232" />
+          <entry key="JAVA" value="11242" />
           <entry key="JavaScript" value="90" />
-          <entry key="PLAIN_TEXT" value="715" />
+          <entry key="PLAIN_TEXT" value="723" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
@@ -159,101 +116,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsMapping.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/DataNet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Edge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/desinger/Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dogsbody.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassExplorer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassWO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="145">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -279,6 +149,7 @@
       <find />
       <find>ant</find>
       <find>call</find>
+      <find>patternRest</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -343,13 +214,13 @@
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzRest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/TempProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsBinding.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsMapping.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/DataNet.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" />
       </list>
     </option>
   </component>
@@ -403,22 +274,8 @@
               <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
               <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -712,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548199769422</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="reformat">
+      <created>1548286302244</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1548286302244</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -758,6 +622,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.29402262" />
       <window_info id="Structure" order="1" sideWeight="0.5022831" side_tool="true" weight="0.25767368" />
@@ -771,11 +636,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28356165" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44246575" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329653" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.39041096" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.39041096" />
       <window_info anchor="bottom" id="Tool Output" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -846,7 +711,8 @@
     <MESSAGE value="do frontend later" />
     <MESSAGE value="interpreter Frontend" />
     <MESSAGE value="imports clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="imports clean" />
+    <MESSAGE value="reformat" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1230,13 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsBinding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1308,7 +1167,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dogsbody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -1340,6 +1199,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

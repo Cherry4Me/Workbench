@@ -15,7 +15,7 @@ public class PatternRest {
 
   TempProject project = TempProject.getInstance();
 
-  @PostMapping("/getState")
+  @PostMapping("/getPattern")
   public HashMap<String, List<MasterPattern>> getState(@RequestBody ClassAndClazz classAndClazz) {
     HashMap<String, List<MasterPattern>> patternData4pattern = new HashMap<>();
 
