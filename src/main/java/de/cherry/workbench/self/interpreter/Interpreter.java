@@ -1,7 +1,6 @@
 package de.cherry.workbench.self.interpreter;
 
-import de.cherry.workbench.self.explorer.ClassExplorer;
-import de.cherry.workbench.self.explorer.TypeSaveObject;
+import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Executable;
@@ -23,7 +22,7 @@ public class Interpreter {
   }
 
   public static List<Executable> callabals(TypeSaveObject object) {
-    Class clazz = object.getType();
+    Class clazz = object.type;
     if (object.isNull())
       return ClassExplorer.allStaticMethods(clazz);
     else
@@ -36,7 +35,7 @@ public class Interpreter {
     executable.setAccessible(true);
     if (executable.getClass().isAssignableFrom(Method.class)) {
       Method method = (Method) executable;
-      out = method.invoke(object.getState(), args);
+      out = method.invoke(object.state, args);
       if (out == null) {
         type = method.getReturnType();
       }
@@ -61,22 +60,22 @@ public class Interpreter {
       , TypeSaveObject typeSaveObject
       , ArrayList<Object> parsedParams
       , Class<?>[] paramClasses) throws Exception {
-    Executable executable1 = typeSaveObject.getType().getMethod(executable, paramClasses);
+    Executable executable1 = typeSaveObject.type.getMethod(executable, paramClasses);
     if (executable1 == null) {
-      executable1 = typeSaveObject.getType().getConstructor(paramClasses);
+      executable1 = typeSaveObject.type.getConstructor(paramClasses);
     }
     return call(executable1, typeSaveObject, parsedParams.toArray());
   }
 
 
   /*public static TypeSaveObject call(String executable, TypeSaveObject typeSaveObject, ArrayList<Object> parsedParams) throws Exception {
-    List<Executable> executables;
+    List<ExecutableDTO> executables;
     if (typeSaveObject.isNull()) {
       executables = ClassExplorer.allStaticMethods(typeSaveObject.getType());
     } else {
       executables = ClassExplorer.allNonStaticMethods(typeSaveObject.getType());
     }
-    for (Executable aExecutable: executables){
+    for (ExecutableDTO aExecutable: executables){
       String name = aExecutable.getName();
       if(name.equals(executable)){
          return call(aExecutable, typeSaveObject, parsedParams);

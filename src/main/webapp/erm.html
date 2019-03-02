@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Model</title>
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/w3.css" rel="stylesheet">
+  <link href="lib/w3-theme-blue.css" rel="stylesheet">
+  <link href="lib/vis.min.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <script crossorigin="anonymous" src="lib/vis.min.js"></script>
+  <script src="lib/toastr.min.js"></script>
+  <link href="lib/toastr.min.css" rel="stylesheet">
+
+  <link href="./nav/nav.css" rel="stylesheet">
+  <script src="./nav/nav.js" type="text/javascript"></script>
+  <link href="./erm/erm.css" rel="stylesheet">
+  <script src="./erm/erm.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div class="w3-modal" id="nodeEdit">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <div class="w3-center"><br>
+      <h2 id="node-operation">Node</h2>
+      <span class="ncancel w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
+    </div>
+    <div class="w3-section w3-container">
+      <label><b>type</b></label>
+      <select class=" w3-border w3-input" id="ntype">
+        <option disabled selected value="">Enter Type</option>
+        <option value="Entity">Entity</option>
+        <option value="String">String</option>
+        <option value="Boolean">Boolean</option>
+        <option value="Integer">Integer</option>
+        <option value="Float">Float</option>
+      </select>
+      <label><b>name</b></label>
+      <input class="w3-input w3-border" id="nlabel" placeholder="Enter label" type="text">
+      <button class="w3-button w3-green w3-section" id="nsave" type="button">Save</button>
+      <button class="ncancel w3-button w3-red" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="w3-modal" id="edgeEdit">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+    <div class="w3-center"><br>
+      <h2 id="edge-operation">Edge</h2>
+      <span class="ecancel w3-button w3-xlarge w3-hover-red w3-display-topright">&times;</span>
+    </div>
+    <div class="w3-section w3-container">
+      <label><b>relation</b></label>
+      <select class=" w3-border w3-input" id="elabel">
+        <option disabled selected value="">Enter Relation</option>
+        <option value="1-n">1 - n</option>
+        <option value="n-1">n - 1</option>
+      </select>
+      <button class="w3-button w3-green w3-section" id="esave" type="button">Save</button>
+      <button class="ecancel w3-button w3-red" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="mynetwork" style="min-height:500px;"></div>
+<div class="nav">
+  <a class="nav-item nav-count-4" href="#save" id="saveButton"><i class="icon ion-md-save"></i><span class="invisible">Alarm</span></a>
+  <a class="mask" href="#toggle"><i class="icon ion-md-add"></i></a>
+</div>
+
+</body>
+
+</html>

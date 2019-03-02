@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clazz</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/w3.css" rel="stylesheet">
+  <link href="lib/w3-theme-blue.css" rel="stylesheet">
+  <link href="lib/font-awsome.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <script src="lib/toastr.min.js"></script>
+  <link href="lib/toastr.min.css" rel="stylesheet">
+  <link href="./nav/nav.css" rel="stylesheet">
+  <script src="./nav/nav.js" type="text/javascript"></script>
+</head>
+
+<body>
+<form class="w3-container" id="loader">
+  <div class="w3-section">
+    <label>Clazz</label>
+    <input class="w3-input w3-border w3-margin-bottom" id="clazz" placeholder="Enter Clazz" required type="text">
+    <label>File</label>
+    <input class="w3-input w3-border" id="file" placeholder="Enter File" required type="text">
+    <button class="w3-button w3-block w3-green w3-section w3-padding" id="load" type="submit">Load</button>
+  </div>
+</form>
+
+<div id="interpreter">
+
+</div>
+<div style="height:80px"></div>
+<div class="nav">
+  <a class="nav-item nav-count-4" href="#save" id="saveButton"><i class="icon ion-md-save"></i><span class="invisible">Save</span></a>
+  <a class="mask" href="#toggle"><i class="icon ion-md-add"></i></a>
+</div>
+<script src="interpreter/interpreter.js"></script>
+<script src="clazz/editor.js"></script>
+</body>
+
+</html>

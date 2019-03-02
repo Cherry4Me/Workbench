@@ -1,7 +1,7 @@
 package de.cherry.workbench.builder;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.cherry.workbench.pattern.erm.DataNet;
+import de.cherry.workbench.system.erm.DataNet;
 import org.junit.Test;
 
 import java.io.IOException;

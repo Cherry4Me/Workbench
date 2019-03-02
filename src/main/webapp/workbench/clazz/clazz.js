@@ -20,7 +20,7 @@ search.on("keyup", function () {
 
 $.ajax({
     "async": true,
-    "url": "http://localhost:9090/clazz",
+    "url": "/clazz",
     "method": "GET",
 }).done(function (response) {
     table.html("");

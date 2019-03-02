@@ -1,9 +1,8 @@
 package de.cherry.workbench.server;
 
 import com.squareup.javapoet.*;
-import de.cherry.workbench.general.Project;
-import de.cherry.workbench.general.server.ApplicationServer;
-import de.cherry.workbench.general.server.ServerDogsbody;
+import de.cherry.workbench.self.server.ApplicationServer;
+import de.cherry.workbench.self.server.Project;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,14 +14,16 @@ import spoon.reflect.declaration.CtClass;
 import javax.lang.model.element.Modifier;
 import java.io.File;
 import java.net.URI;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class ServerDogsbodyTest {
 
   @Test
   public void create() throws Exception {
     File out = new File("/Users/mbaaxur/Documents/gits/WorkbenchCherry/out");
-    ApplicationServer as = ServerDogsbody.create(out, new Project("com.example.out", "out"));
+    ApplicationServer as = ApplicationServer.create(out, new Project("com.example.out", "out"));
     CtClass classForRest = as.allSpoonClasses.getClasses().get(1);
 
 

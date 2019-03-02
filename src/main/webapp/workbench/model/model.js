@@ -15,10 +15,8 @@ function destroy() {
 $(document).ready(function() {
       
     $.ajax({
-        
-        "url": "http://localhost:9090/model",
+        "url": "/model",
         "method": "GET",
-        
     }).done(function (response) {
         console.log(response);
         data = response;
@@ -60,7 +58,7 @@ function save() {
     //console.log(saveData);
       
     $.ajax({
-        "url": "http://localhost:9090/model",
+        "url": "/model",
         "method": "POST",
         "headers": {
             "content-type": "application/json"

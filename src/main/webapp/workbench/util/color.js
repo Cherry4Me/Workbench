@@ -7,6 +7,7 @@
             }
             return (parseInt(bgColor.replace('#', ''), 16) > 0xffffff / 2) ? '#000' : '#fff';
         }
+
         function stringToColour(str) {
             var hash = 0;
             for (var i = 0; i < str.length; i++) {
@@ -19,12 +20,16 @@
             }
             return colour;
         }
-        var text = this.text();
-        var bgColor = stringToColour(text);
-        var textColor = getColorByBgColor(bgColor);
-        this.css('background-color', bgColor)
-            .css('color', textColor);
-        return this;
+        return this.each(function () {
+            // Do something to each element here.
+            var text = $(this).text();
+            var bgColor = stringToColour(text);
+            var textColor = getColorByBgColor(bgColor);
+            $(this).css('background-color', bgColor)
+                .css('color', textColor);
+            return $(this);
+        });
+
     };
 
 }(jQuery));

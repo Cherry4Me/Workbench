@@ -15,6 +15,8 @@ class StudentResource {
   @Autowired
   private StudentRepository studentRepository;
 
+  public static String hallo = "test";
+
   @GetMapping(
       name = "/student"
   )
@@ -51,6 +53,11 @@ class StudentResource {
                         .getId())
                 .toUri();
     return ResponseEntity.created(location).build();
+  }
+
+  @GetMapping("/hallo")
+  public String  getCallabas(@RequestParam("className") String className) throws ClassNotFoundException {
+    return "hallo";
   }
 
   @PutMapping(
