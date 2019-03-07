@@ -1,14 +1,12 @@
 package de.cherry.workbench.general;
 
-import org.apache.commons.io.FileUtils;
+import de.cherry.workbench.self.file.Dir;
+import de.cherry.workbench.self.file.TxtFile;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import static org.junit.Assert.*;
 
 public class DirTest {
 

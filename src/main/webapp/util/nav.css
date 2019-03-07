@@ -1,0 +1,111 @@
+
+.nav {
+    right: 15px;
+    z-index: 20;
+    width: 45px;
+    bottom: 15px;
+    height: 45px;
+    display: block;
+    position: absolute;
+    line-height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .75)
+  }
+  
+  .mask {
+    z-index: 21;
+    color: #fff;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    background: #f23363;
+    -webkit-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s
+  }
+  
+  .nav.active .mask {
+    background: #cf0e3f;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg)
+  }
+  
+  .nav:after {
+    top: 0;
+    left: 0;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    position: absolute;
+    background: #f23363;
+    -webkit-transition: all .1s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s
+  }
+  
+  .nav.active:after {
+    top: -125px;
+    left: -125px;
+    width: 350px;
+    height: 350px
+  }
+  
+  .nav-item {
+    top: 0;
+    left: 0;
+    z-index: 19;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 24px;
+    -webkit-transform: none;
+            transform: none;
+    line-height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: all .3s cubic-bezier(.68, 1.55, .265, 1);
+    transition: all .3s cubic-bezier(.68, 1.55, .265, 1)
+  }
+  
+  .nav.active .nav-count-1 {
+    -webkit-transform: translate(10px, -100px);
+            transform: translate(10px, -100px)
+  }
+  
+  .nav.active .nav-count-2 {
+    -webkit-transform: translate(-35px, -80px);
+            transform: translate(-35px, -80px)
+  }
+  
+  .nav.active .nav-count-3 {
+    -webkit-transform: translate(-80px, -45px);
+            transform: translate(-80px, -45px)
+  }
+  
+  .nav.active .nav-count-4 {
+    -webkit-transform: translate(-100px, 0);
+            transform: translate(-100px, 0)
+  }
+  
+  .pull-left {
+    float: left
+  }
+  
+  .pull-right {
+    float: right
+  }
+  
+  .html,
+  .invisible {
+    display: none
+  }
+  
+  .html.visible,
+  .visible {
+    display: block
+  }
+  

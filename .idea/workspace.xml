@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84c59cfd-8fd9-4ff4-9ba4-798e928fef02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/DataNet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/DomainBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/builder/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/ClazzRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/clazz/ClazzRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassExplorer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ClassWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/ExplorerRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/MethodeWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/explorer/TypeSaveObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/CallDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Dog4Interpreter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ExecutableWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Interpreter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/InterpreterRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ParameterWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/Uiable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/interpreter/ValueContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/pattern/PatternRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/cherry/workbench/pattern/PatternRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ApplicationServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/Pom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/server/ServerDogsbody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/AllClassProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/NotNullCheckAdderProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/NotNullProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/TemplateRemoverProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/getter/Getter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/getter/GetterProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/restify/Restify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/setter/Setter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/spoon/setter/SetterProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/MainRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/cherry/workbench/start/TempProject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/de/cherry/workbench/start/MainRestTest.class" afterDir="false" />
     </list>
     <list id="ed7fffbb-cbc6-4597-9cfa-e62df035442a" name="ignore" comment="" />
     <list id="f1eb5701-2920-4ea8-8171-6a8717a04537" name="wayne" comment="" />
@@ -53,74 +13,102 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1140399272">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="15" />
-          <entry key="css" value="1" />
-          <entry key="html" value="12" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="166" />
-          <entry key="jpeg" value="1" />
-          <entry key="js" value="6" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="23" />
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="16" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="315" />
-          <entry key="JavaScript" value="8" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="14" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="23" />
-          <entry key="html" value="235" />
-          <entry key="java" value="8011" />
-          <entry key="js" value="68" />
-          <entry key="txt" value="521" />
-          <entry key="xml" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="261" />
-          <entry key="JAVA" value="11242" />
-          <entry key="JavaScript" value="90" />
-          <entry key="PLAIN_TEXT" value="723" />
-          <entry key="XML" value="11" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazzeditor/ClazzEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+              <folding>
+                <element signature="e#1311#1312#0" expanded="true" />
+                <element signature="e#1332#1333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/SystemManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+              <folding>
+                <element signature="e#162#163#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/MasterSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/MasterClazz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/stream/StreamEditor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazzeditor/Clazz2Edit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/MainRest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/TempProject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,9 +122,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Singleton" />
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -150,82 +139,88 @@
       <find>ant</find>
       <find>call</find>
       <find>patternRest</find>
+      <find>red</find>
+      <find>blue</find>
+      <find>getPattern</find>
+      <find>model</find>
+      <find>clazzes</find>
+      <find>clazzRest</find>
+      <find>getState</find>
+      <find>getClass</find>
+      <find>window.location</find>
+      <find>getSys</find>
+      <find>w3_close</find>
+      <find>org.springframework.web.bind.annotation.PostMapping</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
       <replace>public</replace>
+      <replace>blue</replace>
+      <replace>indigo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Desktop/LangSandbox-master" value="PREVIEW" />
-        <entry key="$USER_HOME$/Desktop/python-ast-master" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsMapping.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/Js4Workbench.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Ducktyp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Duck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Flow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/stream/FlowTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ExecutableWO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ValueContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/interpreter.html" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Interpreter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/interpreter/interpreter.js" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Dog4Interpreter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/ClassWO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/ParameterWO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/MasterClazz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClassAndClazz.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/system/impl/SystemRestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazz2file/Clazz2FileFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazzeditor/ClazzEditor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/desinger/DesignerFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/erm/ErmFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/SystemFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/SystemManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/RestFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/RestClazz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzAndState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/Uiable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/interpreter/Uiable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/MainRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/Pom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/server/ApplicationServer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RestClazz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/RestFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ModelFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/wo/ModelFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/wo/WoClazz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/wo/WoFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/ModelFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/ClassExplorer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/explorer/MethodeWO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dir.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/pattern/VisualizationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/start/TempProject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/mapping/JsBinding.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/DataNet.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/TypeSaveObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ExecutableWO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Executable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ClassWO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ClassDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/MethodeWO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/MethodeDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ParameterWO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ParameterDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ExecutableDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/dto/ExecutableDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/TypeSaveObjectDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/dto/Uiable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/dto/TypeSaveObjectDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazz2file/Clazz2FileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/MainRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/server/ServerDogsbody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/server/ApplicationServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Interpreter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/ModelClazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/HttpMethods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/PathVariable.java" />
+        <option value="$PROJECT_DIR$/out/src/main/java/com/example/out/StudentResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RestClazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RestManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/ModelManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/GetterAndSetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/ProbertyClazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/PropertyManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/stream/StreamClazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/stream/StreamManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/stream/StreamManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/filter/FilterManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/TempProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/mapper/MapperManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/stream/StreamEditor.java" />
+        <option value="$PROJECT_DIR$/src/main/doc/conzept.md" />
+        <option value="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzManager.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
@@ -237,6 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,14 +272,18 @@
               <item name="WorkbenchCherry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="workbench" type="462c0819:PsiDirectoryNode" />
+              <item name="self" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workbench" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,36 +291,38 @@
     <property name="SearchEverywhereHistoryKey" value="inter&#9;FILE&#9;file:///Users/mbaaxur/Documents/gits/WorkbenchCherry/src/main/java/de/cherry/workbench/interpreter/InterpreterRest.java&#10;interpreter&#9;FILE&#9;file:///Users/mbaaxur/Documents/gits/WorkbenchCherry/src/main/webapp/interpreter/interpreter.js&#10;Inter&#9;FILE&#9;file:///Users/mbaaxur/Documents/gits/WorkbenchCherry/src/main/java/de/cherry/workbench/interpreter/Interpreter.java&#10;Para&#9;PSI&#9;JAVA://de.cherry.workbench.interpreter.ParameterWO" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="de.cherry.workbench.system.impl" />
       <recent name="de.cherry.workbench.pattern" />
       <recent name="de.cherry.workbench.stream" />
       <recent name="de.cherry.workbench.start" />
       <recent name="de.cherry.workbench.builder" />
-      <recent name="de.cherry.workbench.general" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.cherry.workbench" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/out" />
       <recent name="$PROJECT_DIR$/src/main/webapp/desinger" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="de.cherry.workbench.spoon" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/wo" />
       <recent name="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz" />
       <recent name="$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model" />
       <recent name="$PROJECT_DIR$/out/src/main/java/com/example/out/domain" />
-      <recent name="$PROJECT_DIR$/out/src/main/java/com/example/out" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="de.cherry.workbench" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.cherry.workbench.system.clazzeditor" />
+      <recent name="de.cherry.workbench.spoon" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.cherry.workbench.clazz" />
@@ -351,6 +354,7 @@
       <module name="workbench" />
       <option name="PACKAGE_NAME" value="de.cherry.workbench.stream" />
       <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.stream.FlowTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -375,11 +379,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainRestTest.getMapping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemRestTest.getSystems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workbench" />
-      <option name="PACKAGE_NAME" value="de.cherry.workbench.start" />
-      <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.start.MainRestTest" />
-      <option name="METHOD_NAME" value="getMapping()" />
+      <option name="PACKAGE_NAME" value="de.cherry.workbench.system.impl" />
+      <option name="MAIN_CLASS_NAME" value="de.cherry.workbench.system.impl.SystemRestTest" />
+      <option name="METHOD_NAME" value="getSystems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -387,18 +391,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.WorkbenchApplication" />
-      <item itemvalue="JUnit.MainRestTest.getMapping" />
       <item itemvalue="JUnit.MainRestTest.getMapping (1)" />
       <item itemvalue="JUnit.FlowTest.biggerThanFour" />
       <item itemvalue="JUnit.FlowTest" />
+      <item itemvalue="JUnit.SystemRestTest.getSystems" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.WorkbenchApplication" />
+        <item itemvalue="JUnit.SystemRestTest.getSystems" />
         <item itemvalue="JUnit.MainRestTest.getMapping (1)" />
         <item itemvalue="JUnit.FlowTest" />
         <item itemvalue="JUnit.FlowTest.biggerThanFour" />
-        <item itemvalue="JUnit.MainRestTest.getMapping" />
       </list>
     </recent_temporary>
   </component>
@@ -576,31 +580,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548286302244</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="some cleaning">
+      <created>1551967215488</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1551967215490</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.06 at 16h 08m 23s.xml">
-      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.06 at 17h 42m 04s.xml">
-      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowTest_biggerThanFour - 2019.01.06 at 23h 48m 29s.xml">
-      <configuration name="FlowTest.biggerThanFour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowTest_biggerThanFour - 2019.01.06 at 23h 59m 08s.xml">
-      <configuration name="FlowTest.biggerThanFour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowTest - 2019.01.06 at 23h 59m 38s.xml">
-      <configuration name="FlowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlowTest - 2019.01.07 at 00h 11m 17s.xml">
-      <configuration name="FlowTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainRestTest_getMapping_(1) - 2019.01.07 at 00h 11m 57s.xml">
-      <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainRestTest_getMapping_(1) - 2019.01.07 at 00h 12m 11s.xml">
       <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
     </history-entry>
@@ -609,6 +599,27 @@
     </history-entry>
     <history-entry file="MainRestTest_getMapping_(1) - 2019.01.10 at 23h 41m 00s.xml">
       <configuration name="MainRestTest.getMapping (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 31m 10s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 32m 58s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 33m 48s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 34m 00s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 37m 21s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 41m 34s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SystemRestTest_getSystems - 2019.02.27 at 01h 42m 39s.xml">
+      <configuration name="SystemRestTest.getSystems" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -622,9 +633,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.29402262" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.34248787" />
       <window_info id="Structure" order="1" sideWeight="0.5022831" side_tool="true" weight="0.25767368" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -632,15 +642,14 @@
       <window_info id="DB Browser" order="5" show_stripe_button="false" weight="0.32956383" />
       <window_info id="Project Explorer" order="6" show_stripe_button="false" weight="0.32956383" />
       <window_info id="Job Explorer" order="7" show_stripe_button="false" weight="0.32956383" />
-      <window_info anchor="bottom" id="Thumbnails" show_stripe_button="false" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44246575" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32739726" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329653" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.39041096" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.4808219" />
       <window_info anchor="bottom" id="Tool Output" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -649,12 +658,15 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32876712" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
       <window_info anchor="bottom" id="Console" order="15" />
+      <window_info anchor="bottom" id="Thumbnails" order="16" show_stripe_button="false" weight="0.32876712" />
+      <window_info anchor="bottom" id="Docker" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -682,9 +694,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -712,500 +735,553 @@
     <MESSAGE value="interpreter Frontend" />
     <MESSAGE value="imports clean" />
     <MESSAGE value="reformat" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformat" />
+    <MESSAGE value="back on track" />
+    <MESSAGE value="some cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="some cleaning" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/start/MainRestTest.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="annotation.getValue(&quot;name&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>parameter.getQualifiedName().equals(predicateClassName)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aClass.getSimpleName().equals(&quot;StreamInlineReturnTest&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aClass.getSimpleName().equals(&quot;StreamTestFromArray&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aClass.getSimpleName().equals(&quot;GroesserFiveFilter&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>!clazz.calls.isEmpty()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((CtClassImpl) aClass).simpleName.equals(&quot;StreamInlineReturnTest&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.declaration.CtClassImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((CtClassImpl) aClass).simpleName.equals(&quot;StreamTestFromArray&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.declaration.CtClassImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((CtClassImpl) aClass).simpleName.equals(&quot;StreamTestParameter&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.declaration.CtClassImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((CtClassImpl) aClass).simpleName.equals(&quot;StreamTest&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.declaration.CtClassImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>annotation.getValue(&quot;name&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getAnnotations().get(0).getValue(&quot;name&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getAnnotations().get(0).getValue(&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getAnnotations().get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>method.getAnnotations().get(0).getAnnotationType().toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>.get(0).getAnnotationType().toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>systemFinder.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>ctClass.getQualifiedName()</expression-string>
+        <expression-string>invocation.getArguments().get(i).getClass().isAssignableFrom(CtLambdaImpl.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.code.CtLambdaImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invocation.getArguments().get(i).getClass().isAssignableFrom(CtLambdaImpl)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.reflect.code.CtLambdaImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>invocation.getArguments().get(i).getClass().isAssignableFrom(CtLambda.class)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ctClass.getSimpleName()</expression-string>
+        <expression-string>invocation.getArguments().get(i).getClass()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>ctClass</expression-string>
+        <expression-string>invocation.getArguments().get(i)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Interpreter.call(call.getExecutable(), typeSaveObject, parsedParams, parsedParamClasses)</expression-string>
+        <expression-string>invocation</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this</expression-string>
+        <expression-string>i</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>method.getClass()</expression-string>
+        <expression-string>invocation.getArguments().get(0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>method</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>aDuck.getClass()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>method.invoke(aDuck, args)</expression-string>
+        <expression-string>parameter</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/CallDTO.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/reflect/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Dog4Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ExecutableWO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/InterpreterRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ParameterWO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/Uiable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/ValueContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/Pom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/ServerDogsbody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/getter/Getter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/getter/GetterProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/restify/RestContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/restify/Restify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/AllClassProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/NotNullCheckAdderProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/NotNullProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/TemplateRemoverProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/start/MainRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/WorkbenchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/spoon/setter/SetterProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/server/ApplicationServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/pattern/VisualizationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/MasterPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/crud/CrudFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/ErmPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/Visualization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Duck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/dto/ParameterDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/erm/ErmManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/PatchMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/DeleteMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/PutMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/PostMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/GetMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/HttpMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/stream/Flow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/rest/ExplorerRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/src/main/java/com/example/out/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/PathVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/interpreter/rest/InterpreterRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/src/main/java/com/example/out/StudentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.10.RELEASE/spring-web-5.0.10.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/test/TestClazz.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/test/TestManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/ModelClazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="69" column="3" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/model/ModelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ui/UiManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/spoon/getter/GetterProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/erm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/PropertyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/ProbertyClazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/property/GetterAndSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/rest/RestClazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fr/inria/gforge/spoon/spoon-core/7.2.0/spoon-core-7.2.0.jar!/spoon/support/reflect/code/CtInvocationImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fr/inria/gforge/spoon/spoon-core/7.2.0/spoon-core-7.2.0.jar!/spoon/reflect/cu/SourcePosition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/stream/StreamClazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fr/inria/gforge/spoon/spoon-core/7.2.0/spoon-core-7.2.0.jar!/spoon/reflect/code/CtStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fr/inria/gforge/spoon/spoon-core/7.2.0/spoon-core-7.2.0.jar!/spoon/reflect/declaration/CtElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/stream/StreamManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/filter/FilterManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="37" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/mapper/MapperManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/impl/SystemRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazzeditor/Clazz2Edit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/TempProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/stream/StreamEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/clazzeditor/ClazzEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/MasterClazz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/Js4Workbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-723">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/stream/FlowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/Attribute.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/MasterSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/start/TempProject.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/system/SystemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/MainRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/doc/conzept.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="343">
+            <caret line="54" lean-forward="true" selection-end-line="104" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/js/mapping/JsMapping.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/clazz/ClazzManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/builder/DomainBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/DataNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/erm/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/desinger/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Dogsbody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/general/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ClassWO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/cherry/workbench/pattern/PatternRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="259">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
