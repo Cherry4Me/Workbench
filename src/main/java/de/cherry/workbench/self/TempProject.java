@@ -1,9 +1,12 @@
 package de.cherry.workbench.self;
 
 import de.cherry.workbench.clazz.ClazzManager;
+import de.cherry.workbench.clazz.filter.FilterManager;
+import de.cherry.workbench.clazz.mapper.MapperManager;
 import de.cherry.workbench.clazz.model.ModelManager;
 import de.cherry.workbench.clazz.property.PropertyManager;
 import de.cherry.workbench.clazz.rest.RestManager;
+import de.cherry.workbench.clazz.stream.StreamManager;
 import de.cherry.workbench.clazz.ui.UiManager;
 import de.cherry.workbench.self.server.ApplicationServer;
 import de.cherry.workbench.self.server.Project;
@@ -12,6 +15,7 @@ import de.cherry.workbench.system.clazz2file.Clazz2FileManager;
 import de.cherry.workbench.system.clazzeditor.ClazzEditor;
 import de.cherry.workbench.system.desinger.DesignerManager;
 import de.cherry.workbench.system.erm.ErmManager;
+import de.cherry.workbench.system.stream.StreamEditor;
 import spoon.reflect.declaration.CtClass;
 
 import java.io.File;
@@ -29,7 +33,10 @@ public class TempProject {
       new RestManager(),
       new ModelManager(),
       new UiManager(),
-      new PropertyManager()
+      new PropertyManager(),
+      new StreamManager(),
+      new FilterManager(),
+      new MapperManager()
   );
 
   private TempProject() throws Exception {
@@ -48,7 +55,8 @@ public class TempProject {
           new Clazz2FileManager(),
           new ClazzEditor(),
           new DesignerManager(),
-          new ErmManager()
+          new ErmManager(),
+          new StreamEditor()
       );
     }
     return ourInstance;
@@ -66,6 +74,4 @@ public class TempProject {
     }
     return null;
   }
-
-
 }

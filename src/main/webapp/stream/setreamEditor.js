@@ -1,10 +1,12 @@
+
+
 function init(urlData){
     $.ajax({
         type: 'POST',
         url: "/clazzdata",
         data: JSON.stringify(urlData),
         success: function (data) {
-            createUI(data)
+            createUI(data);
         },
         contentType: "application/json",
         dataType: 'json'
@@ -19,20 +21,5 @@ function createUI(urlData){
         addFields(card, className, structure, data);
         $("#interpreter").append(card);
         window.parent.resizeIframe();
-    });
-    $("#saveButton").on("click", function () {
-        var toExecute = {
-            clazz: className,
-            executable: "save",
-            object: JSON.stringify(getObject(className)),
-            params: [],
-            paramsClasses: []
-        }
-    
-        execute(toExecute, function (data) {
-            console.log(data);
-        }, function () {
-            toastr.error("Can't save the Clazz changes.", 'Unsaved!')
-        });
     });
 }

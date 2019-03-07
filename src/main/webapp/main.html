@@ -5,14 +5,39 @@
   <meta charset="UTF-8">
   <title>Systems</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-  <link href="https://www.w3schools.com/lib/w3-theme-blue.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="lib/w3.css" rel="stylesheet">
+  <link href="lib/w3-theme-blue.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <script src="/util/interpreter.js"></script>
 </head>
 
 <body>
-main
+
+<div id="interpreter">
+
+</div>
+
+<script>
+    $.ajax({
+      type: 'GET',
+      url: "/project",
+      success: function (urlData) {
+
+        var className = urlData.type;
+        var data = urlData.state;
+        getCtClass(className, function (structure) {
+          let card = $("<div class='w3-panel w3-card w3-light-grey'>").attr("className", className).append($(
+            "<h3>").text(className));
+          addFields(card, className, structure, data);
+          $("#interpreter").append(card);
+          window.parent.resizeIframe();
+        });
+      },
+      contentType: "application/json",
+      dataType: 'json'
+    });
+
+</script>
 
 </body>
 

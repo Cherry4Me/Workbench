@@ -1,109 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<title>Systems</title>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<link href="lib/w3.css" rel="stylesheet">
+<link href="lib/w3-theme-indigo.css" rel="stylesheet">
+<link href="lib/font-awsome.css" rel="stylesheet">
+<script src="lib/jquery.js"></script>
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif
+  }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Workbench</title>
-  <link rel="stylesheet" returnType="text/css" href="css/bootstrap.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"></script>
-  <script src="js/bootstrap.js"></script>
-</head>
+  body {
+    font-size: 16px;
+  }
+
+  .w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+  }
+
+  .w3-half img:hover {
+    opacity: 1
+  }
+
+  iframe {
+    flex-grow: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+</style>
 
 <body>
-<div class="container" style="margin-top:5px">
 
-  <div class="row">
-
-    <div class="col-md-4">
-      <a href="./workbench/workbench.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/turtel.jpeg">
-        <div class="card-body">
-          <p class="card-text">Workbench the real one!!</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Workbench</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="./builder.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/boats.jpeg">
-        <div class="card-body">
-          <p class="card-text">A simple entity relationship model builder ui to create a application.</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Builder4Me</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="./explorer.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/way.jpeg">
-        <div class="card-body">
-          <p class="card-text">Dive deep in Java, understand API´s and see the BIG picture...</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Explorer4J</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="col-md-4">
-      <a href="./interpreter.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/keks.jpeg">
-        <div class="card-body">
-          <p class="card-text">Interpreter für internal DSLs und Konfigurationen</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Java-Intepreter</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="./desinger.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/glasses.jpeg">
-        <div class="card-body">
-          <p class="card-text">Blah bla bla bla bla bla bla bla blahhhha</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Bla-Workspace</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="col-md-4">
-      <a href="./rivetsjs.html" class="card mb-4 shadow-sm">
-        <img class="card-img-top" src="img/lib.jpeg">
-        <div class="card-body">
-          <p class="card-text">just a few tests with rivets</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group"></div>
-            <small class="text-muted">Rivets-js</small>
-          </div>
-        </div>
-      </a>
-    </div>
-
-
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large" id="mySidebar"
+     style="z-index:3;width:250px;font-weight:bold;"><br>
+  <a class="w3-button w3-hide-large w3-display-topleft" href="javascript:void(0)" onclick="w3_close()"
+     style="width:100%;font-size:22px">Close
+    Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Workbench<br>Systems</b></h3>
   </div>
+  <div class="w3-bar-block" id="links">
+    <a class="w3-bar-item w3-button w3-hover-white" href="main.html" onclick="w3_close()" target="myiframe">Main</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container  w3-hide-large w3-indigo w3-xlarge">
+  <a class="w3-button w3-indigo w3-margin-right" href="javascript:void(0)" onclick="w3_open()">☰</a>
+  <span>Workbench Systems</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" id="myOverlay" onclick="w3_close()" style="cursor:pointer"
+     title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:254px;min-height: 0px">
+  <iframe class="w3-main" id="myiframe" name="myiframe" onload="resizeIframe()" src="main.html" style="width:100%;">
+  </iframe>
+  <!-- End page content -->
 </div>
 
+
+<!-- W3.CSS Container
+<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px;">
+  <p class="w3-right">Powered by <a href="https://github.com/baurmax1998" title="W3.CSS" target="_blank" class="w3-hover-opacity">M4x</a></p>
+</div>
+-->
+
+<script>
+    function resizeIframe(max) {
+      var iframe = $("#myiframe")[0];
+      if (max)
+        iframe.height = window.innerHeight + "px";
+      else
+        iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
+
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    $.ajax({
+      type: 'GET',
+      url: "/getSystems",
+      success: function (systems) {
+        for (let i = 0; i < systems.length; i++) {
+          const system = systems[i];
+          var link = $('<a target="myiframe" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">')
+            .attr("href", system.url)
+            .text(system.name);
+
+          $("#links")
+            .append(link);
+        }
+      },
+      contentType: "application/json",
+      dataType: 'json'
+    });
+
+
+
+    $(document).ready(function () {
+      var site = window.location.hash.substring(1);
+      if ("" !== site)
+        $('#myiframe').attr("src", site);
+    });
+
+    $(window).on('hashchange', function () {
+      site = window.location.hash.substring(1);
+      if ("" !== site)
+        $('#myiframe').attr("src", site);
+    });
+
+    $('#myiframe').on('load', function () {
+      var url = document.getElementById("myiframe").contentWindow.location.href;
+      if ("about:blank" !== url) {
+        $(window).off('hashchange');
+        window.location.hash = url;
+        $(window).on('hashchange', function () {
+          site = window.location.hash.substring(1);
+          if ("" !== site)
+            $('#myiframe').attr("src", site);
+          return true;
+        });
+      }
+    });
+
+
+</script>
 
 </body>
 

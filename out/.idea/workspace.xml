@@ -2,213 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e8c476-788d-40ac-9d58-a238071f02be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/property/GetterAndSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/property/ProbertyClazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/property/PropertyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/HttpMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/PathVariable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/RequestParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ui/UiClazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ui/UiManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/MainRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/ClassDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/ExecutableDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/MethodeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/TypeSaveObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/MasterSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/SystemManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/clazz2file/Clazz2FileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/clazzeditor/Clazz2Edit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/clazzeditor/ClazzEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/desinger/DesignerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/impl/SystemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/impl/SystemRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/webapp/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/webapp/system.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/system/impl/SystemRestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/out/stream/GroesserFiveFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineReturnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestFromArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/doc/conzept.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/filter/FilterManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/mapper/MapperManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/stream/StreamClazz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/stream/StreamManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/stream/StreamEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__fr_inria_gforge_spoon_spoon_core_7_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Maven__fr_inria_gforge_spoon_spoon_core_7_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/out/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/out/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/out/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/out/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/out/StudentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/out/StudentResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/WorkbenchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/WorkbenchApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClassAndClazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/impl/ClassAndClazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/clazz2file/Clazz2FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/MasterClazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/MasterClazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/model/ModelClazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/model/ModelClazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/model/ModelFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/model/ModelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/RestClazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/RestClazz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/RestFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/rest/RestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/wo/WoClazz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/wo/WoFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/desinger/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/desinger/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/Dir.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/file/Dir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/Dogsbody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/FileCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/file/FileCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/Fileable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/file/Fileable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/server/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/TxtFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/file/TxtFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/server/ApplicationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/server/ApplicationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/server/Pom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/server/Pom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/server/ServerDogsbody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/AllClassProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/server/AllClassProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/NotNullCheckAdderProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/NotNullProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/TemplateRemoverProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/getter/Getter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/getter/Getter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/getter/GetterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/getter/GetterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/restify/RestContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/restify/RestContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/restify/Restify.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/restify/Restify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/restify/RestifyProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/restify/RestifyProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/setter/Setter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/setter/Setter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/spoon/setter/SetterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/spoon/setter/SetterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/start/MainRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/erm/ErmManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/general/start/TempProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/TempProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/js/Js4Workbench.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/js/Js4Workbench.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/js/mapping/Attribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/js/mapping/Attribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/js/mapping/JsBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/js/mapping/JsBinding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/js/mapping/JsMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/js/mapping/JsMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/MasterPattern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/PatternFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/PatternRest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/Visualization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/crud/CrudFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/crud/CrudPattern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/erm/DataNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/erm/DataNet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/erm/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/erm/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/erm/ErmFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/erm/ErmPattern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/pattern/erm/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/system/erm/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/explorer/ClassExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/ClassExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/explorer/ClassWO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/explorer/ExplorerRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/rest/ExplorerRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/explorer/MethodeWO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/explorer/TypeSaveObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/CallDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/CallDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/Dog4Interpreter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/ExecutableWO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/InterpreterRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/rest/InterpreterRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/ParameterWO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/dto/ParameterDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/Uiable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/interpreter/ValueContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/desinger.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/desinger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/desinger/desinger.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/desinger/desinger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/interpreter.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/interpreter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/interpreter/interpreter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/interpreter/interpreter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/js/rivets.bundled.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/clazz/clazz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/workbench/clazz/clazz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger/desinger.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger/desinger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger/grapesjs-blocks-basic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger/grapesjs-navbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/desinger/grapesjs-touch.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/meta/meta.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/model/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/workbench/model/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/pages.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/pages/pages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/util/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/workbench/util/color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/builder/DomainBuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/explorer/ClassExplorerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/explorer/ClassExplorerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/explorer/InterpreterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/general/DirTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/general/DirTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/server/ServerDogsbodyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/de/cherry/workbench/start/MainRestTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/WorkbenchApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/WorkbenchApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClassAndClazz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClazzFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClazzRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClazzState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/clazz/ClazzManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/TempProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/de/cherry/workbench/self/TempProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/clazz/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/clazz/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/clazz2file.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/clazz2file.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/clazzEditor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/clazzEditor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/erm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/erm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/interpreter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/interpreter/interpreter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/lib/icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/nav/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/nav/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/webapp/pages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/rivetsjs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/selectize/selectize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/selectize/selectizize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/system.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/aClazz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/action/builder.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/action/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/builder/builder.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/builder/builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/clazz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/clazz/aClazz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/clazz/clazz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/mapper/mapper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/mapper/mapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/mapping.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/meta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/model/model.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/model/model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/pattern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/util/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/util/interpreter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/workbench.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/webapp/workbench/workbench.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClazzManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ClazzManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/MasterClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/MasterClazz.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/model/ModelClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/model/ModelClazz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/model/ModelFinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/property/ProbertyClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/property/ProbertyClazz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/rest/HttpMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/rest/HttpMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/rest/RestClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/rest/RestClazz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/rest/RestFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/wo/WoClazz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/wo/WoFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/desinger/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/Dir.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/Dogsbody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/FileCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/Fileable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/Project.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/TxtFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/server/ApplicationServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/server/Pom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/server/ServerDogsbody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/AllClassProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/NotNullCheckAdderProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/NotNullProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/TemplateRemoverProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/getter/Getter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/getter/GetterProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/restify/Restify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/setter/Setter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/spoon/setter/SetterProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/start/MainRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/general/start/TempProject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/js/Js4Workbench.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/js/mapping/Attribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/js/mapping/JsBinding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/js/mapping/JsMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/MasterPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/PatternFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/PatternRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/Visualization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/crud/CrudFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/crud/CrudPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/erm/DataNet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/erm/Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/erm/ErmFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/erm/ErmPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/pattern/erm/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/explorer/ClassExplorer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/explorer/ClassWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/explorer/ExplorerRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/explorer/MethodeWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/explorer/TypeSaveObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/CallDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/Dog4Interpreter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/ExecutableWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/InterpreterRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/ParameterWO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/Uiable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/ValueContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/builder/DomainBuilderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/explorer/ClassExplorerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/explorer/InterpreterTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/general/DirTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/general/DirTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ui/UiClazz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/clazz/ui/UiClazz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/MainRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/MainRest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/TempProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/TempProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/CallDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/CallDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/ExecutableDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/ExecutableDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/MethodeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/MethodeDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/ParameterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/self/interpreter/dto/ParameterDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/system/clazz2file/Clazz2FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/system/clazz2file/Clazz2FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/system/clazzeditor/ClazzEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/classes/de/cherry/workbench/system/clazzeditor/ClazzEditor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/server/ServerDogsbodyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/start/MainRestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/system/impl/SystemRestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../target/test-classes/de/cherry/workbench/system/impl/SystemRestTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../workbench.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../workbench.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -219,15 +93,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/StudentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -240,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="450">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -250,10 +115,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-781" />
+            <state relative-caret-position="60">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineReturnTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/GroesserFiveFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestFromArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -277,6 +188,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Student</find>
@@ -290,11 +208,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/out/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/StreamTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTest1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestFromArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/GroesserFiveFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineReturnTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
@@ -306,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,15 +266,30 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.out.stream" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -402,10 +343,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="24" width="1280" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -413,11 +354,10 @@
       <window_info id="DB Browser" order="5" />
       <window_info id="Project Explorer" order="6" />
       <window_info id="Job Explorer" order="7" />
-      <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.46027398" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52996844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -430,13 +370,14 @@
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
       <window_info anchor="bottom" id="Console" order="15" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Docker" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -455,10 +396,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.2.RELEASE/spring-data-jpa-2.1.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="450">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/GroesserFiveFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestFromArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamTestParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -469,20 +448,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/StudentResource.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.1.2.RELEASE/spring-data-jpa-2.1.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/out/stream/StreamInlineReturnTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-781" />
+        <state relative-caret-position="135">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
       </provider>
     </entry>
   </component>
