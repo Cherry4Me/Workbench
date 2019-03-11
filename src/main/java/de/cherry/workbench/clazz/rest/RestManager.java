@@ -22,7 +22,7 @@ public class RestManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     RestClazz restClazz = new RestClazz();
     for (Object o : aClass.getMethods()) {
       CtMethod method = (CtMethod) o;

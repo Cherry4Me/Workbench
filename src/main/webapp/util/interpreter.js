@@ -1,4 +1,3 @@
-
 let oVal = jQuery.fn.val;
 jQuery.fn.val = function (a) {
     let value = oVal.apply(this, arguments);
@@ -20,7 +19,40 @@ const typeToHtmlMapping = {
     "java.lang.Integer": "<input class='w3-input w3-border' type='number'>",
     "boolean": "<input class='w3-check' type='checkbox'\>",
     "java.lang.Boolean": "<input class='w3-check' type='checkbox'\>",
-    "java.lang.String": "<input class='w3-input w3-border' type='text'\>"
+    "java.lang.String": "<input class='w3-input w3-border' type='text'\>",
+    "java.util.List": function (className, type, card, name, listvalue) {
+        $.ajax({
+            "url": "./listfield",
+            "method": "POST",
+            data: JSON.stringify({
+                className: className,
+                fieldName: name
+            }),
+            success: function (data) {
+                for (let i = 0; i < listvalue.length; i++) {
+                    const listElement = listvalue[i];
+                    let card2 = $("<div class='w3-panel w3-card w3-light-grey'>")
+                        .attr("className", className)
+                        .append($("<h3>").text(className));
+                    addFields(card2, className, data, listElement);
+                    card.append(
+                        $("<div>")
+                        .addClass("w3-container")
+                        .addClass("w3-margin")
+                        .addClass("field")
+                        .append(card2)
+                        .append(
+                            $("<label>")
+                            .text(name)));
+                }
+                window.parent.resizeIframe();
+
+
+            },
+            contentType: "application/json",
+            dataType: 'json'
+        });
+    }
 };
 
 
@@ -116,23 +148,26 @@ function getObject(className) {
     return object;
 }
 
-function addField(type, card, name, value) {
+function addField(className, type, card, name, value) {
     let htmlType = typeToHtmlMapping[type];
-    if (htmlType === undefined) {
-        console.warn(type + " kann noch nicht abgebildet werden.")
+    if (htmlType === undefined)
+        console.warn(type + " kann noch nicht abgebildet werden.");
+    if (typeof htmlType == "string") {
+        htmlType = $(htmlType).attr("name", name);
+        $(htmlType).val(value);
+        card.append(
+            $("<div>")
+            .addClass("w3-container")
+            .addClass("w3-margin")
+            .addClass("field")
+            .append(htmlType)
+            .append(
+                $("<label>")
+                .text(name)));
     }
-
-    htmlType = $(htmlType).attr("name", name);
-    $(htmlType).val(value);
-    card.append(
-        $("<div>")
-        .addClass("w3-container")
-        .addClass("w3-margin")
-        .addClass("field")
-        .append(htmlType)
-        .append(
-            $("<label>")
-            .text(name)));
+    if (typeof htmlType == "function") {
+        htmlType = htmlType(className, type, card, name, value);
+    }
 }
 
 function addFields(card, className, structure, data) {
@@ -141,10 +176,11 @@ function addFields(card, className, structure, data) {
         for (let name in structure) {
             let type = structure[name];
             let value = data === undefined ? undefined : data[name];
-            addField(type, card, name, value);
+            console.log(type)
+            addField(className, type, card, name, value);
         }
     else {
-        addField(className, card, "value", data);
+        addField(className, className, card, "value", data);
     }
 }
 

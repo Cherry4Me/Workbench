@@ -1,6 +1,6 @@
 package de.cherry.workbench.clazz;
 
-import de.cherry.workbench.self.TempProject;
+import de.cherry.workbench.TempProject;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtElement;
@@ -21,9 +21,9 @@ public interface ClazzManager {
 
   String getClazzName();
 
-  default MasterClazz createClazz(File f) {
+  default MasterClazz readClazz(File f) {
     try {
-      MasterClazz clazz = createClazz(project.getCtClass(f));
+      MasterClazz clazz = readClazz(project.getCtClass(f));
       clazz.setFile(f);
       return clazz;
     } catch (ClassNotFoundException e) {
@@ -31,11 +31,15 @@ public interface ClazzManager {
     }
   }
 
+  default void writeClazz(MasterClazz clazz){
 
-  MasterClazz createClazz(CtClass aClass);
+  }
+
+
+  MasterClazz readClazz(CtClass aClass);
 
   default boolean detect(File f) {
-    CtClass aClass = null;
+    CtClass aClass;
     try {
       aClass = project.getCtClass(f);
     } catch (ClassNotFoundException e) {

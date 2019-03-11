@@ -18,7 +18,7 @@ public class UiManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(File f) {
+  public MasterClazz readClazz(File f) {
     String html = null;
     try {
       String absolutePath = f.getAbsolutePath();
@@ -33,7 +33,7 @@ public class UiManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     throw new RuntimeException("Can't create from Java-Class");
   }
 

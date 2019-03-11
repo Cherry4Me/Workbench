@@ -2,18 +2,39 @@ package de.cherry.workbench.self.interpreter.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.cherry.workbench.self.interpreter.Interpreter;
-import de.cherry.workbench.self.interpreter.dto.CallDTO;
-import de.cherry.workbench.self.interpreter.dto.ExecutableDTO;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import de.cherry.workbench.self.interpreter.dto.*;
 import org.apache.commons.lang3.ClassUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 @RestController
 public class InterpreterRest {
+
+  @PostMapping("field")
+  public HashMap<String, String> getField(@RequestBody ClassAndField classAndField) throws ClassNotFoundException, NoSuchFieldException {
+    Class<?> aClass = Class.forName(classAndField.className);
+    Field field = aClass.getField(classAndField.fieldName);
+    return getStruckture(field.getType().getName());
+  }
+
+  @PostMapping("listfield")
+  public HashMap<String, String> getListField(@RequestBody ClassAndField classAndField) throws ClassNotFoundException, NoSuchFieldException {
+    Class<?> aClass = Class.forName(classAndField.className);
+    Field field = aClass.getField(classAndField.fieldName);
+    Type genericType = field.getGenericType();
+    if (ParameterizedType.class.isAssignableFrom(genericType.getClass())){
+      ParameterizedType parameterizedType = (ParameterizedType) genericType;
+      return getStruckture(((Class<?>) parameterizedType.getActualTypeArguments()[0]).getName());
+    }
+    throw new RuntimeException("test");
+  }
 
 
   @PostMapping("/getCtClass")

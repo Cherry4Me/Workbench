@@ -1,9 +1,9 @@
 package de.cherry.workbench.system.impl;
 
 import de.cherry.workbench.clazz.impl.ClassAndClazz;
-import de.cherry.workbench.self.TempProject;
+import de.cherry.workbench.TempProject;
 import de.cherry.workbench.system.MasterSystem;
-import de.cherry.workbench.system.clazzeditor.ClazzEditor;
+import de.cherry.workbench.pattern.clazzeditor.ClazzEditor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -23,24 +23,24 @@ public class SystemRest {
   }
 
   @GetMapping("/getSystems/{clazz}")
-  public List<SystemDTO> getSystems(@PathVariable("clazz") String clazz) {
-    return project.systemManagers
+  public List<Link> getSystems(@PathVariable("clazz") String clazz) {
+    return project.patternManagers
         .stream()
-        .filter(systemFinder -> {
-          if (systemFinder.getName().equals(new ClazzEditor().getName())) {
+        .filter(patternManager -> {
+          if (patternManager.getName().equals(new ClazzEditor().getName())) {
             return true;
           }
-          return systemFinder.isItTheRightOneFor(clazz);
+          return patternManager.isPatternStartableForClazz(clazz);
         })
-        .map(SystemDTO::from)
+        .map(Link::from)
         .collect(Collectors.toList());
   }
 
   @GetMapping("/getSystems")
-  public List<SystemDTO> getSystems() {
+  public List<Link> getSystems() {
     return project.systemManagers
         .stream()
-        .map(SystemDTO::from)
+        .map(Link::from)
         .collect(Collectors.toList());
   }
 

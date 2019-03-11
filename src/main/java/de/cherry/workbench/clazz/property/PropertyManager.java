@@ -13,7 +13,7 @@ public class PropertyManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     ProbertyClazz probertyClazz = new ProbertyClazz();
     for (Object o : aClass.getFields()) {
       CtField field = (CtField) o;

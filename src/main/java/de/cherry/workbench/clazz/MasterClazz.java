@@ -8,5 +8,4 @@ public interface MasterClazz {
 
   void setFile(File f);
 
-  void save();
 }

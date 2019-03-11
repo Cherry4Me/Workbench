@@ -9,7 +9,7 @@ public class SystemRestTest {
   @Test
   public void getSystems() {
 
-    List<SystemDTO> ui = new SystemRest().getSystems("Ui");
+    List<Link> ui = new SystemRest().getSystems("Ui");
     System.out.println(ui);
   }
 }

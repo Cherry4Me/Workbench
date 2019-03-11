@@ -26,8 +26,4 @@ public class UiClazz implements MasterClazz {
     this.file = f.getAbsolutePath();
   }
 
-  @Override
-  public void save() {
-
-  }
 }

@@ -11,7 +11,7 @@ public class MapperManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     return null;
   }
 

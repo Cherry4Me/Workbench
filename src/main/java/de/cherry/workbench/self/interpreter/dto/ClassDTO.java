@@ -14,6 +14,14 @@ public class ClassDTO {
     this.name = name;
   }
 
+  public static List<ClassDTO> from(List<Class<?>> classes) {
+    ArrayList<ClassDTO> classDTOS = new ArrayList<>();
+    for (Class aClass : classes) {
+      classDTOS.add(new ClassDTO(aClass.getName()));
+    }
+    return classDTOS;
+  }
+
   public static List<ClassDTO> from(Set<Class<?>> classes) {
     ArrayList<ClassDTO> classDTOS = new ArrayList<>();
     for (Class aClass : classes) {

@@ -1,16 +1,18 @@
 package de.cherry.workbench.self.interpreter.rest;
 
+import de.cherry.workbench.clazz.impl.ClassAndClazz;
 import de.cherry.workbench.self.interpreter.ClassExplorer;
+import de.cherry.workbench.self.interpreter.dto.ClassAndField;
 import de.cherry.workbench.self.interpreter.dto.ClassDTO;
 import de.cherry.workbench.self.interpreter.dto.MethodeDTO;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.*;
 
 @RestController
 public class ExplorerRest {

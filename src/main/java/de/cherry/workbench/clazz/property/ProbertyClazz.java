@@ -20,8 +20,4 @@ public class ProbertyClazz implements MasterClazz {
     this.file = f.getAbsolutePath();
   }
 
-  @Override
-  public void save() {
-
-  }
 }

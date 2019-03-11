@@ -13,7 +13,7 @@ public class ModelManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     ModelClazz modelClazz = new ModelClazz();
     for (Object field : aClass.getFields()) {
       CtField ctField = (CtField) field;

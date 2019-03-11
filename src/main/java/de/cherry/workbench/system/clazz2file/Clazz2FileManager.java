@@ -3,7 +3,7 @@ package de.cherry.workbench.system.clazz2file;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.clazz.impl.ClassAndClazz;
-import de.cherry.workbench.self.TempProject;
+import de.cherry.workbench.TempProject;
 import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
 import de.cherry.workbench.system.SystemManager;
 import org.jetbrains.annotations.NotNull;
@@ -74,7 +74,7 @@ public class Clazz2FileManager implements SystemManager {
   public TypeSaveObject getState(@RequestBody ClassAndClazz classAndClazz) {
     ClazzManager finder = getClazzFinder(classAndClazz);
     CtClass aClass = project.as.findClass(classAndClazz.aClass);
-    MasterClazz clazz = finder.createClazz(aClass);
+    MasterClazz clazz = finder.readClazz(aClass);
     return new TypeSaveObject(clazz);
   }
 

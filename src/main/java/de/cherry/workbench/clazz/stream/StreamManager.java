@@ -24,7 +24,7 @@ public class StreamManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz createClazz(CtClass aClass) {
+  public MasterClazz readClazz(CtClass aClass) {
     StreamClazz streamClazz = new StreamClazz();
     for (Object o : aClass.getMethods()) {
       CtMethodImpl method = (CtMethodImpl) o;
@@ -81,7 +81,7 @@ public class StreamManager implements ClazzManager {
 
   @Override
   public boolean detect(CtClass aClass) {
-    StreamClazz clazz = (StreamClazz) createClazz(aClass);
+    StreamClazz clazz = (StreamClazz) readClazz(aClass);
     return !clazz.calls.isEmpty();
   }
 }

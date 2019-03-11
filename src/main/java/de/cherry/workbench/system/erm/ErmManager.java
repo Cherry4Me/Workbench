@@ -3,7 +3,7 @@ package de.cherry.workbench.system.erm;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
-import de.cherry.workbench.self.TempProject;
+import de.cherry.workbench.TempProject;
 import de.cherry.workbench.system.SystemManager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
