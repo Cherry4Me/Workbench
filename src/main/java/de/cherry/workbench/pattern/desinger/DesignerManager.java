@@ -1,21 +1,18 @@
 package de.cherry.workbench.pattern.desinger;
 
 import de.cherry.workbench.TempProject;
-import de.cherry.workbench.clazz.ui.UiClazz;
 import de.cherry.workbench.clazz.ui.UiManager;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
 import de.cherry.workbench.self.file.Dir;
 import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
-import de.cherry.workbench.system.SystemManager;
-import de.cherry.workbench.pattern.js.mapping.JsBinding;
-import de.cherry.workbench.pattern.js.mapping.JsMapping;
+import de.cherry.workbench.self.js.mapping.JsBinding;
+import de.cherry.workbench.self.js.mapping.JsMapping;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

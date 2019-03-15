@@ -193,6 +193,30 @@ function buildUi($toInsert, className, data) {
     });
 }
 
+function addRow($toInsert, data){
+    var fields =  $toInsert.children().first().children();
+    var row = $("<tr>");
+    for (let i = 0; i < fields.length; i++) {
+        const field = $(fields[i]);
+        row.append($("<td>").text(data[field.attr("name")]));
+    }
+    $toInsert.append(row);
+}
+
+function buildTable($toInsert, className, callback){
+    getCtClass(className, function(structure){
+        var headerRow = $("<tr>");
+        for (const field in structure) {
+            if (structure.hasOwnProperty(field)) {
+                const fieldType = structure[field];
+                headerRow.append($("<th>").attr("name", field).text(field))
+            }
+        }
+        $toInsert.append(headerRow);
+        callback($toInsert, structure)
+    })
+}
+
 
 function getCtClass(className, callback) {
     $.ajax({

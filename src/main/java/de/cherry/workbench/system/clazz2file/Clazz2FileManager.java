@@ -1,9 +1,9 @@
 package de.cherry.workbench.system.clazz2file;
 
+import de.cherry.workbench.TempProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.clazz.impl.ClassAndClazz;
-import de.cherry.workbench.TempProject;
 import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
 import de.cherry.workbench.system.SystemManager;
 import org.jetbrains.annotations.NotNull;
@@ -17,6 +17,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import static de.cherry.workbench.TempProject.walk;
 
 @RestController
 public class Clazz2FileManager implements SystemManager {
@@ -41,7 +43,8 @@ public class Clazz2FileManager implements SystemManager {
     Clazz2FileDTO clazz2FileDTO = new Clazz2FileDTO(base);
     walk(
         base,
-        clazz2FileDTO
+        clazz2FileDTO,
+        (inner, f) -> inner.clazzes.addAll(getClazzes(f, project))
     );
 
     return clazz2FileDTO;
@@ -74,7 +77,7 @@ public class Clazz2FileManager implements SystemManager {
   public TypeSaveObject getState(@RequestBody ClassAndClazz classAndClazz) {
     ClazzManager finder = getClazzFinder(classAndClazz);
     CtClass aClass = project.as.findClass(classAndClazz.aClass);
-    MasterClazz clazz = finder.readClazz(aClass);
+    MasterClazz clazz = finder.readClazz(aClass).get(0);
     return new TypeSaveObject(clazz);
   }
 
@@ -87,27 +90,6 @@ public class Clazz2FileManager implements SystemManager {
       }
     }
     throw new IllegalArgumentException();
-  }
-
-
-  public void walk(String path, Clazz2FileDTO clazz2FileDTO) {
-    File root = new File(path);
-    File[] list = root.listFiles();
-    if (list == null)
-      return;
-    for (File f : list)
-      if (!f.getName().startsWith(".")) {
-        Clazz2FileDTO inner = new Clazz2FileDTO(f.getName());
-        if (f.isDirectory()) {
-          if (!f.getName().equals("target")) {
-            walk(f.getAbsolutePath()
-                , inner);
-          }
-        } else {
-          inner.clazzes.addAll(getClazzes(f, project));
-        }
-        clazz2FileDTO.inner.add(inner);
-      }
   }
 
   private List<String> getClazzes(File f, TempProject project) {

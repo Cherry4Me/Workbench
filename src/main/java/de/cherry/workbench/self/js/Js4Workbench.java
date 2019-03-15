@@ -1,4 +1,4 @@
-package de.cherry.workbench.pattern.js;
+package de.cherry.workbench.self.js;
 
 import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
@@ -8,7 +8,7 @@ import com.shapesecurity.shift.ast.*;
 import com.shapesecurity.shift.codegen.CodeGen;
 import com.shapesecurity.shift.parser.JsError;
 import com.shapesecurity.shift.parser.Parser;
-import de.cherry.workbench.pattern.js.mapping.JsBinding;
+import de.cherry.workbench.self.js.mapping.JsBinding;
 
 import java.io.IOException;
 import java.lang.Class;

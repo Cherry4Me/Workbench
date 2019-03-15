@@ -1,6 +1,6 @@
-package de.cherry.workbench.pattern.js.mapping;
+package de.cherry.workbench.self.js.mapping;
 
-import de.cherry.workbench.pattern.js.Js4Workbench;
+import de.cherry.workbench.self.js.Js4Workbench;
 
 import java.io.File;
 import java.nio.file.Files;

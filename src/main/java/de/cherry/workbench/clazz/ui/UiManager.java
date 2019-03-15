@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 
 public class UiManager implements ClazzManager {
   @Override
@@ -18,7 +20,7 @@ public class UiManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz readClazz(File f) {
+  public List<MasterClazz> readClazz(File f) {
     String html = null;
     try {
       String absolutePath = f.getAbsolutePath();
@@ -26,14 +28,14 @@ public class UiManager implements ClazzManager {
       Document document = Jsoup.parse(html);
       String title = document.title();
       String bodyText = document.body().html();
-      return new UiClazz(title, bodyText, absolutePath);
+      return Arrays.asList(new UiClazz(title, bodyText, absolutePath));
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
   }
 
   @Override
-  public MasterClazz readClazz(CtClass aClass) {
+  public List<MasterClazz> readClazz(CtClass aClass) {
     throw new RuntimeException("Can't create from Java-Class");
   }
 

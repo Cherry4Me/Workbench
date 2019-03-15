@@ -5,6 +5,9 @@ import de.cherry.workbench.clazz.MasterClazz;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ModelManager implements ClazzManager {
 
   @Override
@@ -13,14 +16,14 @@ public class ModelManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz readClazz(CtClass aClass) {
+  public List<MasterClazz> readClazz(CtClass aClass) {
     ModelClazz modelClazz = new ModelClazz();
     for (Object field : aClass.getFields()) {
       CtField ctField = (CtField) field;
       if (!ctField.isStatic())
         modelClazz.fields.put(ctField.getSimpleName(), ctField.getType().getQualifiedName());
     }
-    return modelClazz;
+    return Arrays.asList(modelClazz);
   }
 
   @Override

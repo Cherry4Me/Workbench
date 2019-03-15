@@ -6,6 +6,9 @@ import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 import spoon.reflect.declaration.CtMethod;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class PropertyManager implements ClazzManager {
   @Override
   public String getClazzName() {
@@ -13,7 +16,7 @@ public class PropertyManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz readClazz(CtClass aClass) {
+  public List<MasterClazz> readClazz(CtClass aClass) {
     ProbertyClazz probertyClazz = new ProbertyClazz();
     for (Object o : aClass.getFields()) {
       CtField field = (CtField) o;
@@ -23,7 +26,7 @@ public class PropertyManager implements ClazzManager {
       probertyClazz.fields.put(fieldName
           , new GetterAndSetter(getter != null, setter != null));
     }
-    return probertyClazz;
+    return Arrays.asList(probertyClazz);
   }
 
   private String setterName(String fieldName) {

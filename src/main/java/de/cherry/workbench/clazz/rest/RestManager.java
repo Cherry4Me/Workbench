@@ -22,8 +22,9 @@ public class RestManager implements ClazzManager {
   }
 
   @Override
-  public MasterClazz readClazz(CtClass aClass) {
-    RestClazz restClazz = new RestClazz();
+  public List<? extends MasterClazz> readClazz(CtClass aClass) {
+    List<RestClazz> restClazzes = new ArrayList<>();
+    if (aClass == null) return restClazzes;
     for (Object o : aClass.getMethods()) {
       CtMethod method = (CtMethod) o;
       String methodName = method.getSimpleName();
@@ -58,9 +59,9 @@ public class RestManager implements ClazzManager {
           }
         }
       }
-      restClazz.services.add(new Service(methodName, httpMethode, uri, requestBody, requestParams, pathVariables));
+      restClazzes.add(new RestClazz(methodName, httpMethode, uri, requestBody, requestParams, pathVariables));
     }
-    return restClazz;
+    return restClazzes;
   }
 
   @Override

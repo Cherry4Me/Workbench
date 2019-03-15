@@ -1,4 +1,4 @@
-package de.cherry.workbench.pattern.js.mapping;
+package de.cherry.workbench.self.js.mapping;
 
 import org.jsoup.nodes.Node;
 

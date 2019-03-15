@@ -10,8 +10,10 @@ import spoon.support.reflect.code.CtInvocationImpl;
 import spoon.support.reflect.code.CtLambdaImpl;
 import spoon.support.reflect.code.CtLocalVariableImpl;
 import spoon.support.reflect.code.CtReturnImpl;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,36 +23,37 @@ public interface ClazzManager {
 
   String getClazzName();
 
-  default MasterClazz readClazz(File f) {
-    try {
-      MasterClazz clazz = readClazz(project.getCtClass(f));
-      clazz.setFile(f);
-      return clazz;
-    } catch (ClassNotFoundException e) {
-      throw new RuntimeException(e);
+  default List<? extends MasterClazz> readClazz(File f) {
+    CtClass aClass = project.getCtClass(f);
+    if (aClass == null)
+      return new ArrayList<>();
+    List<? extends MasterClazz> masterClazzes = readClazz(aClass);
+    if (masterClazzes == null)
+      return new ArrayList<>();
+    for (MasterClazz readClazz : masterClazzes) {
+      readClazz.setFile(f);
     }
+    return masterClazzes;
   }
 
-  default void writeClazz(MasterClazz clazz){
-
+  default void writeClazz(MasterClazz clazz) {
+    throw new NotImplementedException();
   }
 
-
-  MasterClazz readClazz(CtClass aClass);
+  List<? extends MasterClazz> readClazz(CtClass aClass);
 
   default boolean detect(File f) {
-    CtClass aClass;
-    try {
-      aClass = project.getCtClass(f);
-    } catch (ClassNotFoundException e) {
-      return false;
-    }
-    if (aClass == null) return false;
-    return detect(aClass);
+    CtClass aClass = project.getCtClass(f);
+    if (aClass != null)
+      return detect(aClass);
+    List<? extends MasterClazz> masterClazzes = readClazz(f);
+    return masterClazzes != null && masterClazzes.size() > 0;
   }
 
-
-  boolean detect(CtClass aClass);
+  default boolean detect(CtClass aClass) {
+    List<? extends MasterClazz> masterClazzes = readClazz(aClass);
+    return masterClazzes != null && masterClazzes.size() > 0;
+  }
 
   default boolean implementsOrLamda(CtClass aClass, String interfaceName) {
     for (CtTypeReference<?> superInterface : aClass.getSuperInterfaces()) {

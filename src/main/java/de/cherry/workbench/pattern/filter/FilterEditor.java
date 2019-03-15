@@ -32,7 +32,7 @@ public class FilterEditor implements PatternManager {
     File file = new File(project.as.location.getAbsolutePath() + className.file);
     for (ClazzManager clazzManager : project.clazzManagers) {
       if (clazzManager.getClazzName().equals(className.clazz)) {
-        MasterClazz clazz = clazzManager.readClazz(file);
+        MasterClazz clazz = clazzManager.readClazz(file).get(0);
         return new TypeSaveObject(clazz);
       }
     }
