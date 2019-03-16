@@ -96,7 +96,10 @@ public class Clazz2FileManager implements SystemManager {
     ArrayList<String> clazzes = new ArrayList<>();
     for (ClazzManager finder : project.clazzManagers) {
       if (finder.detect(f)) {
-        clazzes.add(finder.getClazzName());
+        List<? extends MasterClazz> masterClazzes = finder.readClazz(f);
+        for (int i = 0; i < masterClazzes.size(); i++) {
+          clazzes.add(finder.getClazzName());
+        }
       }
     }
     return clazzes;

@@ -28,7 +28,7 @@ public class AjaxManager implements ClazzManager {
   public List<? extends MasterClazz> readClazz(File f) {
     ArrayList<AjaxClazz> ajaxClazzes = new ArrayList<>();
     String name = f.getName();
-    if (!name.endsWith(".js") && !name.endsWith(".html"))
+    if (!name.endsWith(".js") /*&& !name.endsWith(".html")*/)
       return null;
     Script script = getScript(f);
     HashMap<Class, Consumer<Object>> listener = new HashMap<>();
@@ -59,6 +59,7 @@ public class AjaxManager implements ClazzManager {
             }
           }
         }
+        ajaxClazz.setFile(f);
         ajaxClazzes.add(ajaxClazz);
       }
     });

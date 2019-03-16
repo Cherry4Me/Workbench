@@ -2054,7 +2054,7 @@
 	
 				if (inputMode === 'single') self.clear();
 				if (inputMode === 'multi' && self.isFull()) return;
-				if (!(is_create && self.settings.enableCreateDuplicate) && self.items.indexOf(value) !== -1) return;
+				if (!(is_create && self.settings.enableCreateDuplicate) && self.items.indexOf(value) !== -1&& !self.settings.enableDuplicate) return;
 				if (!self.options.hasOwnProperty(value)) return;
 	
 				$item = $(self.render('item', self.options[value]));

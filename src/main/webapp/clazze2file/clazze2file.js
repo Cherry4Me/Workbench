@@ -102,21 +102,28 @@ function build(res, elem, clazzes) {
 function addclazzes(theselected, felem, clazzes) {
     var clazzelem = $('<input type="text" class="input-tags">');
     felem.append(clazzelem);
+    var theSelectedPritty = [];
+    for (let i = 0; i < theselected.length; i++) {
+        const clazz = theselected[i];
+        theSelectedPritty[i] = {
+            clazzName: clazz
+        };
+    }
     clazzelem
         .selectize({
-            persist: false,
-            createOnBlur: true,
             items: theselected,
             create: false,
-            maxItems: null,
+            mode: "multi",
             duplicates: true,
+            enableDuplicate: true,
             enableCreateDuplicate: true,
             hideSelected: false,
             valueField: 'clazzName',
             labelField: 'clazzName',
             searchField: 'clazzName',
             options: clazzes
-        }).on('change', function () {
+        })
+        .on('change', function () {
             $(".item").hashColored();
         });
 
