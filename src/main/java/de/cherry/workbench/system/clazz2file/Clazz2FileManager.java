@@ -1,10 +1,12 @@
 package de.cherry.workbench.system.clazz2file;
 
-import de.cherry.workbench.TempProject;
+import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
-import de.cherry.workbench.clazz.impl.ClassAndClazz;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import de.cherry.workbench.meta.That;
+import de.cherry.workbench.meta.clazz.ClassAndClazz;
+import de.cherry.workbench.meta.file.FileTool;
+import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import de.cherry.workbench.system.SystemManager;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,12 +20,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static de.cherry.workbench.TempProject.walk;
 
 @RestController
 public class Clazz2FileManager implements SystemManager {
 
-  TempProject project = TempProject.getInstance();
+  CurrentProject project = CurrentProject.getInstance();
 
 
   @Override
@@ -39,9 +40,9 @@ public class Clazz2FileManager implements SystemManager {
 
   @GetMapping("clazzes4files")
   public Clazz2FileDTO getModel() {
-    String base = project.as.location.getAbsolutePath();
+    String base = That.getInstance().domain.current.path;
     Clazz2FileDTO clazz2FileDTO = new Clazz2FileDTO(base);
-    walk(
+    FileTool.walk(
         base,
         clazz2FileDTO,
         (inner, f) -> inner.clazzes.addAll(getClazzes(f, project))
@@ -52,16 +53,14 @@ public class Clazz2FileManager implements SystemManager {
 
   @GetMapping("clazz")
   public HashMap<String, List<String>> getClazz() {
-    List<CtClass> classes = project.as.allSpoonClasses.getClasses();
+    List<CtClass> classes = project.j.allSpoonClasses.getClasses();
     HashMap<String, List<String>> clazz4class = new HashMap<>();
     for (CtClass aClass : classes) {
       clazz4class.put(aClass.getQualifiedName(), new ArrayList<>());
       for (ClazzManager finder : project.clazzManagers) {
-        if (finder.detect(aClass)) {
-          List<String> clazzes = clazz4class.get(aClass.getQualifiedName());
-          clazzes.add(finder.getClazzName());
-          clazz4class.put(aClass.getQualifiedName(), clazzes);
-        }
+        List<String> clazzes = clazz4class.get(aClass.getQualifiedName());
+        clazzes.add(finder.getClazzName());
+        clazz4class.put(aClass.getQualifiedName(), clazzes);
       }
     }
     return clazz4class;
@@ -76,8 +75,8 @@ public class Clazz2FileManager implements SystemManager {
   @PostMapping("/getState")
   public TypeSaveObject getState(@RequestBody ClassAndClazz classAndClazz) {
     ClazzManager finder = getClazzFinder(classAndClazz);
-    CtClass aClass = project.as.findClass(classAndClazz.aClass);
-    MasterClazz clazz = finder.readClazz(aClass).get(0);
+    File aClassFile = project.j.findFile(classAndClazz.aClass);
+    MasterClazz clazz = finder.readClazz(aClassFile).get(0);
     return new TypeSaveObject(clazz);
   }
 
@@ -92,15 +91,14 @@ public class Clazz2FileManager implements SystemManager {
     throw new IllegalArgumentException();
   }
 
-  private List<String> getClazzes(File f, TempProject project) {
+  private List<String> getClazzes(File f, CurrentProject project) {
     ArrayList<String> clazzes = new ArrayList<>();
     for (ClazzManager finder : project.clazzManagers) {
-      if (finder.detect(f)) {
-        List<? extends MasterClazz> masterClazzes = finder.readClazz(f);
+      List<? extends MasterClazz> masterClazzes = finder.readClazz(f);
+      if (masterClazzes != null)
         for (int i = 0; i < masterClazzes.size(); i++) {
           clazzes.add(finder.getClazzName());
         }
-      }
     }
     return clazzes;
   }

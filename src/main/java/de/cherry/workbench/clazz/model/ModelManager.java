@@ -2,9 +2,12 @@ package de.cherry.workbench.clazz.model;
 
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
+import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.java.JTool;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +19,12 @@ public class ModelManager implements ClazzManager {
   }
 
   @Override
-  public List<MasterClazz> readClazz(CtClass aClass) {
+  public List<? extends MasterClazz> readClazz(File f) {
+    JTool j = CurrentProject.getInstance().j;
+    CtClass aClass = j.getCtClass(f);
+    if (aClass == null)
+      return null;
+    if (!detect(aClass)) return null;
     ModelClazz modelClazz = new ModelClazz();
     for (Object field : aClass.getFields()) {
       CtField ctField = (CtField) field;
@@ -26,7 +34,6 @@ public class ModelManager implements ClazzManager {
     return Arrays.asList(modelClazz);
   }
 
-  @Override
   public boolean detect(CtClass aClass) {
     if (aClass == null) return false;
     for (String part : aClass.getQualifiedName().split("\\.")) {

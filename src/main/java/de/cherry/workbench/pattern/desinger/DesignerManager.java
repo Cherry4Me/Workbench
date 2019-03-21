@@ -1,19 +1,16 @@
 package de.cherry.workbench.pattern.desinger;
 
-import de.cherry.workbench.TempProject;
+import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ui.UiManager;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
-import de.cherry.workbench.self.file.Dir;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
-import de.cherry.workbench.self.js.mapping.JsBinding;
-import de.cherry.workbench.self.js.mapping.JsMapping;
+import de.cherry.workbench.meta.file.Dir;
+import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,12 +21,12 @@ import java.util.stream.Collectors;
 @RestController
 public class DesignerManager implements PatternManager {
 
-  TempProject project = TempProject.getInstance();
+  CurrentProject project = CurrentProject.getInstance();
 
 
   @GetMapping("pages")
   public List<String> getPages() throws IOException {
-    Dir web = project.as.webDir.get();
+    Dir web = project.js.webDir;
     List<String> pathList = Files.walk(Paths.get(web.getFile().getAbsolutePath()))
         .filter(Files::isRegularFile)
         .filter((path -> "html".equals(FilenameUtils.getExtension(path.toString()))))
@@ -38,21 +35,9 @@ public class DesignerManager implements PatternManager {
     return pathList;
   }
 
-  @GetMapping("mapping")
-  public JsBinding getMapping(@RequestParam("page") String page) throws Exception {
-    File web = project.as.webDir.get().getFile();
-    String pageFile = web.toString() + page;
-    String html = new String(Files.readAllBytes(Paths.get(pageFile)));
-    Document document = Jsoup.parse(html);
-    JsMapping jsMapping = new JsMapping();
-    JsMapping.getMapping(document.childNodes(), jsMapping);
-    return JsBinding.create(jsMapping, web);
-  }
-
-
   @GetMapping("page")
   public String getPage(@RequestParam("page") String page) throws IOException {
-    Dir web = project.as.webDir.get();
+    Dir web = project.js.webDir;
     String pageFile = web.getFile().toString() + page;
     String html = new String(Files.readAllBytes(Paths.get(pageFile)));
     Document document = Jsoup.parse(html);
@@ -63,7 +48,7 @@ public class DesignerManager implements PatternManager {
   @PostMapping("page")
   public void savePage(@RequestParam("page") String pageUrl
       , @RequestBody Page page) throws IOException {
-    Dir web = project.as.webDir.get();
+    Dir web = project.js.webDir;
     String pageFile = web.getFile().toString() + pageUrl;
     Path path = Paths.get(pageFile);
     String html = new String(Files.readAllBytes(path));

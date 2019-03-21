@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link href="lib/w3.css" rel="stylesheet">
+  <link href="lib/w3-theme-blue.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="lib/jquery.js"></script>
+  <style>
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: calc(25% - 8px);
+      cursor: pointer;
+      margin: 0 4px;
+      margin-bottom: 5px;
+    }
+
+    .row {
+      margin: 0 -5px;
+    }
+
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+    }
+
+    .fa {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="content">
+    <span class="w3-xxlarge w3-margin">Projects</span>
+    <button class="w3-button w3-round-xxlarge w3-green">
+      <i class="fa fa-plus" style="font-size:24px"></i></button>
+    <br>
+    <br>
+  </div>
+
+  <script src="./projects/projects.js"></script>
+
+</body>
+
+</html>

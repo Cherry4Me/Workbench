@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on("ready", function(){
     var test = "hallo";
     $.ajax({
         type: 'GET',

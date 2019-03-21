@@ -1,7 +1,7 @@
 package de.cherry.workbench.general;
 
-import de.cherry.workbench.self.file.Dir;
-import de.cherry.workbench.self.file.TxtFile;
+import de.cherry.workbench.meta.file.Dir;
+import de.cherry.workbench.meta.file.TxtFile;
 import org.junit.Test;
 
 import java.io.IOException;

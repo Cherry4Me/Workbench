@@ -1,6 +1,6 @@
 package de.cherry.workbench.explorer;
 
-import de.cherry.workbench.self.interpreter.ClassExplorer;
+import de.cherry.workbench.meta.interpreter.ClassExplorer;
 import org.junit.Test;
 import org.reflections.Reflections;
 import org.reflections.scanners.ResourcesScanner;

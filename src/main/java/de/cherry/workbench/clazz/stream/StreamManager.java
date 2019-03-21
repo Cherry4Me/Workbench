@@ -2,6 +2,8 @@ package de.cherry.workbench.clazz.stream;
 
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
+import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.java.JTool;
 import spoon.reflect.code.CtStatement;
 import spoon.reflect.cu.SourcePosition;
 import spoon.reflect.declaration.CtClass;
@@ -12,6 +14,7 @@ import spoon.support.reflect.code.CtReturnImpl;
 import spoon.support.reflect.code.CtVariableReadImpl;
 import spoon.support.reflect.declaration.CtMethodImpl;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -24,7 +27,11 @@ public class StreamManager implements ClazzManager {
   }
 
   @Override
-  public List<MasterClazz> readClazz(CtClass aClass) {
+  public List<? extends MasterClazz> readClazz(File f) {
+    JTool j = CurrentProject.getInstance().j;
+    CtClass aClass = j.getCtClass(f);
+    if (aClass == null)
+      return null;
     StreamClazz streamClazz = new StreamClazz();
     for (Object o : aClass.getMethods()) {
       CtMethodImpl method = (CtMethodImpl) o;
@@ -45,6 +52,7 @@ public class StreamManager implements ClazzManager {
         }
       }
     }
+    if (streamClazz.calls.isEmpty()) return null;
     return Arrays.asList(streamClazz);
   }
 
@@ -77,11 +85,5 @@ public class StreamManager implements ClazzManager {
       return calls;
     else
       return null;
-  }
-
-  @Override
-  public boolean detect(CtClass aClass) {
-    StreamClazz clazz = (StreamClazz) readClazz(aClass).get(0);
-    return !clazz.calls.isEmpty();
   }
 }

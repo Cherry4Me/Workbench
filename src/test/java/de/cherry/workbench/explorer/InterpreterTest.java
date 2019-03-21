@@ -1,7 +1,7 @@
 package de.cherry.workbench.explorer;
 
-import de.cherry.workbench.self.interpreter.Interpreter;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import de.cherry.workbench.meta.interpreter.Interpreter;
+import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import org.junit.Test;
 
 import java.lang.reflect.Executable;

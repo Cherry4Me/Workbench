@@ -1,0 +1,15 @@
+!!de.cherry.workbench.meta.domain.MyDomain
+firstName: "John"
+lastName: "Doe"
+age: 20
+current:
+    name: "out"
+    group: "com.example.out"
+    path: "/Users/mbaaxur/Documents/gits/WorkbenchCherry/out"
+projects:
+  - name: "out"
+    group: "com.example.out"
+    path: "/Users/mbaaxur/Documents/gits/WorkbenchCherry/out"
+  - name: "out2"
+    group: "com.example.out2"
+    path: "/Users/mbaaxur/Documents/gits/WorkbenchCherry/out"

@@ -2,7 +2,7 @@ package de.cherry.workbench.pattern.comperator;
 
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 
 public class ComperatorEditor implements PatternManager {
   @Override

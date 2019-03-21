@@ -6,7 +6,7 @@ import de.cherry.workbench.clazz.dynamic.DynamicManager;
 import de.cherry.workbench.clazz.event.EventManager;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
-import de.cherry.workbench.self.interpreter.dto.TypeSaveObject;
+import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;

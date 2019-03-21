@@ -1,8 +1,9 @@
 package de.cherry.workbench.server;
 
 import com.squareup.javapoet.*;
-import de.cherry.workbench.self.server.ApplicationServer;
-import de.cherry.workbench.self.server.Project;
+import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.That;
+import de.cherry.workbench.meta.java.JTool;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,7 +13,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import spoon.reflect.declaration.CtClass;
 
 import javax.lang.model.element.Modifier;
-import java.io.File;
 import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
@@ -22,9 +22,10 @@ public class ServerDogsbodyTest {
 
   @Test
   public void create() throws Exception {
-    File out = new File("/Users/mbaaxur/Documents/gits/WorkbenchCherry/out");
-    ApplicationServer as = ApplicationServer.create(out, new Project("com.example.out", "out"));
-    CtClass classForRest = as.allSpoonClasses.getClasses().get(1);
+    JTool j = CurrentProject.getInstance().j;
+    String group = That.getInstance().domain.current.group;
+
+    CtClass classForRest = j.allSpoonClasses.getClasses().get(1);
 
 
     ClassName longClass = ClassName.get(Long.class);
@@ -43,9 +44,9 @@ public class ServerDogsbodyTest {
         .addSuperinterface(jpaRepoRef)
         .build();
     JavaFile javaFile = JavaFile
-        .builder(as.project.group, repository)
+        .builder(group, repository)
         .build();
-    as.addClass(javaFile);
+    j.addClass(javaFile);
 
 
     ClassName repoClassName = ClassName.get(classForRest.getPackage().getQualifiedName()
@@ -169,11 +170,11 @@ public class ServerDogsbodyTest {
         .build();
 
     JavaFile restFile = JavaFile
-        .builder(as.project.group, rest)
+        .builder(group, rest)
         .build();
-    as.addClass(restFile);
+    j.addClass(restFile);
 
-    as.build();
+    j.build();
   }
 
   private AnnotationSpec getDeleteAnnotation(String path, String simpleName) {

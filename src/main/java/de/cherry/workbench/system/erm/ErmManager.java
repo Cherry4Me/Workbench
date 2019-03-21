@@ -3,7 +3,7 @@ package de.cherry.workbench.system.erm;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
-import de.cherry.workbench.TempProject;
+import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.system.SystemManager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +22,7 @@ import java.util.stream.Stream;
 @RestController
 public class ErmManager implements SystemManager {
 
-  TempProject project = TempProject.getInstance();
+  CurrentProject project = CurrentProject.getInstance();
 
 
   @Override
@@ -75,7 +75,7 @@ public class ErmManager implements SystemManager {
         JavaFile domainClassFile = JavaFile
             .builder("com.example.out.domain", domainClass.build())
             .build();
-        project.as.addClass(domainClassFile);
+        project.j.addClass(domainClassFile);
       }
     }
   }
@@ -92,10 +92,10 @@ public class ErmManager implements SystemManager {
   @GetMapping("model")
   public DataNet getModel() {
     int sequence = 0;
-    TempProject project = TempProject.getInstance();
+    CurrentProject project = CurrentProject.getInstance();
     DataNet dataNet = new DataNet();
     HashMap<String, String> node2Name = new HashMap<>();
-    for (CtClass aClass : project.as.allSpoonClasses.getClasses()) {
+    for (CtClass aClass : project.j.allSpoonClasses.getClasses()) {
       if ("domain".equals(aClass.getPackage().getSimpleName())) {
         String simpleName = aClass.getSimpleName();
         String id = node2Name.get(simpleName.toLowerCase());

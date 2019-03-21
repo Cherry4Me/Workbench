@@ -2,6 +2,8 @@ package de.cherry.workbench.clazz.rest;
 
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
+import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.java.JTool;
 import org.springframework.web.bind.annotation.RestController;
 import spoon.reflect.code.CtExpression;
 import spoon.reflect.declaration.CtAnnotation;
@@ -9,6 +11,7 @@ import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtMethod;
 import spoon.reflect.declaration.CtParameter;
 
+import java.io.File;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,13 +21,18 @@ public class RestManager implements ClazzManager {
 
   @Override
   public String getClazzName() {
-    return RestClazz.class.getSimpleName();
+    return "Rest";
   }
 
   @Override
-  public List<? extends MasterClazz> readClazz(CtClass aClass) {
+  public List<? extends MasterClazz> readClazz(File f) {
+    JTool j = CurrentProject.getInstance().j;
+    CtClass aClass = j.getCtClass(f);
+    if (aClass == null)
+      return null;
     List<RestClazz> restClazzes = new ArrayList<>();
     if (aClass == null) return restClazzes;
+    if (aClass.getAnnotation(RestController.class) == null) return restClazzes;
     for (Object o : aClass.getMethods()) {
       CtMethod method = (CtMethod) o;
       String methodName = method.getSimpleName();
@@ -62,11 +70,5 @@ public class RestManager implements ClazzManager {
       restClazzes.add(new RestClazz(methodName, httpMethode, uri, requestBody, requestParams, pathVariables));
     }
     return restClazzes;
-  }
-
-  @Override
-  public boolean detect(CtClass aClass) {
-    RestController annotation = aClass.getAnnotation(RestController.class);
-    return annotation != null;
   }
 }

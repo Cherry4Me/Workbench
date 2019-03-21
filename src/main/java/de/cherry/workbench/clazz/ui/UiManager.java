@@ -21,6 +21,7 @@ public class UiManager implements ClazzManager {
 
   @Override
   public List<MasterClazz> readClazz(File f) {
+    if(!f.getAbsolutePath().endsWith(".html")) return null;
     String html = null;
     try {
       String absolutePath = f.getAbsolutePath();
@@ -32,20 +33,5 @@ public class UiManager implements ClazzManager {
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
-  }
-
-  @Override
-  public List<MasterClazz> readClazz(CtClass aClass) {
-    throw new RuntimeException("Can't create from Java-Class");
-  }
-
-  @Override
-  public boolean detect(File f) {
-    return f.getAbsolutePath().endsWith(".html");
-  }
-
-  @Override
-  public boolean detect(CtClass aClass) {
-    return false;
   }
 }
