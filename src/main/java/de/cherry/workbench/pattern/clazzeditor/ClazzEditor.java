@@ -1,6 +1,5 @@
 package de.cherry.workbench.pattern.clazzeditor;
 
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.meta.That;
@@ -16,14 +15,14 @@ import java.util.List;
 @RestController
 public class ClazzEditor implements PatternManager {
 
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
 
   @PostMapping("/clazzdata")
   @Override
   public TypeSaveObject findPattern(@RequestBody Clazz2Edit className) {
-    File file = new File(That.getInstance().domain.current.path + className.file);
-    for (ClazzManager clazzManager : project.clazzManagers) {
+    File file = new File(That.getInstance().get().path + className.file);
+    for (ClazzManager clazzManager : that.clazzManagers) {
       if (clazzManager.getClazzName().equals(className.clazz)) {
         List<? extends MasterClazz> clazz = clazzManager.readClazz(file);
         return new TypeSaveObject(clazz.get(0));

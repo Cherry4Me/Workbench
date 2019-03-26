@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.lang.reflect.Executable;
 import java.util.List;
 
-public class InterpreterTest {
+public class BuilderTest {
 
   @Test
   public void callabals() throws Exception {

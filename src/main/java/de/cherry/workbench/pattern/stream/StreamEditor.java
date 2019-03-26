@@ -1,7 +1,7 @@
 package de.cherry.workbench.pattern.stream;
 
 import de.cherry.workbench.clazz.stream.StreamManager;
-import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.That;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class StreamEditor implements PatternManager {
-
-  CurrentProject project = CurrentProject.getInstance();
 
   @PostMapping("/streamInfo")
   public TypeSaveObject getClazzWithData(@RequestBody Clazz2Edit className) throws Exception {

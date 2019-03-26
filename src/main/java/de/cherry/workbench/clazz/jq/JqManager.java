@@ -1,17 +1,21 @@
 package de.cherry.workbench.clazz.jq;
 
+import com.shapesecurity.shift.ast.*;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
-import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.clazz.event.EventClazz;
+import de.cherry.workbench.meta.That;
 import de.cherry.workbench.meta.js.JsTool;
-import spoon.reflect.declaration.CtClass;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.io.File;
+import java.lang.Class;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class JqManager implements ClazzManager {
-  CurrentProject project = CurrentProject.getInstance();
 
   @Override
   public String getClazzName() {
@@ -21,7 +25,8 @@ public class JqManager implements ClazzManager {
   @Override
   public List<? extends MasterClazz> readClazz(File f) {
     throw new NotImplementedException();
-    /*if (!f.getName().endsWith("js")) return null;
+    /*JsTool js = That.getInstance().getJs();
+    if (!f.getName().endsWith("js")) return null;
     Script script = js.getScript(f);
     ArrayList<EventClazz> eventClazzes = new ArrayList<>();
     HashMap<Class, Consumer<Object>> listener = new HashMap<>();

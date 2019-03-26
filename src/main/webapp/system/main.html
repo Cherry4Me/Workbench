@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <title>Systems</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <link href="lib/w3.css" rel="stylesheet">
-  <link href="lib/w3-theme-blue.css" rel="stylesheet">
-  <script src="lib/jquery.js"></script>
+  <link href="/util/lib/w3.css" rel="stylesheet">
+  <link href="/util/lib/w3-theme-blue.css" rel="stylesheet">
+  <script src="/util/lib/jquery.js"></script>
   <script src="/util/interpreter.js"></script>
 </head>
 
@@ -22,7 +22,6 @@
       type: 'GET',
       url: "/project",
       success: function (urlData) {
-
         var className = urlData.type;
         var data = urlData.state;
         getCtClass(className, function (structure) {

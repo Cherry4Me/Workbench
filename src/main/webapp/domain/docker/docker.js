@@ -1,5 +1,5 @@
 $.ajax({
-    "url": "/projects",
+    "url": "/docker",
     "method": "GET",
 }).done(function (projects) {
     for (let i = 0; i < projects.length; i++) {
@@ -7,7 +7,7 @@ $.ajax({
         $("#content").append(
             $('<div class="column w3-theme">')
             .on("click", function(){
-                
+                console.log(project);
             })
             .append(
                 $('<div class="card">')

@@ -1,6 +1,5 @@
 package de.cherry.workbench.system.clazz2file;
 
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.meta.That;
@@ -23,13 +22,11 @@ import java.util.List;
 
 @RestController
 public class Clazz2FileManager implements SystemManager {
-
-  CurrentProject project = CurrentProject.getInstance();
-
+  That that =  That.getInstance();
 
   @Override
   public String getURL() {
-    return "clazz2file.html";
+    return "/system/clazz2file.html";
   }
 
   @Override
@@ -40,12 +37,12 @@ public class Clazz2FileManager implements SystemManager {
 
   @GetMapping("clazzes4files")
   public Clazz2FileDTO getModel() {
-    String base = That.getInstance().domain.current.path;
+    String base = that.get().path;
     Clazz2FileDTO clazz2FileDTO = new Clazz2FileDTO(base);
     FileTool.walk(
         base,
         clazz2FileDTO,
-        (inner, f) -> inner.clazzes.addAll(getClazzes(f, project))
+        (inner, f) -> inner.clazzes.addAll(getClazzes(f))
     );
 
     return clazz2FileDTO;
@@ -53,11 +50,11 @@ public class Clazz2FileManager implements SystemManager {
 
   @GetMapping("clazz")
   public HashMap<String, List<String>> getClazz() {
-    List<CtClass> classes = project.j.allSpoonClasses.getClasses();
+    List<CtClass> classes = that.getJ().allSpoonClasses.getClasses();
     HashMap<String, List<String>> clazz4class = new HashMap<>();
     for (CtClass aClass : classes) {
       clazz4class.put(aClass.getQualifiedName(), new ArrayList<>());
-      for (ClazzManager finder : project.clazzManagers) {
+      for (ClazzManager finder : that.clazzManagers) {
         List<String> clazzes = clazz4class.get(aClass.getQualifiedName());
         clazzes.add(finder.getClazzName());
         clazz4class.put(aClass.getQualifiedName(), clazzes);
@@ -69,13 +66,13 @@ public class Clazz2FileManager implements SystemManager {
 
   @GetMapping("getclazzes")
   public List<ClazzManager> getClazzes() {
-    return project.clazzManagers;
+    return that.clazzManagers;
   }
 
   @PostMapping("/getState")
   public TypeSaveObject getState(@RequestBody ClassAndClazz classAndClazz) {
     ClazzManager finder = getClazzFinder(classAndClazz);
-    File aClassFile = project.j.findFile(classAndClazz.aClass);
+    File aClassFile = that.getJ().findFile(classAndClazz.aClass);
     MasterClazz clazz = finder.readClazz(aClassFile).get(0);
     return new TypeSaveObject(clazz);
   }
@@ -83,7 +80,7 @@ public class Clazz2FileManager implements SystemManager {
 
   @NotNull
   private ClazzManager getClazzFinder(@RequestBody ClassAndClazz classAndClazz) {
-    for (ClazzManager finder : project.clazzManagers) {
+    for (ClazzManager finder : that.clazzManagers) {
       if (finder.getClazzName().equals(classAndClazz.aClazz)) {
         return finder;
       }
@@ -91,9 +88,9 @@ public class Clazz2FileManager implements SystemManager {
     throw new IllegalArgumentException();
   }
 
-  private List<String> getClazzes(File f, CurrentProject project) {
+  private List<String> getClazzes(File f) {
     ArrayList<String> clazzes = new ArrayList<>();
-    for (ClazzManager finder : project.clazzManagers) {
+    for (ClazzManager finder : that.clazzManagers) {
       List<? extends MasterClazz> masterClazzes = finder.readClazz(f);
       if (masterClazzes != null)
         for (int i = 0; i < masterClazzes.size(); i++) {

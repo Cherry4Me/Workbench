@@ -3,9 +3,7 @@ package de.cherry.workbench.clazz.event;
 import com.shapesecurity.shift.ast.*;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
-import de.cherry.workbench.meta.CurrentProject;
-import de.cherry.workbench.meta.js.JsTool;
-import spoon.reflect.declaration.CtClass;
+import de.cherry.workbench.meta.That;
 
 import java.io.File;
 import java.lang.Class;
@@ -16,7 +14,7 @@ import java.util.function.Consumer;
 
 public class EventManager implements ClazzManager {
 
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
   @Override
   public String getClazzName() {
@@ -26,7 +24,7 @@ public class EventManager implements ClazzManager {
   @Override
   public List<? extends MasterClazz> readClazz(File f) {
     if(!f.getName().endsWith("js")) return null;
-    Script script = project.js.getScript(f);
+    Script script = that.getJs().getScript(f);
     ArrayList<EventClazz> eventClazzes = new ArrayList<>();
     HashMap<Class, Consumer<Object>> listener = new HashMap<>();
     listener.put(CallExpression.class, o -> {
@@ -36,14 +34,14 @@ public class EventManager implements ClazzManager {
       StaticMemberExpression callee = (StaticMemberExpression) calleeSuper;
       if (!callee.getProperty().equals("on")) return;
       ExpressionSuper calledObject = callee.get_object();
-      String target = project.js.getCalled(calledObject);
+      String target = that.getJs().getCalled(calledObject);
       for (SpreadElementExpression argument : callExpression.getArguments()) {
-        String event = project.js.getExpressionString((Expression) argument);
+        String event = that.getJs().getExpressionString((Expression) argument);
         eventClazzes.add(new EventClazz(target, event, f));
         return;
       }
     });
-    project.js.processTree(script, listener);
+    that.getJs().processTree(script, listener);
     return eventClazzes;
   }
 }

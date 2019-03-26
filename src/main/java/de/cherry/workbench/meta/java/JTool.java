@@ -1,7 +1,6 @@
 package de.cherry.workbench.meta.java;
 
 import com.squareup.javapoet.JavaFile;
-import de.cherry.workbench.meta.file.Dir;
 import spoon.Launcher;
 import spoon.compiler.SpoonResource;
 import spoon.compiler.SpoonResourceHelper;
@@ -31,12 +30,12 @@ public class JTool {
 
   public AllClassProcessor allSpoonClasses;
   public CtModel model;
-  public Dir javaDir;
+  public File javaDir;
 
-  public JTool(Dir javaDir) throws FileNotFoundException {
+  public JTool(File javaDir) throws FileNotFoundException {
     this.javaDir = javaDir;
     this.launcher = new Launcher();
-    String exactSrc = javaDir.getFile().getAbsolutePath();
+    String exactSrc = javaDir.getAbsolutePath();
 
 
     List<SpoonResource> resources =
@@ -74,7 +73,7 @@ public class JTool {
 
   public void addClass(JavaFile jClass) {
     try {
-      File file = new File(javaDir.getFile().getAbsolutePath());
+      File file = new File(javaDir.getAbsolutePath());
       jClass.writeTo(file);
       launcher.addInputResource(SpoonResourceHelper.createResource(file));
       file.delete();
@@ -100,7 +99,7 @@ public class JTool {
 
 
   public void build() {
-    File out = javaDir.getFile();
+    File out = javaDir;
     launcher.setSourceOutputDirectory(out);
     launcher.prettyprint();
   }

@@ -5,7 +5,7 @@ import de.cherry.workbench.system.SystemManager;
 public class DependencyManager implements SystemManager {
   @Override
   public String getURL() {
-    return "./dependency.html";
+    return "/system/dependency.html";
   }
 
   @Override

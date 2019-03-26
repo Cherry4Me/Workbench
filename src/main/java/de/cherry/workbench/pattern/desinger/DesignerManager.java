@@ -1,16 +1,16 @@
 package de.cherry.workbench.pattern.desinger;
 
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ui.UiManager;
+import de.cherry.workbench.meta.That;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.Clazz2Edit;
-import de.cherry.workbench.meta.file.Dir;
 import de.cherry.workbench.meta.interpreter.dto.TypeSaveObject;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -21,13 +21,13 @@ import java.util.stream.Collectors;
 @RestController
 public class DesignerManager implements PatternManager {
 
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
 
   @GetMapping("pages")
   public List<String> getPages() throws IOException {
-    Dir web = project.js.webDir;
-    List<String> pathList = Files.walk(Paths.get(web.getFile().getAbsolutePath()))
+    File web = that.getJs().webDir;
+    List<String> pathList = Files.walk(Paths.get(web.getAbsolutePath()))
         .filter(Files::isRegularFile)
         .filter((path -> "html".equals(FilenameUtils.getExtension(path.toString()))))
         .map(path -> path.toString().split("webapp")[1])
@@ -37,8 +37,8 @@ public class DesignerManager implements PatternManager {
 
   @GetMapping("page")
   public String getPage(@RequestParam("page") String page) throws IOException {
-    Dir web = project.js.webDir;
-    String pageFile = web.getFile().toString() + page;
+    File web = that.getJs().webDir;
+    String pageFile = web.toString() + page;
     String html = new String(Files.readAllBytes(Paths.get(pageFile)));
     Document document = Jsoup.parse(html);
     document.title();
@@ -48,8 +48,8 @@ public class DesignerManager implements PatternManager {
   @PostMapping("page")
   public void savePage(@RequestParam("page") String pageUrl
       , @RequestBody Page page) throws IOException {
-    Dir web = project.js.webDir;
-    String pageFile = web.getFile().toString() + pageUrl;
+    File web = that.getJs().webDir;
+    String pageFile = web.toString() + pageUrl;
     Path path = Paths.get(pageFile);
     String html = new String(Files.readAllBytes(path));
     Document document = Jsoup.parse(html);

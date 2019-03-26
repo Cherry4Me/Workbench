@@ -4,11 +4,18 @@ import de.cherry.workbench.meta.file.Dir;
 import de.cherry.workbench.meta.file.TxtFile;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class DirTest {
+
+  @Test
+  public void join(){
+    System.out.println(String.join(File.separator, "hallo", "welt"));
+  }
+
 
   @Test
   public void start() throws IOException {

@@ -1,7 +1,6 @@
 package de.cherry.workbench.server;
 
 import com.squareup.javapoet.*;
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.meta.That;
 import de.cherry.workbench.meta.java.JTool;
 import org.junit.Test;
@@ -22,8 +21,8 @@ public class ServerDogsbodyTest {
 
   @Test
   public void create() throws Exception {
-    JTool j = CurrentProject.getInstance().j;
-    String group = That.getInstance().domain.current.group;
+    JTool j = That.getInstance().getJ();
+    String group = That.getInstance().get().group;
 
     CtClass classForRest = j.allSpoonClasses.getClasses().get(1);
 

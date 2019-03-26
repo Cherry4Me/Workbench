@@ -3,9 +3,7 @@ package de.cherry.workbench.clazz.ajax;
 import com.shapesecurity.shift.ast.*;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
-import de.cherry.workbench.meta.CurrentProject;
-import de.cherry.workbench.meta.js.JsTool;
-import spoon.reflect.declaration.CtClass;
+import de.cherry.workbench.meta.That;
 
 import java.io.File;
 import java.lang.Class;
@@ -16,7 +14,7 @@ import java.util.function.Consumer;
 
 public class AjaxManager implements ClazzManager {
 
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
   @Override
   public String getClazzName() {
@@ -29,7 +27,7 @@ public class AjaxManager implements ClazzManager {
     String name = f.getName();
     if (!name.endsWith(".js") /*&& !name.endsWith(".html")*/)
       return null;
-    Script script = project.js.getScript(f);
+    Script script = that.getJs().getScript(f);
     HashMap<Class, Consumer<Object>> listener = new HashMap<>();
     listener.put(CallExpression.class, o -> {
       CallExpression callExpression = (CallExpression) o;
@@ -51,10 +49,10 @@ public class AjaxManager implements ClazzManager {
             StaticPropertyName propertyName = (StaticPropertyName) dataProperty.getName();
             Expression expression = dataProperty.getExpression();
             if (propertyName.getValue().equals("type")) {
-              ajaxClazz.type = project.js.getExpressionString(expression);
+              ajaxClazz.type = that.getJs().getExpressionString(expression);
             }
             if (propertyName.getValue().equals("url")) {
-              ajaxClazz.url = project.js.getExpressionString(expression);
+              ajaxClazz.url = that.getJs().getExpressionString(expression);
             }
           }
         }
@@ -62,7 +60,7 @@ public class AjaxManager implements ClazzManager {
         ajaxClazzes.add(ajaxClazz);
       }
     });
-    project.js.processTree(script, listener);
+    that.getJs().processTree(script, listener);
     return ajaxClazzes;
   }
 }

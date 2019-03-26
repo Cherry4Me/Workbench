@@ -3,7 +3,7 @@ package de.cherry.workbench.system.erm;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeSpec;
-import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.That;
 import de.cherry.workbench.system.SystemManager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,12 +22,12 @@ import java.util.stream.Stream;
 @RestController
 public class ErmManager implements SystemManager {
 
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
 
   @Override
   public String getURL() {
-    return "erm.html";
+    return "/system/erm.html";
   }
 
   @Override
@@ -61,9 +61,9 @@ public class ErmManager implements SystemManager {
             }
           }
           if ("Entity".equals(toAdd.type)) {
-            //add Dependency
+            //set Dependency
             if (!thisNodeHasTheOther) {
-              ClassName className = ClassName.get("com.example.out.domain", toAdd.label);
+              ClassName className = ClassName.get("com.example.out.myDomain", toAdd.label);
               domainClass.addField(className, lowerFirstLetter(toAdd.label), Modifier.PRIVATE);
             }
           } else {
@@ -73,9 +73,9 @@ public class ErmManager implements SystemManager {
           }
         }
         JavaFile domainClassFile = JavaFile
-            .builder("com.example.out.domain", domainClass.build())
+            .builder("com.example.out.myDomain", domainClass.build())
             .build();
-        project.j.addClass(domainClassFile);
+        that.getJ().addClass(domainClassFile);
       }
     }
   }
@@ -92,11 +92,10 @@ public class ErmManager implements SystemManager {
   @GetMapping("model")
   public DataNet getModel() {
     int sequence = 0;
-    CurrentProject project = CurrentProject.getInstance();
     DataNet dataNet = new DataNet();
     HashMap<String, String> node2Name = new HashMap<>();
-    for (CtClass aClass : project.j.allSpoonClasses.getClasses()) {
-      if ("domain".equals(aClass.getPackage().getSimpleName())) {
+    for (CtClass aClass : that.getJ().allSpoonClasses.getClasses()) {
+      if ("myDomain".equals(aClass.getPackage().getSimpleName())) {
         String simpleName = aClass.getSimpleName();
         String id = node2Name.get(simpleName.toLowerCase());
         if (id == null) {

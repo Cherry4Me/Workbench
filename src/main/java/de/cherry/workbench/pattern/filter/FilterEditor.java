@@ -1,6 +1,5 @@
 package de.cherry.workbench.pattern.filter;
 
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.meta.That;
@@ -15,7 +14,7 @@ import java.io.File;
 
 @RestController
 public class FilterEditor implements PatternManager {
-  CurrentProject project = CurrentProject.getInstance();
+  That that = That.getInstance();
 
   @Override
   public String getUrl() {
@@ -30,8 +29,8 @@ public class FilterEditor implements PatternManager {
   @PostMapping("/getFilter")
   @Override
   public TypeSaveObject findPattern(@RequestBody Clazz2Edit className) {
-    File file = new File(That.getInstance().domain.current.path + className.file);
-    for (ClazzManager clazzManager : project.clazzManagers) {
+    File file = new File(That.getInstance().get().path + className.file);
+    for (ClazzManager clazzManager : that.clazzManagers) {
       if (clazzManager.getClazzName().equals(className.clazz)) {
         MasterClazz clazz = clazzManager.readClazz(file).get(0);
         return new TypeSaveObject(clazz);

@@ -17,9 +17,9 @@ import java.util.function.Consumer;
 
 public class JsTool {
 
-  public Dir webDir;
+  public File webDir;
 
-  public JsTool(Dir webDir) {
+  public JsTool(File webDir) {
     this.webDir = webDir;
   }
 

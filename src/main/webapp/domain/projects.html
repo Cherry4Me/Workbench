@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link href="../util/lib/w3.css" rel="stylesheet">
+  <link href="../util/lib/w3-theme-blue.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../util/lib/jquery.js"></script>
+  <style>
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: calc(25% - 8px);
+      cursor: pointer;
+      margin: 0 4px;
+      margin-bottom: 5px;
+    }
+
+    .row {
+      margin: 0 -5px;
+    }
+
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+    }
+
+    .fa {
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-modal" id="id01" style="position: absolute;">
+    <div class="w3-modal-content w3-card-4" style="
+      position: absolute;
+      top: 10%;
+      left: 1em;
+      right: 1em;">
+      <header class="w3-container w3-indigo">
+        <span class="w3-button w3-display-topright" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+        <h4 id="modal_header">Modal Header</h4>
+      </header>
+      <div class="w3-container">
+
+        <label>Path</label>
+        <input id="path" class="w3-input w3-border" type="text">
+
+        <label>Group</label>
+        <input id="group" class="w3-input w3-border" type="text">
+
+        <label>Name</label>
+        <input id="name" class="w3-input w3-border" type="text">
+
+        <label>Template</label>
+        <select id="template" class="w3-select w3-margin-bottom" name="option">
+          <option value="" disabled selected>Choose template</option>
+          <option>Java-Maven-Spring-Boot-Web-Server</option>
+        </select>
+
+        <button id="start" class="w3-btn w3-green w3-margin-bottom w3-round-xxlarge">Start</button>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="content">
+    <span class="w3-xxlarge w3-margin">Projects</span>
+    <button class="w3-button w3-round-xxlarge w3-green" id="newProjekt">
+      <i class="fa fa-plus" style="font-size:24px"></i></button>
+    <br>
+    <br>
+  </div>
+
+  <script src="./projects/projects.js"></script>
+
+</body>
+
+</html>

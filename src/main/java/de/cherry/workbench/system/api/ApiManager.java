@@ -1,6 +1,5 @@
 package de.cherry.workbench.system.api;
 
-import de.cherry.workbench.meta.CurrentProject;
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.clazz.rest.RestManager;
@@ -18,12 +17,11 @@ import java.util.List;
 @RestController
 public class ApiManager implements SystemManager {
 
-  private CurrentProject project = CurrentProject.getInstance();
   private That that = That.getInstance();
 
   @Override
   public String getURL() {
-    return "api.html";
+    return "/system/api.html";
   }
 
   @Override
@@ -34,9 +32,9 @@ public class ApiManager implements SystemManager {
   @GetMapping("/api")
   public List<MasterClazz> getApi() {
     ArrayList<MasterClazz> clazzes = new ArrayList<>();
-    String base = that.domain.current.path;
+    String base = that.get().path;
     Clazz2FileDTO clazz2FileDTO = new Clazz2FileDTO(base);
-    ClazzManager clazzManager = project.findClazzManager(
+    ClazzManager clazzManager = that.findClazzManager(
         (cm) -> RestManager.class.isAssignableFrom(cm.getClass()));
     FileTool.walk(
         base,

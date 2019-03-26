@@ -16,7 +16,7 @@ public class AllClassProcessor extends AbstractProcessor<CtClass> {
   }
 
   public void process(CtClass ctClass) {
-    System.out.println(ctClass.getSimpleName());
+    //System.out.println(ctClass.getSimpleName());
     classes.add(ctClass);
 
   }

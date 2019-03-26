@@ -2,7 +2,7 @@ package de.cherry.workbench.clazz.rest;
 
 import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
-import de.cherry.workbench.meta.CurrentProject;
+import de.cherry.workbench.meta.That;
 import de.cherry.workbench.meta.java.JTool;
 import org.springframework.web.bind.annotation.RestController;
 import spoon.reflect.code.CtExpression;
@@ -26,7 +26,7 @@ public class RestManager implements ClazzManager {
 
   @Override
   public List<? extends MasterClazz> readClazz(File f) {
-    JTool j = CurrentProject.getInstance().j;
+    JTool j = That.getInstance().getJ();
     CtClass aClass = j.getCtClass(f);
     if (aClass == null)
       return null;

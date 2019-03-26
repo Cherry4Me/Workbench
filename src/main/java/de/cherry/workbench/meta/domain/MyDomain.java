@@ -1,11 +1,11 @@
 package de.cherry.workbench.meta.domain;
 
+import org.jetbrains.annotations.NotNull;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class MyDomain {
@@ -18,17 +18,46 @@ public class MyDomain {
 
   public Project current;
 
-  private MyDomain(){
+  private MyDomain() {
   }
 
-  public static MyDomain getInstance(){
+  public void set(Project newProject) {
+    current = newProject;
+    boolean isNew = true;
+    for (Project project : projects) {
+      if (newProject.name.equals(project.name)) {
+        isNew = false;
+      }
+    }
+    if (isNew)
+      projects.add(newProject);
+    write();
+  }
+
+  private void write() {
+    Yaml yaml = new Yaml();
+    String dump = yaml.dump(this);
     try {
-      Yaml yaml = new Yaml();
-      File initialFile = new File("./domain.yaml");
+      Files.write(Paths.get(getFile().getAbsolutePath()), dump.getBytes());
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
+
+  public static MyDomain getInstance() {
+    try {
+      File initialFile = getFile();
       InputStream inputStream = new FileInputStream(initialFile);
+      Yaml yaml = new Yaml();
       return yaml.load(inputStream);
     } catch (FileNotFoundException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  @NotNull
+  private static File getFile() {
+    return new File("domain.yaml");
   }
 }
