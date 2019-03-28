@@ -4,10 +4,12 @@ import de.cherry.workbench.clazz.ClazzManager;
 import de.cherry.workbench.clazz.MasterClazz;
 import de.cherry.workbench.meta.That;
 import de.cherry.workbench.meta.java.JTool;
+import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
 import java.io.File;
+import java.lang.annotation.Annotation;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,10 +38,12 @@ public class ModelManager implements ClazzManager {
 
   public boolean detect(CtClass aClass) {
     if (aClass == null) return false;
-    for (String part : aClass.getQualifiedName().split("\\.")) {
-      if (part.equals("myDomain"))
-        return true;
+    boolean isEntity = false;
+    for (CtAnnotation<? extends Annotation> annotation : aClass.getAnnotations()) {
+      if (annotation.getAnnotationType().getSimpleName().equals("Entity")) {
+        isEntity = true;
+      }
     }
-    return false;
+    return isEntity;
   }
 }

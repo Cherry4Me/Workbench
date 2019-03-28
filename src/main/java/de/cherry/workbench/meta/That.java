@@ -25,6 +25,7 @@ import de.cherry.workbench.pattern.comperator.ComperatorEditor;
 import de.cherry.workbench.pattern.desinger.DesignerManager;
 import de.cherry.workbench.pattern.dynamiceditor.DynamicEditor;
 import de.cherry.workbench.pattern.filter.FilterEditor;
+import de.cherry.workbench.pattern.repositorycreator.RepositoryCreator;
 import de.cherry.workbench.pattern.stream.StreamEditor;
 import de.cherry.workbench.system.SystemManager;
 import de.cherry.workbench.system.api.ApiManager;
@@ -55,35 +56,36 @@ public class That {
         throw new RuntimeException(e);
       }
       ourInstance.clazzManagers = Arrays.asList(
-          new RestManager(),
-          new ModelManager(),
-          new UiManager(),
-          new PropertyManager(),
-          new StreamManager(),
-          new FilterManager(),
-          new MapperManager(),
-          new AjaxManager(),
-          new EventManager(),
-          new DynamicManager()
+          //new RestManager(),
+          new ModelManager()
+          //new UiManager(),
+          //new PropertyManager(),
+          //new StreamManager(),
+          //new FilterManager(),
+          //new MapperManager(),
+          //new AjaxManager(),
+          //new EventManager(),
+          //new DynamicManager()
       );
       ourInstance.patternManagers = Arrays.asList(
           new ClazzEditor(),
-          new DesignerManager(),
-          new StreamEditor(),
-          new FilterEditor(),
-          new ComperatorEditor(),
-          new DynamicEditor()
+          new RepositoryCreator()
+          //new DesignerManager(),
+          //new StreamEditor(),
+          //new FilterEditor(),
+          //new ComperatorEditor(),
+          //new DynamicEditor()
       );
       ourInstance.systemManagers = Arrays.asList(
           new Clazz2FileManager(),
-          new ErmManager(),
-          new ApiManager()
+          new ErmManager()
+          //new ApiManager()
       );
 
       ourInstance.domainManagers = Arrays.asList(
-          new Projects(),
-          new DockerManager(),
-          new Terminal()
+          new Projects()
+          //new DockerManager(),
+          //new Terminal()
       );
     }
     return ourInstance;

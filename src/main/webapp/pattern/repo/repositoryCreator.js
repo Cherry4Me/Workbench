@@ -1,7 +1,7 @@
 function init(urlData){
     $.ajax({
         type: 'POST',
-        url: "/clazzdata",
+        url: "/repositoryTemplate",
         data: JSON.stringify(urlData),
         success: function (data) {
             createUI(data)

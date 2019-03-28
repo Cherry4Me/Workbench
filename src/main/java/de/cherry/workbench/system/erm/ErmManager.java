@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import spoon.reflect.declaration.CtAnnotation;
 import spoon.reflect.declaration.CtClass;
 import spoon.reflect.declaration.CtField;
 
 import javax.lang.model.element.Modifier;
+import javax.persistence.Entity;
+import java.lang.annotation.Annotation;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -41,6 +44,7 @@ public class ErmManager implements SystemManager {
     for (Node node : dataNet.nodes) {
       if ("Entity".equals(node.type)) {
         TypeSpec.Builder domainClass = TypeSpec.classBuilder(node.label);
+        domainClass.addAnnotation(Entity.class);
         List<Edge> allEdgesToThatNode = getAllEdgesToThatNode(dataNet, node).collect(Collectors.toList());
         for (Edge edge : allEdgesToThatNode) {
           Node toAdd;
@@ -63,7 +67,7 @@ public class ErmManager implements SystemManager {
           if ("Entity".equals(toAdd.type)) {
             //set Dependency
             if (!thisNodeHasTheOther) {
-              ClassName className = ClassName.get("com.example.out.myDomain", toAdd.label);
+              ClassName className = ClassName.get(that.get().group, toAdd.label);
               domainClass.addField(className, lowerFirstLetter(toAdd.label), Modifier.PRIVATE);
             }
           } else {
@@ -73,7 +77,7 @@ public class ErmManager implements SystemManager {
           }
         }
         JavaFile domainClassFile = JavaFile
-            .builder("com.example.out.myDomain", domainClass.build())
+            .builder(that.get().group, domainClass.build())
             .build();
         that.getJ().addClass(domainClassFile);
       }
@@ -95,7 +99,13 @@ public class ErmManager implements SystemManager {
     DataNet dataNet = new DataNet();
     HashMap<String, String> node2Name = new HashMap<>();
     for (CtClass aClass : that.getJ().allSpoonClasses.getClasses()) {
-      if ("myDomain".equals(aClass.getPackage().getSimpleName())) {
+      boolean isEntity = false;
+      for (CtAnnotation<? extends Annotation> annotation : aClass.getAnnotations()) {
+        if (annotation.getAnnotationType().getSimpleName().equals("Entity")) {
+          isEntity = true;
+        }
+      }
+      if (isEntity) {
         String simpleName = aClass.getSimpleName();
         String id = node2Name.get(simpleName.toLowerCase());
         if (id == null) {
