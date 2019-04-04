@@ -1,10 +1,10 @@
 function init(urlData) {
     $.ajax({
         type: 'POST',
-        url: "/repositoryTemplate",
+        url: "/restify",
         data: JSON.stringify(urlData),
         success: function (data) {
-            toastr.success("Repository created", 'Succes!')
+            toastr.success("Restifyed", 'Succes!')
         },
         error: function(e){
             console.error(e);

@@ -1,36 +1,23 @@
 package de.cherry.workbench.meta;
 
 import de.cherry.workbench.clazz.ClazzManager;
-import de.cherry.workbench.clazz.ajax.AjaxManager;
-import de.cherry.workbench.clazz.dynamic.DynamicManager;
-import de.cherry.workbench.clazz.event.EventManager;
-import de.cherry.workbench.clazz.filter.FilterManager;
-import de.cherry.workbench.clazz.mapper.MapperManager;
 import de.cherry.workbench.clazz.model.ModelManager;
-import de.cherry.workbench.clazz.property.PropertyManager;
+import de.cherry.workbench.clazz.repository.RepositoryManager;
 import de.cherry.workbench.clazz.rest.RestManager;
-import de.cherry.workbench.clazz.stream.StreamManager;
-import de.cherry.workbench.clazz.ui.UiManager;
 import de.cherry.workbench.domain.DomainManager;
-import de.cherry.workbench.domain.docker.DockerManager;
 import de.cherry.workbench.domain.projects.Projects;
-import de.cherry.workbench.domain.terminal.Terminal;
 import de.cherry.workbench.meta.domain.MyDomain;
 import de.cherry.workbench.meta.domain.Project;
 import de.cherry.workbench.meta.java.JTool;
 import de.cherry.workbench.meta.js.JsTool;
 import de.cherry.workbench.pattern.PatternManager;
 import de.cherry.workbench.pattern.clazzeditor.ClazzEditor;
-import de.cherry.workbench.pattern.comperator.ComperatorEditor;
-import de.cherry.workbench.pattern.desinger.DesignerManager;
-import de.cherry.workbench.pattern.dynamiceditor.DynamicEditor;
-import de.cherry.workbench.pattern.filter.FilterEditor;
 import de.cherry.workbench.pattern.repositorycreator.RepositoryCreator;
-import de.cherry.workbench.pattern.stream.StreamEditor;
+import de.cherry.workbench.pattern.restify.Restify;
 import de.cherry.workbench.system.SystemManager;
-import de.cherry.workbench.system.api.ApiManager;
 import de.cherry.workbench.system.clazz2file.Clazz2FileManager;
 import de.cherry.workbench.system.erm.ErmManager;
+import de.cherry.workbench.system.pages.Pages;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -56,8 +43,9 @@ public class That {
         throw new RuntimeException(e);
       }
       ourInstance.clazzManagers = Arrays.asList(
-          //new RestManager(),
-          new ModelManager()
+          new RestManager(),
+          new ModelManager(),
+          new RepositoryManager()
           //new UiManager(),
           //new PropertyManager(),
           //new StreamManager(),
@@ -69,7 +57,8 @@ public class That {
       );
       ourInstance.patternManagers = Arrays.asList(
           new ClazzEditor(),
-          new RepositoryCreator()
+          new RepositoryCreator(),
+          new Restify()
           //new DesignerManager(),
           //new StreamEditor(),
           //new FilterEditor(),
@@ -78,7 +67,8 @@ public class That {
       );
       ourInstance.systemManagers = Arrays.asList(
           new Clazz2FileManager(),
-          new ErmManager()
+          new ErmManager(),
+          new Pages()
           //new ApiManager()
       );
 
@@ -151,5 +141,10 @@ public class That {
 
   public Project get(){
     return myDomain.current;
+  }
+
+  public void refresh() {
+    j = null;
+    js = null;
   }
 }

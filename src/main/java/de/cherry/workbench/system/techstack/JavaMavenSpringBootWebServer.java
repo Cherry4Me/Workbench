@@ -6,7 +6,6 @@ import com.squareup.javapoet.TypeSpec;
 import de.cherry.workbench.meta.That;
 import de.cherry.workbench.meta.domain.Project;
 import de.cherry.workbench.meta.file.Dir;
-import de.cherry.workbench.meta.server.Pom;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.lang.model.element.Modifier;

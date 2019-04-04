@@ -5,24 +5,55 @@
   <meta charset="UTF-8">
   <title>Pages</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <link href="lib/w3.css" rel="stylesheet">
-  <link href="lib/w3-theme-blue.css" rel="stylesheet">
-  <link href="lib/font-awsome.css" rel="stylesheet">
-  <script src="lib/jquery.js"></script>
+  <link href="/util/lib/w3.css" rel="stylesheet">
+  <link href="/util/lib/w3-theme-blue.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <script src="/util/lib/jquery.js"></script>
+  <script src="/util/lib/toastr.min.js"></script>
+  <link href="/util/lib/toastr.min.css" rel="stylesheet">
+  <link href="/util/nav.css" rel="stylesheet">
+  <script src="/util/nav.js" type="text/javascript"></script>
+  <link href="/util/lib/selectizize.css" rel="stylesheet">
+  <script src="/util/lib/selectize.js" type="text/javascript"></script>
+  <script src="/util/color.js" type="text/javascript"></script>
 </head>
 
 <body>
-<div id="content ">
-  <input class="w3-input w3-border" id="myInput" placeholder="Search for names.." returnType="text"
-         title="Type in a name">
 
-  <table class="w3-table-all w3-hoverable" id="myTable">
-    <tr>
-      <td>Keine Seite gefunden</td>
-    </tr>
-  </table>
-</div>
-<script src="./pages/pages.js"></script>
+  <div class="w3-modal" id="id01" style="position: absolute;">
+    <div class="w3-modal-content w3-card-4" >
+      <header class="w3-container w3-indigo">
+        <span class="w3-button w3-display-topright"
+          onclick="document.getElementById('id01').style.display='none'">&times;</span>
+        <h4 id="modal_header">Modal Header</h4>
+      </header>
+      <div class="w3-container">
+          <div class="w3-section">
+            <label><b>Filename</b></label>
+            <input id="fileName" class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Filename">
+            <button id="createFile" class="w3-button w3-block w3-green w3-section">Create</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div style="min-height: 350px" id="content">
+    <input class="w3-input w3-border" id="myInput" placeholder="Search for names.." returnType="text"
+      title="Type in a name">
+
+    <table class="w3-table-all w3-hoverable" id="myTable">
+      <tr>
+        <td>Keine Seite gefunden</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="nav">
+    <a class="nav-item nav-count-4" href="#save" id="saveButton"><i class="icon ion-md-add"></i><span
+        class="invisible">Alarm</span></a>
+    <a class="mask" href="#toggle"><i class="icon ion-md-add"></i></a>
+  </div>
+  <script src="./pages/pages.js"></script>
 </body>
 
 </html>

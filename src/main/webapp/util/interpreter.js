@@ -22,7 +22,7 @@ const typeToHtmlMapping = {
     "java.lang.String": "<input class='w3-input w3-border' type='text'\>",
     "java.util.List": function (className, type, card, name, listvalue) {
         $.ajax({
-            "url": "./listfield",
+            "url": "/listfield",
             "method": "POST",
             data: JSON.stringify({
                 className: className,
@@ -58,7 +58,7 @@ const typeToHtmlMapping = {
 
 function addFunctions(card, className) {
     $.ajax({
-        "url": "./methode?class=" + className,
+        "url": "/methode?class=" + className,
         "method": "GET",
     }).done(function (data) {
         let tabReiter = $("<div class='w3-bar w3-black'>");

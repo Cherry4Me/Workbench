@@ -28,8 +28,6 @@ public class RestManager implements ClazzManager {
   public List<? extends MasterClazz> readClazz(File f) {
     JTool j = That.getInstance().getJ();
     CtClass aClass = j.getCtClass(f);
-    if (aClass == null)
-      return null;
     List<RestClazz> restClazzes = new ArrayList<>();
     if (aClass == null) return restClazzes;
     if (aClass.getAnnotation(RestController.class) == null) return restClazzes;
@@ -67,7 +65,15 @@ public class RestManager implements ClazzManager {
           }
         }
       }
-      restClazzes.add(new RestClazz(methodName, httpMethode, uri, requestBody, requestParams, pathVariables));
+      restClazzes.add(
+          new RestClazz(
+              methodName
+              , httpMethode
+              , uri
+              , requestBody
+              , requestParams
+              , pathVariables
+              , f));
     }
     return restClazzes;
   }

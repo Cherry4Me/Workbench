@@ -1,4 +1,4 @@
-package de.cherry.workbench.meta.server;
+package de.cherry.workbench.system.techstack;
 
 import de.cherry.workbench.meta.domain.Project;
 import de.cherry.workbench.meta.file.Fileable;

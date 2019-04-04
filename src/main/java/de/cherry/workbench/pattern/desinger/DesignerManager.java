@@ -23,18 +23,6 @@ public class DesignerManager implements PatternManager {
 
   That that = That.getInstance();
 
-
-  @GetMapping("pages")
-  public List<String> getPages() throws IOException {
-    File web = that.getJs().webDir;
-    List<String> pathList = Files.walk(Paths.get(web.getAbsolutePath()))
-        .filter(Files::isRegularFile)
-        .filter((path -> "html".equals(FilenameUtils.getExtension(path.toString()))))
-        .map(path -> path.toString().split("webapp")[1])
-        .collect(Collectors.toList());
-    return pathList;
-  }
-
   @GetMapping("page")
   public String getPage(@RequestParam("page") String page) throws IOException {
     File web = that.getJs().webDir;

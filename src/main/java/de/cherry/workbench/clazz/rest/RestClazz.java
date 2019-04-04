@@ -22,13 +22,15 @@ public class RestClazz implements MasterClazz {
       , String uri
       , String requestBody
       , List<RequestParam> requestParams
-      , ArrayList<PathVariable> pathVariables) {
+      , ArrayList<PathVariable> pathVariables
+      , File file) {
     this.methodName = methodName;
     this.httpMethode = httpMethode;
     this.uri = uri;
     this.requestBody = requestBody;
     this.requestParams = requestParams;
     this.pathVariables = pathVariables;
+    this.setFile(file);
   }
 
 
