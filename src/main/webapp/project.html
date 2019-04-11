@@ -8,38 +8,36 @@
 <link href="/util/lib/font-awsome.css" rel="stylesheet">
 <script src="/util/lib/jquery.js"></script>
 <style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Poppins", sans-serif
-  }
-
-  body {
-    font-size: 16px;
-  }
-
-  .w3-half img {
-    margin-bottom: -6px;
-    margin-top: 16px;
-    opacity: 0.8;
-    cursor: pointer
-  }
-
-  .w3-half img:hover {
-    opacity: 1
-  }
-
-  iframe {
-    flex-grow: 1;
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Poppins", sans-serif
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .w3-half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+    
+    .w3-half img:hover {
+        opacity: 1
+    }
+    
+    iframe {
+        flex-grow: 1;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
 </style>
 
 <body>
@@ -54,7 +52,8 @@
     <h3 class="w3-padding-64"><b>Workbench<br>Systems</b></h3>
   </div>
   <div class="w3-bar-block" id="links">
-    <a class="w3-bar-item w3-button w3-hover-white" href="main.html" onclick="w3_close()" target="myiframe">Main</a>
+    <a class="w3-bar-item w3-button w3-hover-white" href="/system/main.html" onclick="w3_close()"
+       target="myiframe">Main</a>
   </div>
 </nav>
 
@@ -69,7 +68,8 @@
      title="close side menu"></div>
 
 <div class="w3-main" style="margin-left:254px;min-height: 0px">
-  <iframe class="w3-main" id="myiframe" name="myiframe" onload="resizeIframe()" src="/system/main.html" style="width:100%;">
+  <iframe class="w3-main" id="myiframe" name="myiframe" onload="resizeIframe()" src="/system/main.html"
+          style="width:100%;">
   </iframe>
   <!-- End page content -->
 </div>
@@ -77,84 +77,83 @@
 
 <!-- W3.CSS Container
 <div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px;">
-  <p class="w3-right">Powered by <a href="https://github.com/baurmax1998" title="W3.CSS" target="_blank" class="w3-hover-opacity">M4x</a></p>
+<p class="w3-right">Powered by <a href="https://github.com/baurmax1998" title="W3.CSS" target="_blank" class="w3-hover-opacity">M4x</a></p>
 </div>
 -->
 
 <script>
-    function resizeIframe(max) {
-      var iframe = $("#myiframe")[0];
-      if (max)
-        iframe.height = window.innerHeight + "px";
-      else
-        iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-    }
-
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementById("myOverlay").style.display = "none";
-    }
-
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-
-    $.ajax({
-      type: 'GET',
-      url: "/getSystems",
-      success: function (systems) {
-        for (let i = 0; i < systems.length; i++) {
-          const system = systems[i];
-          var link = $('<a target="myiframe" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">')
-            .attr("href", system.url)
-            .text(system.name);
-
-          $("#links")
-            .append(link);
+        function resizeIframe(max) {
+            var iframe = $("#myiframe")[0];
+            if (max)
+                iframe.height = window.innerHeight + "px";
+            else
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
         }
-      },
-      contentType: "application/json",
-      dataType: 'json'
-    });
 
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-    $(document).ready(function () {
-      var site = window.location.hash.substring(1);
-      if ("" !== site)
-        $('#myiframe').attr("src", site);
-    });
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-    $(window).on('hashchange', function () {
-      site = window.location.hash.substring(1);
-      if ("" !== site)
-        $('#myiframe').attr("src", site);
-    });
+        $.ajax({
+            type: 'GET',
+            url: "/getSystems",
+            success: function(systems) {
+                for (let i = 0; i < systems.length; i++) {
+                    const system = systems[i];
+                    var link = $('<a target="myiframe" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">')
+                        .attr("href", system.url)
+                        .text(system.name);
 
-    $('#myiframe').on('load', function () {
-      var url = document.getElementById("myiframe").contentWindow.location.href;
-      if ("about:blank" !== url) {
-        $(window).off('hashchange');
-        window.location.hash = url;
-        $(window).on('hashchange', function () {
-          site = window.location.hash.substring(1);
-          if ("" !== site)
-            $('#myiframe').attr("src", site);
-          return true;
+                    $("#links")
+                        .append(link);
+                }
+            },
+            contentType: "application/json",
+            dataType: 'json'
         });
-      }
-    });
 
+
+
+        $(document).ready(function() {
+            var site = window.location.hash.substring(1);
+            if ("" !== site)
+                $('#myiframe').attr("src", site);
+        });
+
+        $(window).on('hashchange', function() {
+            site = window.location.hash.substring(1);
+            if ("" !== site)
+                $('#myiframe').attr("src", site);
+        });
+
+        $('#myiframe').on('load', function() {
+            var url = document.getElementById("myiframe").contentWindow.location.href;
+            if ("about:blank" !== url) {
+                $(window).off('hashchange');
+                window.location.hash = url;
+                $(window).on('hashchange', function() {
+                    site = window.location.hash.substring(1);
+                    if ("" !== site)
+                        $('#myiframe').attr("src", site);
+                    return true;
+                });
+            }
+        });
 
 </script>
 

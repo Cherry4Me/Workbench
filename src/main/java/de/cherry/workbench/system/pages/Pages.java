@@ -2,7 +2,6 @@ package de.cherry.workbench.system.pages;
 
 import de.cherry.workbench.meta.That;
 import de.cherry.workbench.system.SystemManager;
-import de.cherry.workbench.system.erm.DataNet;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

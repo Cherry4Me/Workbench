@@ -1,14 +1,12 @@
-
-
-(function (old) {
-    $.fn.attr = function () {
+(function(old) {
+    $.fn.attr = function() {
         if (arguments.length === 0) {
             if (this.length === 0) {
                 return null;
             }
 
             var obj = {};
-            $.each(this[0].attributes, function () {
+            $.each(this[0].attributes, function() {
                 if (this.specified) {
                     obj[this.name] = this.value;
                 }
@@ -20,12 +18,12 @@
     };
 })($.fn.attr);
 
-jQuery.fn.outerHTML = function () {
+jQuery.fn.outerHTML = function() {
     return jQuery('<div />').append(this.eq(0).clone()).html();
 };
 
 var site;
-$(document).ready(function () {
+$(document).ready(function() {
     site = window.location.hash.substring(1);
     $.ajax({
         "async": true,
@@ -35,7 +33,7 @@ $(document).ready(function () {
             "content-type": "application/json",
             "cache-control": "no-cache",
         }
-    }).done(function (response) {
+    }).done(function(response) {
         init();
         editor.addComponents(response);
     });
@@ -54,7 +52,7 @@ function save() {
             "content-type": "application/json",
         },
         "data": JSON.stringify(data)
-    }).done(function (response) {
+    }).done(function(response) {
         console.log(response);
     });
 }
@@ -75,7 +73,7 @@ function init() {
                 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
             ]
         },
-        plugins:['grapesjs-touch']
+        plugins: ['grapesjs-touch']
 
         // plugins: ['gjs-navbar', 'grapesjs-touch', 'gjs-blocks-basic'],
         // pluginsOpts: {
@@ -89,7 +87,7 @@ function init() {
     editor.Panels.addButton('options', [{
         id: 'save',
         className: 'fa fa-floppy-o icon-blank',
-        command: function () {
+        command: function() {
             save();
         },
         attributes: {
@@ -135,7 +133,7 @@ function init() {
                 ],
             }),
         }, {
-            isComponent: function (el) {
+            isComponent: function(el) {
                 var tagName = new String(el.tagName).toLowerCase();
                 if (tagName == 'input') {
                     return {
@@ -182,8 +180,7 @@ function init() {
             defaults: Object.assign({}, txtModel.prototype.defaults, {
                 tagName: 'h1',
                 traits: [
-                    'rv-text'
-                    ,{
+                    'rv-text', {
                         type: 'select',
                         label: 'Type',
                         name: 'header-type',
@@ -193,10 +190,10 @@ function init() {
                     'title'
                 ]
             }),
-            init: function () {
+            init: function() {
                 this.listenTo(this, 'change:header-type', this.updElem);
             },
-            updElem: function () {
+            updElem: function() {
                 //todo remove or do it right (make the Text Tags cangeable)
                 // var newElem = $('<' + this.changed['header-type'] + '>');
                 // const attrs = $(this.view.el.outerHTML).attr();
@@ -210,7 +207,7 @@ function init() {
                 // editor.store();
             }
         }, {
-            isComponent: function (el) {
+            isComponent: function(el) {
                 var tagName = new String(el.tagName).toLowerCase();
                 for (let i = 0; i < headTypes.length; i++) {
                     const hType = headTypes[i];
@@ -235,7 +232,7 @@ function init() {
                 ],
             }),
         }, {
-            isComponent: function (el) {
+            isComponent: function(el) {
                 var tagName = new String(el.tagName).toLowerCase();
                 if (tagName == 'div') {
                     return {
@@ -260,7 +257,7 @@ function init() {
                 ],
             }),
         }, {
-            isComponent: function (el) {
+            isComponent: function(el) {
                 var tagName = new String(el.tagName).toLowerCase();
                 if (tagName == 'button') {
                     return {
@@ -296,7 +293,8 @@ function init() {
         label: 'Simple text',
         content: '<h1 class="w3-opacity">hallo</h1>',
     });
-    window.parent.resizeIframe(true);
+    if (window.parent.resizeIframe != undefined)
+        window.parent.resizeIframe(true);
 
 
 }

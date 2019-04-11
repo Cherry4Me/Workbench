@@ -1,9 +1,8 @@
 !!de.cherry.workbench.meta.domain.MyDomain
 age: 20
-current: {group: de.example, name: abc, path: /Users/mbaaxur/Documents/gits/WorkbenchCherry/abc}
+current: {group: de.example, name: abc, path: abc}
 firstName: John
 lastName: Doe
 projects:
-- {group: com.example.out, name: out, path: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out}
-- {group: com.example.out2, name: out2, path: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out}
-- {group: de.example, name: abc, path: /Users/mbaaxur/Documents/gits/WorkbenchCherry/abc}
+  - {group: com.example.out, name: out, path: out}
+  - {group: de.example, name: abc, path: abc}
