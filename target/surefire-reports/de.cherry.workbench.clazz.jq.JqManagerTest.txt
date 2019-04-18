@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: de.cherry.workbench.clazz.jq.JqManagerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in de.cherry.workbench.clazz.jq.JqManagerTest
+readClazz(de.cherry.workbench.clazz.jq.JqManagerTest)  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.jq.JqManagerTest.readClazz(JqManagerTest.java:18)
+Caused by: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.jq.JqManagerTest.readClazz(JqManagerTest.java:18)
+

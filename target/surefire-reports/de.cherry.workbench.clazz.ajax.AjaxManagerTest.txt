@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: de.cherry.workbench.clazz.ajax.AjaxManagerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in de.cherry.workbench.clazz.ajax.AjaxManagerTest
+readClazz(de.cherry.workbench.clazz.ajax.AjaxManagerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.ajax.AjaxManagerTest.readClazz(AjaxManagerTest.java:16)
+Caused by: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.ajax.AjaxManagerTest.readClazz(AjaxManagerTest.java:16)
+

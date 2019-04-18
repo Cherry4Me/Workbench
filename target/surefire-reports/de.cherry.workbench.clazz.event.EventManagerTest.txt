@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: de.cherry.workbench.clazz.event.EventManagerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in de.cherry.workbench.clazz.event.EventManagerTest
+readClazz(de.cherry.workbench.clazz.event.EventManagerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.event.EventManagerTest.readClazz(EventManagerTest.java:18)
+Caused by: java.nio.file.NoSuchFileException: /Users/mbaaxur/Documents/gits/WorkbenchCherry/out/src/main/webapp/call.js
+	at de.cherry.workbench.clazz.event.EventManagerTest.readClazz(EventManagerTest.java:18)
+

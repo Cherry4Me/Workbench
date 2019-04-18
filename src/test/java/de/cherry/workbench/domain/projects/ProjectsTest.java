@@ -18,10 +18,10 @@ public class ProjectsTest {
     toCreate.name = "abc";
     toCreate.template = "Java-Maven-Spring-Boot-Web-Server";
     File file = new File("/Users/mbaaxur/Documents/gits/WorkbenchCherry/abc");
-    FileUtils.deleteDirectory(file);
-    assertTrue(file.mkdir());
-    boolean project = new Projects().createProject(toCreate);
-    System.out.println(project);
+   //  FileUtils.deleteDirectory(file);
+    //assertTrue(file.mkdir());
+   // boolean project = new Projects().createProject(toCreate);
+    // System.out.println(project);
 
   }
 }

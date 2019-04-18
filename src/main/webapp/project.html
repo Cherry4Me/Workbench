@@ -42,46 +42,34 @@
 
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large" id="mySidebar"
-     style="z-index:3;width:250px;font-weight:bold;"><br>
-  <a class="w3-button w3-hide-large w3-display-topleft" href="javascript:void(0)" onclick="w3_close()"
-     style="width:100%;font-size:22px">Close
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large" id="mySidebar" style="z-index:3;width:250px;font-weight:bold;"><br>
+        <a class="w3-button w3-hide-large w3-display-topleft" href="javascript:void(0)" onclick="w3_close()" style="width:100%;font-size:22px">Close
     Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Workbench<br>Systems</b></h3>
-  </div>
-  <div class="w3-bar-block" id="links">
-    <a class="w3-bar-item w3-button w3-hover-white" href="/system/main.html" onclick="w3_close()"
-       target="myiframe">Main</a>
-  </div>
-</nav>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><a href="/index.html"><b>Workbench<br>Systems</b></a></h3>
+        </div>
+        <div class="w3-bar-block" id="links">
+            <a class="w3-bar-item w3-button w3-hover-white" href="/system/main.html" onclick="w3_close()" target="myiframe">Main</a>
+        </div>
+    </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container  w3-hide-large w3-indigo w3-xlarge">
-  <a class="w3-button w3-indigo w3-margin-right" href="javascript:void(0)" onclick="w3_open()">☰</a>
-  <span>Workbench Systems</span>
-</header>
+    <!-- Top menu on small screens -->
+    <header class="w3-container  w3-hide-large w3-indigo w3-xlarge">
+        <a class="w3-button w3-indigo w3-margin-right" href="javascript:void(0)" onclick="w3_open()">☰</a>
+        <span>Workbench Systems</span>
+    </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" id="myOverlay" onclick="w3_close()" style="cursor:pointer"
-     title="close side menu"></div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" id="myOverlay" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
 
-<div class="w3-main" style="margin-left:254px;min-height: 0px">
-  <iframe class="w3-main" id="myiframe" name="myiframe" onload="resizeIframe()" src="/system/main.html"
-          style="width:100%;">
+    <div class="w3-main" style="margin-left:254px;min-height: 0px">
+        <iframe class="w3-main" id="myiframe" name="myiframe" onload="resizeIframe()" src="/system/main.html" style="width:100%;">
   </iframe>
-  <!-- End page content -->
-</div>
+        <!-- End page content -->
+    </div>
 
-
-<!-- W3.CSS Container
-<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px;">
-<p class="w3-right">Powered by <a href="https://github.com/baurmax1998" title="W3.CSS" target="_blank" class="w3-hover-opacity">M4x</a></p>
-</div>
--->
-
-<script>
+    <script>
         function resizeIframe(max) {
             var iframe = $("#myiframe")[0];
             if (max)
@@ -154,8 +142,7 @@
                 });
             }
         });
-
-</script>
+    </script>
 
 </body>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RunDemo</title>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link href="/util/lib/w3.css" rel="stylesheet">
+  <link href="/util/lib/w3-theme-blue.css" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <script src="/util/lib/jquery.js"></script>
+  <script src="/util/lib/toastr.min.js"></script>
+  <link href="/util/lib/toastr.min.css" rel="stylesheet">
+  <link href="/util/nav.css" rel="stylesheet">
+  <script src="/util/nav.js" type="text/javascript"></script>
+  <link href="/util/lib/selectizize.css" rel="stylesheet">
+  <script src="/util/lib/selectize.js" type="text/javascript"></script>
+  <script src="/util/color.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <button id="run" class="w3-button w3-block w3-green w3-section">Run</button>
+  <script>
+    $("#run").on("click", function () {
+      $.ajax({
+        type: 'POST',
+        url: "/runit",
+        success: function (data) {
+          console.log(data);
+        },
+        contentType: "application/json",
+        dataType: 'json'
+      });
+    });
+  </script>
+</body>
+
+</html>

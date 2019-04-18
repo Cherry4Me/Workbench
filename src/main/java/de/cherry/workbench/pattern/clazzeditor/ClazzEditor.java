@@ -21,11 +21,12 @@ public class ClazzEditor implements PatternManager {
   @PostMapping("/clazzdata")
   @Override
   public TypeSaveObject findPattern(@RequestBody Clazz2Edit className) {
-    File file = new File(That.getInstance().get().path + className.file);
+    String[] paht = className.file.split("\\$");
+    File file = new File(That.getInstance().get().path + paht[0]);
     for (ClazzManager clazzManager : that.clazzManagers) {
       if (clazzManager.getClazzName().equals(className.clazz)) {
         List<? extends MasterClazz> clazz = clazzManager.readClazz(file);
-        return new TypeSaveObject(clazz.get(0));
+        return new TypeSaveObject(clazz.get(Integer.valueOf(paht[1])));
       }
     }
     return null;

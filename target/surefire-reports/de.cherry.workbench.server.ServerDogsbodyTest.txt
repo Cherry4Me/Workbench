@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: de.cherry.workbench.server.ServerDogsbodyTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.363 s <<< FAILURE! - in de.cherry.workbench.server.ServerDogsbodyTest
+create(de.cherry.workbench.server.ServerDogsbodyTest)  Time elapsed: 0.362 s  <<< ERROR!
+java.lang.NullPointerException
+	at de.cherry.workbench.server.ServerDogsbodyTest.create(ServerDogsbodyTest.java:27)
+

@@ -1,0 +1,13 @@
+de/cherry/workbench/system/impl/SystemRestTest.class
+de/cherry/workbench/WorkbenchApplicationTests.class
+de/cherry/workbench/builder/DomainBuilderTest.class
+de/cherry/workbench/clazz/event/EventManagerTest.class
+de/cherry/workbench/pattern/VisualizationTest.class
+de/cherry/workbench/general/DirTest.class
+de/cherry/workbench/explorer/BuilderTest.class
+de/cherry/workbench/maven/MavenInvocater.class
+de/cherry/workbench/domain/terminal/TerminalTest.class
+de/cherry/workbench/explorer/ClassExplorerTest.class
+de/cherry/workbench/clazz/ajax/AjaxManagerTest.class
+de/cherry/workbench/domain/projects/ProjectsTest.class
+de/cherry/workbench/clazz/jq/JqManagerTest.class

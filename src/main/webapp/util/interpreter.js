@@ -1,5 +1,5 @@
 let oVal = jQuery.fn.val;
-jQuery.fn.val = function (a) {
+jQuery.fn.val = function(a) {
     let value = oVal.apply(this, arguments);
 
     if (a === undefined) { //read val
@@ -20,7 +20,7 @@ const typeToHtmlMapping = {
     "boolean": "<input class='w3-check' type='checkbox'\>",
     "java.lang.Boolean": "<input class='w3-check' type='checkbox'\>",
     "java.lang.String": "<input class='w3-input w3-border' type='text'\>",
-    "java.util.List": function (className, type, card, name, listvalue) {
+    "java.util.List": function(className, type, card, name, listvalue) {
         $.ajax({
             "url": "/listfield",
             "method": "POST",
@@ -28,7 +28,7 @@ const typeToHtmlMapping = {
                 className: className,
                 fieldName: name
             }),
-            success: function (data) {
+            success: function(data) {
                 for (let i = 0; i < listvalue.length; i++) {
                     const listElement = listvalue[i];
                     let card2 = $("<div class='w3-panel w3-card w3-light-grey'>")
@@ -60,7 +60,7 @@ function addFunctions(card, className) {
     $.ajax({
         "url": "/methode?class=" + className,
         "method": "GET",
-    }).done(function (data) {
+    }).done(function(data) {
         let tabReiter = $("<div class='w3-bar w3-black'>");
         let tabs = [];
         for (let i in data) {
@@ -68,7 +68,7 @@ function addFunctions(card, className) {
             if (func.className === className) {
                 let mehtodeName = func.mehtodeName;
                 tabReiter.append(
-                    $("<button class='w3-bar-item w3-button tablink'>" + mehtodeName + "</button>").on("click", function (e) {
+                    $("<button class='w3-bar-item w3-button tablink'>" + mehtodeName + "</button>").on("click", function(e) {
                         $(".function").hide();
                         $(".tablink").removeClass("w3-red");
                         let functionName = $(e.currentTarget).addClass("w3-red").text();
@@ -85,7 +85,7 @@ function addFunctions(card, className) {
                     addField(param.value.name, tab, param.key);
                     paramsClasses.push(param.value.name);
                 }
-                tab.append($("<button class='w3-button w3-margin-bottom w3-green'>").text("doit").on("click", function () {
+                tab.append($("<button class='w3-button w3-margin-bottom w3-green'>").text("doit").on("click", function() {
                     console.log(mehtodeName);
                     let params = getParams(mehtodeName);
                     let object = getObject(className);
@@ -99,7 +99,7 @@ function addFunctions(card, className) {
                     };
                     console.log(toExecute);
 
-                    execute(toExecute, function (data) {
+                    execute(toExecute, function(data) {
                         $("#out").text(JSON.stringify(data));
                         console.log(data);
                         let className = data.type;
@@ -133,7 +133,7 @@ function execute(toExecute, than, error) {
 
 function getParams(mehtodeName) {
     let params = [];
-    $("#" + mehtodeName + ">.field").each(function (i, element) {
+    $("#" + mehtodeName + ">.field").each(function(i, element) {
         params.push($($(element).find("input")[0]).val())
     });
     return params;
@@ -141,7 +141,7 @@ function getParams(mehtodeName) {
 
 function getObject(className) {
     let object = {};
-    $("[className='" + className + "']>.field").each(function (i, element) {
+    $("[className='" + className + "']>.field").each(function(i, element) {
         let field = $($(element).find("input")[0]);
         object[field.attr("name")] = field.val();
     });
@@ -185,7 +185,7 @@ function addFields(card, className, structure, data) {
 }
 
 function buildUi($toInsert, className, data) {
-    getCtClass(className, function (structure) {
+    getCtClass(className, function(structure) {
         let card = $("<div class='w3-panel w3-card w3-light-grey'>").attr("className", className).append($("<h3>").text(className));
         addFields(card, className, structure, data);
         $toInsert.append(card);
@@ -193,8 +193,8 @@ function buildUi($toInsert, className, data) {
     });
 }
 
-function addRow($toInsert, data){
-    var fields =  $toInsert.children().first().children();
+function addRow($toInsert, data) {
+    var fields = $toInsert.children().first().children();
     var row = $("<tr>");
     for (let i = 0; i < fields.length; i++) {
         const field = $(fields[i]);
@@ -203,8 +203,8 @@ function addRow($toInsert, data){
     $toInsert.append(row);
 }
 
-function buildTable($toInsert, className, callback){
-    getCtClass(className, function(structure){
+function buildTable($toInsert, className, callback) {
+    getCtClass(className, function(structure) {
         var headerRow = $("<tr>");
         for (const field in structure) {
             if (structure.hasOwnProperty(field)) {

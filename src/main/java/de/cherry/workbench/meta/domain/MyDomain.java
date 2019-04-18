@@ -10,9 +10,8 @@ import java.util.List;
 
 public class MyDomain {
 
-  public String firstName;
-  public String lastName;
-  public int age;
+  public String basePath;
+  public String baseGroup;
 
   public List<Project> projects;
 

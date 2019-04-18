@@ -5,6 +5,7 @@ import de.cherry.workbench.clazz.model.ModelManager;
 import de.cherry.workbench.clazz.repository.RepositoryManager;
 import de.cherry.workbench.clazz.rest.RestManager;
 import de.cherry.workbench.domain.DomainManager;
+import de.cherry.workbench.domain.domain.MyDomainManager;
 import de.cherry.workbench.domain.projects.Projects;
 import de.cherry.workbench.meta.domain.MyDomain;
 import de.cherry.workbench.meta.domain.Project;
@@ -15,9 +16,11 @@ import de.cherry.workbench.pattern.clazzeditor.ClazzEditor;
 import de.cherry.workbench.pattern.repositorycreator.RepositoryCreator;
 import de.cherry.workbench.pattern.restify.Restify;
 import de.cherry.workbench.system.SystemManager;
+import de.cherry.workbench.system.api.ApiManager;
 import de.cherry.workbench.system.clazz2file.Clazz2FileManager;
 import de.cherry.workbench.system.erm.ErmManager;
 import de.cherry.workbench.system.pages.Pages;
+import de.cherry.workbench.system.run.RunDemo;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -27,6 +30,8 @@ import java.util.function.Predicate;
 
 public class That {
   private static That ourInstance = null;
+
+  private MyDomain myDomain = MyDomain.getInstance();
 
   public List<DomainManager> domainManagers;
   public List<SystemManager> systemManagers;
@@ -66,14 +71,16 @@ public class That {
           //new DynamicEditor()
       );
       ourInstance.systemManagers = Arrays.asList(
-          new Clazz2FileManager(),
-          new ErmManager(),
-          new Pages()
-          //new ApiManager()
+          new Clazz2FileManager()
+          , new ErmManager()
+          , new Pages()
+          , new ApiManager()
+          //, new RunDemo()
       );
 
       ourInstance.domainManagers = Arrays.asList(
-          new Projects()
+          new Projects(),
+          new MyDomainManager()
           //new DockerManager(),
           //new Terminal()
       );
@@ -83,9 +90,6 @@ public class That {
 
   private That() {
   }
-
-  private MyDomain myDomain = MyDomain.getInstance();
-
 
   public JTool getJ() {
     if (j == null)
@@ -139,8 +143,12 @@ public class That {
     myDomain.set(current);
   }
 
-  public Project get(){
+  public Project get() {
     return myDomain.current;
+  }
+
+  public MyDomain getMyDomain() {
+    return myDomain;
   }
 
   public void refresh() {

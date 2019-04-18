@@ -10,19 +10,21 @@ public class RestClazz implements MasterClazz {
 
   private String file;
 
-  public final HttpMethods httpMethode;
-  public final String uri;
-  public final String methodName;
-  public final String requestBody;
-  public final List<RequestParam> requestParams;
-  public final ArrayList<PathVariable> pathVariables;
+  public String httpMethode;
+  public String uri;
+  public String methodName;
+  public String requestBody;
+  public List<RequestParam> requestParams;
+  public List<PathVariable> pathVariables;
+  public String resultType;
 
   public RestClazz(String methodName
-      , HttpMethods httpMethode
+      , String httpMethode
       , String uri
       , String requestBody
       , List<RequestParam> requestParams
       , ArrayList<PathVariable> pathVariables
+      , String resultType
       , File file) {
     this.methodName = methodName;
     this.httpMethode = httpMethode;
@@ -30,6 +32,7 @@ public class RestClazz implements MasterClazz {
     this.requestBody = requestBody;
     this.requestParams = requestParams;
     this.pathVariables = pathVariables;
+    this.resultType = resultType;
     this.setFile(file);
   }
 

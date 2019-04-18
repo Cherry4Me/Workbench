@@ -17,9 +17,9 @@ $("#start").on("click", function(){
     var name = $("#name").val();
     var template = $("#template").children("option:selected").val();
     var newProject = {
-        path: "/Users/mbaaxur/Documents/gits/WorkbenchCherry/abc",
-        group: "de.example",
-        name: "abc",
+        path: "default",
+        group: "default",
+        name: $("#name").val(),
         template: "Java-Maven-Spring-Boot-Web-Server"
     }
     

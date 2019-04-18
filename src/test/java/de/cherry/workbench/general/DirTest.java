@@ -32,7 +32,7 @@ public class DirTest {
             x -> x.add(new TxtFile())
         )
         .add(new TxtFile());
-    start.build();
+    //start.build();
 
     System.out.println("start");
   }

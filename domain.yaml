@@ -1,8 +1,8 @@
 !!de.cherry.workbench.meta.domain.MyDomain
-age: 20
-current: {group: de.example, name: abc, path: abc}
-firstName: John
-lastName: Doe
+baseGroup: de.example
+basePath: /Users/mbaaxur/Documents/JavaTest/workbenches/
+current: {group: com.example.out, name: out, path: /Users/mbaaxur/Documents/JavaTest/workbenches/out}
 projects:
-  - {group: com.example.out, name: out, path: out}
-  - {group: de.example, name: abc, path: abc}
+- {group: com.example.out, name: out, path: /Users/mbaaxur/Documents/JavaTest/workbenches/out}
+- {group: de.example, name: abc, path: /Users/mbaaxur/Documents/JavaTest/workbenches/abc}
+- {group: de.example.rechner, name: rechner, path: /Users/mbaaxur/Documents/JavaTest/workbenches/rechner}

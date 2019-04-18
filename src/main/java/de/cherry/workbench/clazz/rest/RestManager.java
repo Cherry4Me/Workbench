@@ -68,11 +68,12 @@ public class RestManager implements ClazzManager {
       restClazzes.add(
           new RestClazz(
               methodName
-              , httpMethode
+              , httpMethode.toString()
               , uri
               , requestBody
               , requestParams
               , pathVariables
+              , method.getType().toString()
               , f));
     }
     return restClazzes;

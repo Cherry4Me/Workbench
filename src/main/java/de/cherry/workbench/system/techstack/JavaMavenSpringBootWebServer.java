@@ -16,6 +16,8 @@ public class JavaMavenSpringBootWebServer implements TechnologyStack {
   @Override
   public void build(Project project) throws IOException {
     File path = new File(project.path);
+    if (!path.exists())
+      path.mkdir();
     if (!path.isDirectory() | !path.canWrite())
       throw new RuntimeException("nope");
 

@@ -38,8 +38,8 @@ public class Projects implements DomainManager {
   public boolean createProject(@RequestBody ToCreate toCreate) throws IOException {
     Project project = new Project();
     project.name = toCreate.name;
-    project.path = toCreate.path;
-    project.group = toCreate.group;
+    project.path = that.getMyDomain().basePath + toCreate.name;
+    project.group = that.getMyDomain().baseGroup + "." + toCreate.name;
     that.set(project);
     if (toCreate.template.equals("Java-Maven-Spring-Boot-Web-Server")){
       JavaMavenSpringBootWebServer template = new JavaMavenSpringBootWebServer();
@@ -55,6 +55,6 @@ public class Projects implements DomainManager {
 
   @Override
   public String getURL() {
-    return "./projects.html";
+    return "/domain/projects.html";
   }
 }

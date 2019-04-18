@@ -11,6 +11,7 @@
   <script src="../util/lib/jquery.js"></script>
   <style>
     /* Float four columns side by side */
+
     .column {
       float: left;
       width: calc(25% - 8px);
@@ -23,8 +24,8 @@
       margin: 0 -5px;
     }
 
-
     /* Responsive columns */
+
     @media screen and (max-width: 600px) {
       .column {
         width: 100%;
@@ -34,6 +35,7 @@
     }
 
     /* Style the counter cards */
+
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       padding: 16px;
@@ -55,16 +57,17 @@
       left: 1em;
       right: 1em;">
       <header class="w3-container w3-indigo">
-        <span class="w3-button w3-display-topright" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+        <span class="w3-button w3-display-topright"
+          onclick="document.getElementById('id01').style.display='none'">&times;</span>
         <h4 id="modal_header">Modal Header</h4>
       </header>
       <div class="w3-container">
 
-        <label>Path</label>
+        <!--<label>Path</label>
         <input id="path" class="w3-input w3-border" type="text">
 
         <label>Group</label>
-        <input id="group" class="w3-input w3-border" type="text">
+        <input id="group" class="w3-input w3-border" type="text">-->
 
         <label>Name</label>
         <input id="name" class="w3-input w3-border" type="text">
